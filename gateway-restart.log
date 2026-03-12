@@ -1,0 +1,47 @@
+[2026-03-05 16:21:26] 开始重启 OpenClaw Gateway...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - channels.imessage.groupPolicy is "allowlist" but groupAllowFrom is  │
+│    empty — this channel does not fall back to allowFrom, so all group  │
+│    messages will be silently dropped. Add sender IDs to                │
+│    channels.imessage.groupAllowFrom, or set groupPolicy to "open".     │
+│  - channels.feishu.groupPolicy is "allowlist" but groupAllowFrom (and  │
+│    allowFrom) is empty — all group messages will be silently dropped.  │
+│    Add sender IDs to channels.feishu.groupAllowFrom or                 │
+│    channels.feishu.allowFrom, or set groupPolicy to "open".            │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Restarted LaunchAgent: gui/501/ai.openclaw.gateway
+[2026-03-05 16:21:26] ✅ Gateway 重启成功
+[2026-03-05 16:21:26] ---
+[2026-03-08 03:00:59] 开始重启 OpenClaw Gateway...
+env: node: No such file or directory
+[2026-03-08 03:00:59] ❌ Gateway 重启失败
+[2026-03-08 03:00:59] ---
+[2026-03-09 03:00:00] 开始重启 OpenClaw Gateway...
+env: node: No such file or directory
+[2026-03-09 03:00:00] ❌ Gateway 重启失败
+[2026-03-09 03:00:00] ---
+[2026-03-10 03:00:00] 开始重启 OpenClaw Gateway...
+env: node: No such file or directory
+[2026-03-10 03:00:00] ❌ Gateway 重启失败
+[2026-03-10 03:00:00] ---
+[2026-03-11 03:00:00] 开始重启 OpenClaw Gateway...
+env: node: No such file or directory
+[2026-03-11 03:00:00] ❌ Gateway 重启失败
+[2026-03-11 03:00:00] ---
+[2026-03-12 03:00:00] 开始重启 OpenClaw Gateway...
+env: node: No such file or directory
+[2026-03-12 03:00:00] ❌ Gateway 重启失败
+[2026-03-12 03:00:00] ---

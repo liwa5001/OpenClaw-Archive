@@ -1,0 +1,195 @@
+[2026-03-07 14:20:04] === 飞书消息轮询开始 ===
+[2026-03-07 14:20:04] 状态文件已初始化
+[2026-03-07 14:20:04] 获取 access_token...
+[2026-03-07 14:20:04] access_token 获取成功
+[2026-03-07 14:20:04] 获取 chat_id...
+[2026-03-07 14:20:05] 未找到与用户的聊天，可能是第一次对话
+[2026-03-07 14:20:05] === 飞书消息轮询结束 ===
+[2026-03-07 14:20:39] === 飞书消息轮询开始 ===
+[2026-03-07 14:20:39] 获取 access_token...
+[2026-03-07 14:20:39] access_token 获取成功
+[2026-03-07 14:20:39] 获取 chat_id...
+[2026-03-07 14:20:39] 未找到与用户的聊天，可能是第一次对话
+[2026-03-07 14:20:39] === 飞书消息轮询结束 ===
+[2026-03-07 14:21:37] === 飞书消息轮询开始 ===
+[2026-03-07 14:21:37] 获取 access_token...
+[2026-03-07 14:21:38] access_token 获取成功
+[2026-03-07 14:21:38] 获取 chat_id...
+[2026-03-07 14:21:38] 未找到与用户的聊天，可能是第一次对话
+[2026-03-07 14:21:38] === 飞书消息轮询结束 ===
+[2026-03-07 14:25:13] === 飞书消息轮询开始 ===
+[2026-03-07 14:25:13] 获取 access_token...
+[2026-03-07 14:25:13] 获取 chat_id...
+[2026-03-07 14:25:14] chat_id: oc_2c00ebb4c4dbd98ad7392249e68dc669
+[2026-03-07 14:25:14] 获取新消息 (start_time: 0)...
+[2026-03-07 14:25:14] 处理了 0 条消息
+[2026-03-07 14:25:14] === 飞书消息轮询结束 ===
+[2026-03-07 14:25:30] === 飞书消息轮询开始 ===
+[2026-03-07 14:25:30] 获取 access_token...
+[2026-03-07 14:25:30] 获取 chat_id...
+[2026-03-07 14:25:30] chat_id: oc_2c00ebb4c4dbd98ad7392249e68dc669
+[2026-03-07 14:25:30] 获取新消息 (start_time: 1772864714)...
+[2026-03-07 14:25:30] 处理了 0 条消息
+[2026-03-07 14:25:30] === 飞书消息轮询结束 ===
+[2026-03-07 14:28:32] === 飞书消息轮询开始 ===
+[2026-03-07 14:28:33] 获取 access_token...
+[2026-03-07 14:28:33] 获取 chat_id...
+[2026-03-07 14:28:33] chat_id: oc_2c00ebb4c4dbd98ad7392249e68dc669
+[2026-03-07 14:28:33] 获取最新消息...
+[2026-03-07 14:28:34] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:35] 转发失败
+[2026-03-07 14:28:35] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:36] 转发失败
+[2026-03-07 14:28:36] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:37] 转发失败
+[2026-03-07 14:28:37] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:38] 转发失败
+[2026-03-07 14:28:38] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:39] 转发失败
+[2026-03-07 14:28:39] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:40] 转发失败
+[2026-03-07 14:28:40] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:41] 转发失败
+[2026-03-07 14:28:41] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:42] 转发失败
+[2026-03-07 14:28:42] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:43] 转发失败
+[2026-03-07 14:28:43] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [非文本消息]
+[2026-03-07 14:28:44] 转发失败
+[2026-03-07 14:28:44] 处理了 10 条新消息
+[2026-03-07 14:28:44] === 飞书消息轮询结束 ===
+[2026-03-07 14:29:21] === 飞书消息轮询开始 ===
+[2026-03-07 14:29:21] 获取 access_token...
+[2026-03-07 14:29:21] 获取 chat_id...
+[2026-03-07 14:29:21] chat_id: oc_2c00ebb4c4dbd98ad7392249e68dc669
+[2026-03-07 14:29:21] 获取最新消息...
+[2026-03-07 14:29:22] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:25] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:27] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:29] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:31] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:33] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:35] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:37] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:39] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:41] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]
+[2026-03-07 14:29:43] 处理了 10 条新消息
+[2026-03-07 14:29:43] === 飞书消息轮询结束 ===
+[2026-03-07 14:31:52] === 飞书消息轮询开始 ===
+[2026-03-07 14:31:52] 获取 access_token...
+[2026-03-07 14:31:52] access_token 获取成功
+[2026-03-07 14:31:52] 获取 chat_id...
+[2026-03-07 14:31:53] chat_id: oc_2c00ebb4c4dbd98ad7392249e68dc669
+[2026-03-07 14:31:53] 获取新消息...
+[2026-03-07 14:31:53] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:31:53] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:31:57] 转发失败
+[2026-03-07 14:31:57] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:31:57] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:31:59] 转发失败
+[2026-03-07 14:31:59] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:31:59] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:32:01] 转发失败
+[2026-03-07 14:32:01] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:32:01] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:32:03] 转发失败
+[2026-03-07 14:32:03] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:32:03] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:32:05] 转发失败
+[2026-03-07 14:32:05] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:32:05] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:32:07] 转发失败
+[2026-03-07 14:32:07] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:32:07] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:32:08] 转发失败
+[2026-03-07 14:32:09] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:32:09] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:32:11] 转发失败
+[2026-03-07 14:32:11] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:32:11] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:32:13] 转发失败
+[2026-03-07 14:32:13] 收到新消息：ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+[2026-03-07 14:32:13] 转发消息到 webchat: ou_7781abd1e83eae23ccf01fe627f0747f - [text类型消息]...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+error: unknown command 'sessions_send'
+[2026-03-07 14:32:15] 转发失败
+[2026-03-07 14:32:15] 本次处理了 10 条新消息
+[2026-03-07 14:32:15] === 飞书消息轮询结束 ===

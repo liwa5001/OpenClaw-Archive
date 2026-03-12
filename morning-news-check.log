@@ -1,0 +1,262 @@
+🔍 晨报自检开始 - 2026-03-07 22:41:56
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ✅ 飞书配置存在
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查飞书连接...
+   ✅ 飞书连接正常
+5️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (125Gi)
+6️⃣ 检查 Gateway 状态...
+   ❌ Gateway 未运行
+   🔄 尝试重启 Gateway...
+   ✅ Gateway 重启成功
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - Gateway 未运行
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b55f7dacf3ca8c347719a8a7c52d (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 晨报自检完成 - Sat Mar  7 22:42:08 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-07 22:43:24
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ✅ 飞书配置存在
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查飞书配置...
+   ❌ 飞书目标用户未配置
+5️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (125Gi)
+6️⃣ 检查 Gateway 状态...
+   ❌ Gateway 未运行
+   🔄 尝试重启 Gateway...
+   ✅ Gateway 重启成功
+
+📊 检查结果：4 通过，2 失败
+⚠️ 发现问题:
+   - 飞书目标用户未配置
+   - Gateway 未运行
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b55f7d797aca4c2e879b37bb4edd (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 晨报自检完成 - Sat Mar  7 22:43:33 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-07 22:44:42
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (125Gi)
+5️⃣ 检查 Gateway 状态...
+   ❌ Gateway 未运行
+   🔄 尝试重启 Gateway...
+   ✅ Gateway 重启成功
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：4 通过，2 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+   - Gateway 未运行
+⚠️ 晨报自检发现 2 个问题，请检查配置
+✅ 晨报自检完成 - Sat Mar  7 22:44:48 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-09 06:55:00
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (121Gi)
+5️⃣ 检查 Gateway 状态...
+   ✅ Gateway 运行中
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+⚠️ 晨报自检发现 1 个问题，请检查配置
+✅ 晨报自检完成 - Mon Mar  9 06:55:02 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-09 06:55:00
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (121Gi)
+5️⃣ 检查 Gateway 状态...
+   ✅ Gateway 运行中
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+⚠️ 晨报自检发现 1 个问题，请检查配置
+✅ 晨报自检完成 - Mon Mar  9 06:55:02 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-10 06:55:00
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (120Gi)
+5️⃣ 检查 Gateway 状态...
+   ✅ Gateway 运行中
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+⚠️ 晨报自检发现 1 个问题，请检查配置
+✅ 晨报自检完成 - Tue Mar 10 06:55:01 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-10 06:55:00
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (120Gi)
+5️⃣ 检查 Gateway 状态...
+   ✅ Gateway 运行中
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+⚠️ 晨报自检发现 1 个问题，请检查配置
+✅ 晨报自检完成 - Tue Mar 10 06:55:01 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-11 06:55:00
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (112Gi)
+5️⃣ 检查 Gateway 状态...
+   ✅ Gateway 运行中
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+⚠️ 晨报自检发现 1 个问题，请检查配置
+✅ 晨报自检完成 - Wed Mar 11 06:55:02 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-11 06:55:00
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (112Gi)
+5️⃣ 检查 Gateway 状态...
+   ✅ Gateway 运行中
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+⚠️ 晨报自检发现 1 个问题，请检查配置
+✅ 晨报自检完成 - Wed Mar 11 06:55:02 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-12 06:55:01
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (111Gi)
+5️⃣ 检查 Gateway 状态...
+   ✅ Gateway 运行中
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+⚠️ 晨报自检发现 1 个问题，请检查配置
+✅ 晨报自检完成 - Thu Mar 12 06:55:03 CST 2026
+---
+🔍 晨报自检开始 - 2026-03-12 06:55:01
+1️⃣ 检查 OpenClaw 命令...
+   ✅ OpenClaw 命令正常
+2️⃣ 检查飞书配置...
+   ❌ 飞书配置异常
+3️⃣ 检查新闻源...
+   ✅ 新闻源可访问 (3/3)
+4️⃣ 检查磁盘空间...
+   ✅ 磁盘空间充足 (111Gi)
+5️⃣ 检查 Gateway 状态...
+   ✅ Gateway 运行中
+6️⃣ 检查晨报脚本...
+   ✅ 晨报脚本可执行
+
+📊 检查结果：5 通过，1 失败
+⚠️ 发现问题:
+   - 飞书配置异常
+⚠️ 晨报自检发现 1 个问题，请检查配置
+✅ 晨报自检完成 - Thu Mar 12 06:55:03 CST 2026
+---
