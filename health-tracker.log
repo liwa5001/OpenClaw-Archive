@@ -1,0 +1,454 @@
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+📊 生成日报 - 2026-03-04
+./scripts/health-report.sh: line 36: [: 0
+0: integer expression expected
+📰 健康日报 - 2026-03-04
+
+🏃 昨日运动
+昨天休息，今天继续加油！💪
+
+📋 今日训练计划
+- 查看 training-reminder.sh 获取今日训练
+- 运动前 1 小时会收到提醒
+
+💡 健康提示
+- 保持充足睡眠（7-8 小时）
+- 运动前后注意拉伸
+- 及时补充水分
+
+---
+🏰 城堡健康追踪
+🔔 训练提醒检查 - Wed Mar  4 08:00:01 CST 2026
+./scripts/training-reminder.sh: line 191: imsg: command not found
+🔍 开始分析昨日运动数据 - Wed Mar  4 09:00:00 CST 2026
+📊 分析昨日运动数据 - 2026-03-03
+./scripts/analyze-workout.sh: line 42: [: 0
+0: integer expression expected
+
+Parse error: bad token
+    <stdin>:1
+
+
+Parse error: bad token
+    <stdin>:1
+
+✅ 找到运动记录：
+   名称：
+   类型：
+   距离： km
+   时间： 分钟
+   平均心率： bpm
+   最大功率： W
+./scripts/analyze-workout.sh: line 193: imsg: command not found
+ℹ️ 用户未同意调整，保持原计划
+🔔 训练提醒检查 - Wed Mar  4 20:00:00 CST 2026
+./scripts/training-reminder.sh: line 131: imsg: command not found
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+📊 生成日报 - 2026-03-05
+./scripts/health-report.sh: line 36: [: 0
+0: integer expression expected
+📰 健康日报 - 2026-03-05
+
+🏃 昨日运动
+昨天休息，今天继续加油！💪
+
+📋 今日训练计划
+- 查看 training-reminder.sh 获取今日训练
+- 运动前 1 小时会收到提醒
+
+💡 健康提示
+- 保持充足睡眠（7-8 小时）
+- 运动前后注意拉伸
+- 及时补充水分
+
+---
+🏰 城堡健康追踪
+🔔 训练提醒检查 - Thu Mar  5 08:00:00 CST 2026
+./scripts/training-reminder.sh: line 191: imsg: command not found
+🔍 开始分析昨日运动数据 - Thu Mar  5 09:00:01 CST 2026
+📊 分析昨日运动数据 - 2026-03-04
+./scripts/analyze-workout.sh: line 42: [: 0
+0: integer expression expected
+
+Parse error: bad token
+    <stdin>:1
+
+
+Parse error: bad token
+    <stdin>:1
+
+✅ 找到运动记录：
+   名称：
+   类型：
+   距离： km
+   时间： 分钟
+   平均心率： bpm
+   最大功率： W
+./scripts/analyze-workout.sh: line 193: imsg: command not found
+ℹ️ 用户未同意调整，保持原计划
+🔔 训练提醒检查 - Thu Mar  5 20:00:01 CST 2026
+./scripts/training-reminder.sh: line 131: imsg: command not found
+🔔 训练提醒检查 - Fri Mar  6 08:00:00 CST 2026
+./scripts/training-reminder.sh: line 191: imsg: command not found
+✅ 补跑任务完成 - 2026-03-06 12:18:28
+ℹ️ 用户未同意调整，保持原计划
+🔔 训练提醒检查 - Sat Mar  7 20:00:00 CST 2026
+sent
+✅ 晚间提醒已发送 - Sat Mar  7 20:00:00 CST 2026
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+📊 生成日报 - 2026-03-08
+./scripts/health-report.sh: line 39: [: 0
+0: integer expression expected
+📰 健康日报 - 2026-03-08
+
+🏃 昨日运动
+昨天休息，今天继续加油！💪
+
+📋 今日训练计划
+- 查看 training-reminder.sh 获取今日训练
+- 运动前 1 小时会收到提醒
+
+💡 健康提示
+- 保持充足睡眠（7-8 小时）
+- 运动前后注意拉伸
+- 及时补充水分
+
+---
+🏰 城堡健康追踪
+🔔 训练提醒检查 - Sun Mar  8 20:00:00 CST 2026
+sent
+✅ 晚间提醒已发送 - Sun Mar  8 20:00:00 CST 2026
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+📊 生成日报 - 2026-03-09
+./scripts/health-report.sh: line 39: [: 0
+0: integer expression expected
+📰 健康日报 - 2026-03-09
+
+🏃 昨日运动
+昨天休息，今天继续加油！💪
+
+📋 今日训练计划
+- 查看 training-reminder.sh 获取今日训练
+- 运动前 1 小时会收到提醒
+
+💡 健康提示
+- 保持充足睡眠（7-8 小时）
+- 运动前后注意拉伸
+- 及时补充水分
+
+---
+🏰 城堡健康追踪
+🔔 训练提醒检查 - Mon Mar  9 08:00:01 CST 2026
+sent
+✅ 当天提醒已发送 - Mon Mar  9 08:00:01 CST 2026
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+📈 生成周报 - 2026-03-09
+📰 健康周报 -  至 
+
+🚴 本周运动统计
+- 运动次数：统计中...
+- 总距离：统计中...
+- 总时间：统计中...
+- 平均心率：统计中...
+
+📊 训练进度
+- 第 X 周 / 12 周
+- 本周目标：完成 X km
+- 实际完成：统计中...
+
+💓 心率分析
+- 平均静息心率：待华为数据接入
+- 运动平均心率：统计中...
+
+🎯 下周计划
+- 继续基础耐力训练
+- 逐步增加长距离
+
+---
+🏰 城堡健康追踪
+🔐 检查 Strava Token 状态...
+🔔 训练提醒检查 - Mon Mar  9 20:00:00 CST 2026
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b55df2ab2dca8b3f92ffad505534 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 晚间提醒已发送（飞书） - Mon Mar  9 20:00:08 CST 2026
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+./scripts/health-report.sh: line 39: [: 0
+0: integer expression expected
+📊 生成日报 - 2026-03-10
+📰 健康日报 - 2026-03-10
+
+🏃 昨日运动
+昨天休息，今天继续加油！💪
+
+📋 今日训练计划
+- 查看 training-reminder.sh 获取今日训练
+- 运动前 1 小时会收到提醒
+
+💡 健康提示
+- 保持充足睡眠（7-8 小时）
+- 运动前后注意拉伸
+- 及时补充水分
+
+---
+🏰 城堡健康追踪
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b55c1dc09c4a0c10f184c9ff9e9d (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+🔔 训练提醒检查 - Tue Mar 10 08:00:00 CST 2026
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b55c1bebc80a4c3e3b9d9a073639 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 当天提醒已发送（飞书） - Tue Mar 10 08:00:07 CST 2026
+🔐 检查 Strava Token 状态...
+✅ Token 已就绪
+
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+📊 生成日报 - 2026-03-11
+📰 健康日报 - 2026-03-11
+
+🏃 昨日运动
+有 1 次运动记录
+详情见 Strava App
+
+📋 今日训练计划
+- 查看 training-reminder.sh 获取今日训练
+- 运动前 1 小时会收到提醒
+
+💡 健康提示
+- 保持充足睡眠（7-8 小时）
+- 运动前后注意拉伸
+- 及时补充水分
+
+---
+🏰 城堡健康追踪
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b543ee42e08a0c39a9f08e83a403 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+🔔 训练提醒检查 - Wed Mar 11 08:00:01 CST 2026
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b543f46494ca4c143f72483df6c2 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 当天提醒已发送（飞书） - Wed Mar 11 08:00:08 CST 2026
+🔐 检查 Strava Token 状态...
+✅ Token 已就绪
+
+🔍 开始分析昨日运动数据 - Wed Mar 11 09:00:00 CST 2026
+📊 分析昨日运动数据 - 2026-03-10
+./scripts/analyze-workout.sh: line 106: [: 0
+0: integer expression expected
+✅ 找到运动记录：
+   名称：午间骑行
+   类型：Ride
+   距离：44.9 km
+   时间：107 分钟
+   平均心率：129.4 bpm
+   最大功率：117.9 W
+env: node: No such file or directory
+🔔 训练提醒检查 - Wed Mar 11 20:00:00 CST 2026
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b5421da4968a4c3ebea3f8709fb2 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 晚间提醒已发送（飞书） - Wed Mar 11 20:00:08 CST 2026
+🔐 检查 Strava Token 状态...
+✅ Token 已就绪
+
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+📊 生成日报 - 2026-03-12
+📰 健康日报 - 2026-03-12
+
+🏃 昨日运动
+有 1 次运动记录
+详情见 Strava App
+
+📋 今日训练计划
+- 查看 training-reminder.sh 获取今日训练
+- 运动前 1 小时会收到提醒
+
+💡 健康提示
+- 保持充足睡眠（7-8 小时）
+- 运动前后注意拉伸
+- 及时补充水分
+
+---
+🏰 城堡健康追踪
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b542b8c138cacc2ec78ef3d69a05 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+🔔 训练提醒检查 - Thu Mar 12 08:00:01 CST 2026
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b54146e472ca0c36e8aaf943037d (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 当天提醒已发送（飞书） - Thu Mar 12 08:00:08 CST 2026
+🔐 检查 Strava Token 状态...
+✅ Token 已就绪
+
+🔍 开始分析昨日运动数据 - Thu Mar 12 09:00:01 CST 2026
+📊 分析昨日运动数据 - 2026-03-11
+./scripts/analyze-workout.sh: line 106: [: 0
+0: integer expression expected
+✅ 找到运动记录：
+   名称：午间骑行
+   类型：Ride
+   距离：44.9 km
+   时间：107 分钟
+   平均心率：129.4 bpm
+   最大功率：117.9 W
+env: node: No such file or directory
+ℹ️ 用户未同意调整，保持原计划

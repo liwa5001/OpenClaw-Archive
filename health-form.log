@@ -1,0 +1,47 @@
+[2026-03-11T03:51:15.427Z] 🚀 健康堡表单服务器启动在端口 8889
+[2026-03-11T03:51:15.430Z] 📝 表单地址：http://localhost:8889/
+[2026-03-11T03:51:15.430Z] 📊 提交地址：http://localhost:8889/submit
+[2026-03-11T03:54:30.335Z] 🚀 健康堡表单服务器启动在端口 8890
+[2026-03-11T03:54:30.337Z] 📝 表单地址：http://0.0.0.0:8890/
+[2026-03-11T03:54:30.337Z] 📊 提交地址：http://0.0.0.0:8890/submit
+[2026-03-11T03:54:30.337Z] 🌐 局域网访问地址：http://172.20.10.2:8890/
+[2026-03-11T03:58:48.076Z] 🚀 健康堡表单服务器启动在端口 8891
+[2026-03-11T03:58:48.079Z] 📝 表单地址：http://0.0.0.0:8891/
+[2026-03-11T03:58:48.079Z] 📊 提交地址：http://0.0.0.0:8891/submit
+[2026-03-11T03:58:48.080Z] 🌐 局域网访问地址：http://172.20.10.2:8891/
+[2026-03-11T04:02:49.266Z] 收到表单提交：{"date":"2026-03-10","exercise_status":"0","exercise_type":"无","exercise_duration":"0","exercise_distance":"0","exercise_rating":"0","food_breakfast":"测试","food_lunch":"测试","food_dinner":"测试","food_snack":"","sleep_bedtime":"23:00","sleep_waketime":"07:00","sleep_deep":"2","sleep_light":"4","sleep_rem":"1.5","sleep_rhr":"55","sleep_rating":"3"}
+[2026-03-11T04:02:49.282Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/health/daily-stats/2026-03-10-health-stats.md
+[2026-03-11T04:02:55.319Z] ✅ 确认消息已发送（飞书）
+[2026-03-11T04:09:47.967Z] 🚀 健康堡表单服务器启动在端口 8892
+[2026-03-11T04:09:47.969Z] 📝 表单地址：http://0.0.0.0:8892/
+[2026-03-11T04:09:47.969Z] 📊 提交地址：http://0.0.0.0:8892/submit
+[2026-03-11T04:09:47.969Z] 🌐 局域网访问地址：http://172.20.10.2:8892/
+[2026-03-11T05:02:03.481Z] 收到表单提交：{"date":"2026-03-10","exercise_status":"1","exercise_type":"骑行","exercise_duration":"","exercise_distance":"","exercise_rating":"5","food_breakfast_time":"","food_breakfast":"","food_lunch_time":"","food_lunch":"","food_dinner_time":"","food_dinner":"","food_snack_time":"13:02","food_snack":"","sleep_bedtime":"23:00","sleep_waketime":"07:00","sleep_deep":"","sleep_light":"","sleep_rem":"","sleep_rhr":"","sleep_rating":"3","weight":""}
+[2026-03-11T05:02:03.529Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/health/daily-stats/2026-03-10-health-stats.md
+[2026-03-11T05:02:09.055Z] ✅ 确认消息已发送（飞书）
+[2026-03-11T05:03:38.479Z] 🚀 健康堡表单服务器启动在端口 8893
+[2026-03-11T05:03:38.480Z] 📝 表单地址：http://0.0.0.0:8893/
+[2026-03-11T05:03:38.480Z] 📊 提交地址：http://0.0.0.0:8893/submit
+[2026-03-11T05:03:38.481Z] 🌐 局域网访问地址：http://172.20.10.2:8893/
+[2026-03-11T05:26:01.720Z] 🚀 健康堡表单服务器启动在端口 8897
+[2026-03-11T05:26:01.722Z] 📝 表单地址：http://0.0.0.0:8897/
+[2026-03-11T05:26:01.722Z] 📊 提交地址：http://0.0.0.0:8897/submit
+[2026-03-11T05:26:01.723Z] 🌐 局域网访问地址：http://172.20.10.2:8897/
+[2026-03-11T05:28:48.399Z] 收到表单提交：{"exercise_status":"0","exercise_type":"无","exercise_duration":"0","exercise_distance":"0","exercise_rating":"0","food_breakfast_time":"","food_breakfast":"无","food_lunch_time":"","food_lunch":"无","food_dinner_time":"17:30","food_dinner":"半个寿喜锅，两个芝麻汤团，三串烤蔬菜，4串烤肉串","food_snack_time":"22:00","food_snack":"五罐啤酒，半个烤鱿鱼，全家超市海带两串，煮豆腐100克，煮萝卜两块","sleep_bedtime":"00:30","sleep_waketime":"08:30","sleep_deep":"1.5","sleep_light":"4","sleep_rem":"2.5","sleep_rhr":"73","sleep_rating":"2","weight":""}
+[2026-03-11T05:28:48.419Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/health/daily-stats/2026-03-11-health-stats.md
+[2026-03-11T05:28:56.881Z] ✅ 确认消息已发送（飞书）
+[2026-03-12T03:10:59.323Z] 🚀 健康堡表单服务器启动在端口 8897
+[2026-03-12T03:10:59.326Z] 📝 表单地址：http://0.0.0.0:8897/
+[2026-03-12T03:10:59.326Z] 📊 提交地址：http://0.0.0.0:8897/submit
+[2026-03-12T03:10:59.327Z] 🌐 局域网访问地址：http://192.168.2.58:8897/
+[2026-03-12T07:51:13.427Z] 🚀 健康堡表单服务器启动在端口 8897
+[2026-03-12T07:51:13.430Z] 📝 表单地址：http://0.0.0.0:8897/
+[2026-03-12T07:51:13.430Z] 📊 提交地址：http://0.0.0.0:8897/submit
+[2026-03-12T07:51:13.431Z] 🌐 局域网访问地址：http://192.168.2.58:8897/
+[2026-03-12T07:54:19.998Z] 收到表单提交：{"exercise_status":"0","exercise_type":"无","exercise_duration":"0","exercise_distance":"0","exercise_rating":"0","food_breakfast_time":"","food_breakfast":"无","food_lunch_time":"","food_lunch":"色拉","food_dinner_time":"","food_dinner":"羊肉串2，寿司4，啤酒2L，蔬菜串4。碳水100克","food_snack_time":"","food_snack":"无","sleep_bedtime":"02:56","sleep_waketime":"09:31","sleep_deep":"1","sleep_light":"3.6","sleep_rem":"1.7","sleep_rhr":"79","sleep_rating":"1","weight":"84.8"}
+[2026-03-12T07:54:20.040Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/health/daily-stats/2026-03-12-health-stats.md
+[2026-03-12T07:54:27.664Z] ✅ 确认消息已发送（飞书）
+[2026-03-12T07:59:04.284Z] 🚀 健康堡表单服务器启动在端口 8897
+[2026-03-12T07:59:04.287Z] 📝 表单地址：http://0.0.0.0:8897/
+[2026-03-12T07:59:04.287Z] 📊 提交地址：http://0.0.0.0:8897/submit
+[2026-03-12T07:59:04.288Z] 🌐 局域网访问地址：http://192.168.2.58:8897/

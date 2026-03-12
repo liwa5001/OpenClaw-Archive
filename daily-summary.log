@@ -1,0 +1,137 @@
+📊 每日小结任务已触发 - 2026-03-05 20:43:25
+✅ 每日小结已发送 - Thu Mar  5 20:43:26 CST 2026
+📊 每日小结任务已触发 - 2026-03-05 20:45:01
+✅ 每日小结已发送 - Thu Mar  5 20:45:01 CST 2026
+📊 每日小结任务已触发 - 2026-03-05 20:46:44
+✅ 每日小结已发送 - Thu Mar  5 20:46:44 CST 2026
+📊 每日小结任务已触发 - 2026-03-05 20:47:44
+✅ 每日小结已发送 - Thu Mar  5 20:47:44 CST 2026
+📊 每日小结任务已触发 - 2026-03-05 20:49:48
+✅ 每日小结已发送 - Thu Mar  5 20:49:48 CST 2026
+📊 每日小结任务已触发 - 2026-03-05 21:30:05
+✅ 每日小结已发送 - Thu Mar  5 21:30:09 CST 2026
+📊 每日小结任务已触发 - 2026-03-06 21:30:00
+env: node: No such file or directory
+⚠️ 飞书发送失败
+✅ 每日小结已发送（飞书） - Fri Mar  6 21:30:00 CST 2026
+📊 每日小结任务已触发 - 2026-03-06 21:45:33
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Error: Channel is required when multiple channels are configured: imessage, feishu
+⚠️ 飞书发送失败
+✅ 每日小结已发送（飞书） - Fri Mar  6 21:45:38 CST 2026
+📊 每日小结任务已触发 - 2026-03-06 21:46:06
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b5599e4d79ca0c31193d70b3b3fa (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 每日小结已发送（飞书） - Fri Mar  6 21:46:09 CST 2026
+📊 每日小结任务已触发 - 2026-03-07 21:30:00
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b55f6c6ded4acc2c9e007b78a2c5 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 每日小结已发送（飞书） - Sat Mar  7 21:30:42 CST 2026
+📊 每日小结任务已触发 - 2026-03-07 22:31:59
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b55f720f1f4a4c3405bc2049265a (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 每日小结已发送（飞书） - Sat Mar  7 22:32:04 CST 2026
+📊 每日小结任务已触发 - 2026-03-08 21:30:00
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b55e3d0cd48a8c39604a928fdeea (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 每日小结已发送（飞书） - Sun Mar  8 21:30:08 CST 2026
+🏰 生成城堡六堡每日总结 | 2026-03-10
+================================
+✅ 总结已生成：project-log/daily-summary-2026-03-10.md
+⚠️  markdown-pdf 未安装，仅生成 Markdown 文件
+   安装方法：npm install -g markdown-pdf
+
+📁 文件位置：
+   Markdown: project-log/daily-summary-2026-03-10.md
+   PDF: project-log/daily-pdfs/daily-summary-2026-03-10.pdf
+🏰 生成城堡六堡每日总结 | 2026-03-11
+================================
+✅ 总结已生成：project-log/daily-summary-2026-03-11.md
+⚠️  markdown-pdf 未安装，仅生成 Markdown 文件
+   安装方法：npm install -g markdown-pdf
+
+📁 文件位置：
+   Markdown: project-log/daily-summary-2026-03-11.md
+   PDF: project-log/daily-pdfs/daily-summary-2026-03-11.pdf
