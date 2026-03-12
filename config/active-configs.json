@@ -1,0 +1,156 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-03-05T09:20:00+08:00",
+  "description": "活跃配置中心 - 记录所有自动化任务的配置信息",
+  
+  "tasks": {
+    "morning-news": {
+      "name": "晨报",
+      "status": "active",
+      "script": "/workspace/scripts/morning-news.sh",
+      "schedule": "0 7 * * *",
+      "channel": "feishu",
+      "target": "ou_7781abd1e83eae23ccf01fe627f0747f",
+      "format": "markdown",
+      "commandPath": "/opt/homebrew/bin/openclaw",
+      "history": [
+        {
+          "date": "2026-03-04",
+          "change": "从 iMessage 改为飞书发送",
+          "reason": "飞书格式更好，支持 Markdown 链接"
+        },
+        {
+          "date": "2026-03-05",
+          "change": "删除旧脚本 morning-news-ai.js",
+          "reason": "避免重复发送和配置混淆"
+        }
+      ]
+    },
+    
+    "daily-hot-report": {
+      "name": "每日爆款日报",
+      "status": "active",
+      "script": "/workspace/scripts/daily-hot-report-ultimate.sh",
+      "schedule": "30 7 * * *",
+      "channel": "feishu",
+      "target": "ou_7781abd1e83eae23ccf01fe627f0747f",
+      "logFile": "/workspace/logs/daily-hot-report.log",
+      "history": [
+        {
+          "date": "2026-03-08",
+          "change": "从 7:05 改为 7:30 发送，修复 cron PATH 问题",
+          "reason": "用户要求 7:30 发送，cron 环境变量需完整 PATH"
+        }
+      ]
+    },
+    
+    "health-report-daily": {
+      "name": "健康日报",
+      "status": "active",
+      "script": "/workspace/scripts/health-report.sh",
+      "schedule": "35 7 * * *",
+      "args": ["daily"],
+      "channel": "feishu",
+      "logFile": "/workspace/logs/health-tracker.log",
+      "history": [
+        {
+          "date": "2026-03-08",
+          "change": "从 7:30 改为 7:35 发送",
+          "reason": "与爆款日报错开 5 分钟，避免同时发送"
+        }
+      ]
+    },
+    
+    "training-reminder-morning": {
+      "name": "训练提醒（当天）",
+      "status": "active",
+      "script": "/workspace/scripts/training-reminder.sh",
+      "schedule": "0 8 * * *",
+      "channel": "feishu",
+      "logFile": "/workspace/logs/health-tracker.log"
+    },
+    
+    "training-reminder-evening": {
+      "name": "训练提醒（预告）",
+      "status": "active",
+      "script": "/workspace/scripts/training-reminder.sh",
+      "schedule": "0 20 * * *",
+      "channel": "feishu",
+      "logFile": "/workspace/logs/health-tracker.log"
+    },
+    
+    "workout-analysis": {
+      "name": "运动数据分析",
+      "status": "active",
+      "script": "/workspace/scripts/analyze-workout.sh",
+      "schedule": "0 9 * * *",
+      "description": "分析昨天的运动数据",
+      "channel": "feishu",
+      "logFile": "/workspace/logs/health-tracker.log"
+    },
+    
+    "training-plan-check": {
+      "name": "检查训练计划调整",
+      "status": "active",
+      "script": "/workspace/scripts/update-training-plan.sh",
+      "schedule": "30 9 * * *",
+      "args": ["check"],
+      "channel": "feishu",
+      "logFile": "/workspace/logs/health-tracker.log"
+    },
+    
+    "health-report-weekly": {
+      "name": "健康周报",
+      "status": "active",
+      "script": "/workspace/scripts/health-report.sh",
+      "schedule": "30 8 * * 1",
+      "args": ["weekly"],
+      "channel": "feishu",
+      "logFile": "/workspace/logs/health-tracker.log"
+    },
+    
+    "health-report-yearly": {
+      "name": "健康年报",
+      "status": "active",
+      "script": "/workspace/scripts/health-report.sh",
+      "schedule": "0 9 1 1 *",
+      "args": ["yearly"],
+      "channel": "feishu",
+      "logFile": "/workspace/logs/health-tracker.log"
+    },
+    
+    "daily-summary": {
+      "name": "每日小结",
+      "status": "active",
+      "script": "/workspace/scripts/daily-summary.sh",
+      "schedule": "30 21 * * *",
+      "channel": "feishu",
+      "target": "ou_7781abd1e83eae23ccf01fe627f0747f",
+      "history": [
+        {
+          "date": "2026-03-05",
+          "change": "从 iMessage 改为飞书发送",
+          "reason": "与晨报保持一致，统一使用飞书"
+        }
+      ]
+    }
+  },
+  
+  "deprecated": {
+    "morning-news-ai": {
+      "name": "晨报（旧版 - iMessage）",
+      "status": "deprecated",
+      "script": "/workspace/scripts/morning-news-ai.js",
+      "deprecatedDate": "2026-03-05",
+      "reason": "已改为飞书发送，使用 morning-news.sh 替代",
+      "action": "deleted"
+    }
+  },
+  
+  "environment": {
+    "openclawPath": "/opt/homebrew/bin/openclaw",
+    "nodePath": "/opt/homebrew/bin/node",
+    "workspaceRoot": "/Users/liwang/.openclaw/workspace",
+    "timezone": "Asia/Shanghai"
+  }
+}

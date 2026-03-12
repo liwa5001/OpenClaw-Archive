@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 成长堡 12 周学习计划 (Castle Six) - 2026 完整版 v4.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 60px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h2 {
+            color: #764ba2;
+            font-size: 24px;
+            margin: 40px 0 20px 0;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        h3 {
+            color: #5a67d8;
+            font-size: 20px;
+            margin: 30px 0 15px 0;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 10px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 13px;
+        }
+        
+        tr:nth-child(even) {
+            background: #f7fafc;
+        }
+        
+        tr:hover {
+            background: #edf2f7;
+        }
+        
+        .stars {
+            color: #fbbf24;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #f59e0b;
+            margin: 20px 0;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3b82f6;
+            margin: 20px 0;
+        }
+        
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #10b981;
+            margin: 20px 0;
+        }
+        
+        code {
+            background: #1a202c;
+            color: #68d391;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+            font-size: 12px;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+            line-height: 1.8;
+        }
+        
+        .emoji {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .toc {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+        }
+        
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .toc li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+            color: #718096;
+            font-size: 14px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 2px;
+        }
+        
+        .badge-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .badge-success {
+            background: #48bb78;
+            color: white;
+        }
+        
+        .badge-warning {
+            background: #ed8936;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 成长堡 12 周学习计划 (Castle Six)</h1>
+        
+        <div class="info-box">
+            <strong>📋 版本信息：</strong><br>
+            <strong>版本：</strong>v4.0 创哥增强版（Jeff Su + 剪映 + 创哥 AI 实验室）<br>
+            <strong>学习方向：</strong>OpenClaw + Claude AI + Jeff Su + 剪映 + 创哥 AI 实验室<br>
+            <strong>预计完成：</strong>2026-05-30 (12 周)<br>
+            <strong>每日学习：</strong>90 分钟 (3×30min)<br>
+            <strong>创建日期：</strong>2026-03-09
+        </div>
+
+        <h2>🎯 学习目标总览</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>方向</th>
+                    <th>核心能力</th>
+                    <th>12 周目标</th>
+                    <th>考核标准</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>🏰 OpenClaw</strong></td>
+                    <td>Sub-Agent 开发、Skills 编写、自动化工作流</td>
+                    <td>能独立开发完整 Agent 系统</td>
+                    <td>完成健康堡 + 成长堡 MVP + 2 个自定义 Skill</td>
+                </tr>
+                <tr>
+                    <td><strong>🤖 Claude AI</strong></td>
+                    <td>Prompt 工程、API 调用、Agent 开发</td>
+                    <td>掌握 AI 应用开发全流程</td>
+                    <td>10+ Prompt 模板 + 1 个 API 项目</td>
+                </tr>
+                <tr>
+                    <td><strong>🎬 Jeff Su</strong></td>
+                    <td>AI 工具应用、工作效率提升、AI 原生思维</td>
+                    <td>建立 AI 工作流系统</td>
+                    <td>5 个 AI 习惯 + 1 个完整工作流</td>
+                </tr>
+                <tr>
+                    <td><strong>✂️ 剪映</strong></td>
+                    <td>视频剪辑、AI 生成、短视频运营</td>
+                    <td>独立产出专业级视频</td>
+                    <td>发布 3-5 个作品 (单播放 1000+)</td>
+                </tr>
+                <tr>
+                    <td><strong>🧪 创哥 AI</strong></td>
+                    <td>AI 实战、技术选型、工具评测</td>
+                    <td>掌握 AI 工具选型能力</td>
+                    <td>完成 3 个创哥实战项目</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>📚 精选资源库</h2>
+
+        <h3>1️⃣ OpenClaw / Agent 系统 (3 个核心资源)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>资源名称</th>
+                    <th>平台</th>
+                    <th>时长</th>
+                    <th>播放量</th>
+                    <th>质量评分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>OC-01</td>
+                    <td>一个视频搞懂 OpenClaw！</td>
+                    <td>B 站</td>
+                    <td>10min</td>
+                    <td>221.7 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>OC-02</td>
+                    <td>【保姆级】OpenClaw 全网最细教学</td>
+                    <td>B 站</td>
+                    <td>53min</td>
+                    <td>25.8 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>OC-03</td>
+                    <td>手把手彻底学会 Agent Skills！</td>
+                    <td>B 站</td>
+                    <td>19min</td>
+                    <td>38.5 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>2️⃣ Claude AI / Prompt 工程 (6 个核心资源)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>资源名称</th>
+                    <th>平台</th>
+                    <th>时长</th>
+                    <th>播放量</th>
+                    <th>质量评分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CA-01</td>
+                    <td>【吴恩达】2026 年公认最好的 Claude Code 教程</td>
+                    <td>B 站</td>
+                    <td>1h43min</td>
+                    <td>9.8 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CA-02</td>
+                    <td>Claude Code 从 0 到 1 全攻略</td>
+                    <td>B 站</td>
+                    <td>44min</td>
+                    <td>48.4 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CA-03</td>
+                    <td>Master the Perfect ChatGPT Prompt Formula</td>
+                    <td>YouTube</td>
+                    <td>8:30</td>
+                    <td>340 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CA-04</td>
+                    <td>Beginner to Pro with ChatGPT in One Video</td>
+                    <td>YouTube</td>
+                    <td>8:45</td>
+                    <td>48.6 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CA-05</td>
+                    <td>2026 提示词工程教程</td>
+                    <td>B 站</td>
+                    <td>30h</td>
+                    <td>1 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CA-06</td>
+                    <td>用神器 Claude Code！打造贴身 AI 秘书团</td>
+                    <td>B 站</td>
+                    <td>21min</td>
+                    <td>33.6 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3️⃣ Jeff Su AI 工具 / 工作效率 (6 个核心资源)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>资源名称</th>
+                    <th>平台</th>
+                    <th>时长</th>
+                    <th>播放量</th>
+                    <th>质量评分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JS-01</td>
+                    <td>How to Create Cinematic AI Videos</td>
+                    <td>YouTube</td>
+                    <td>17:01</td>
+                    <td>37.4 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>JS-02</td>
+                    <td>Complete AI Video Editing Tutorial</td>
+                    <td>YouTube</td>
+                    <td>27:00</td>
+                    <td>2.4 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>JS-03</td>
+                    <td>Learn 80% of NotebookLM</td>
+                    <td>YouTube</td>
+                    <td>12:36</td>
+                    <td>130 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>JS-04</td>
+                    <td>I Switched 50% of My AI Work to Claude</td>
+                    <td>YouTube</td>
+                    <td>12:44</td>
+                    <td>49.8 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>JS-05</td>
+                    <td>3 AI Habits So Powerful</td>
+                    <td>YouTube</td>
+                    <td>10:50</td>
+                    <td>18.7 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>JS-06</td>
+                    <td>Give Me 9 Minutes, I'll Make You AI-Native</td>
+                    <td>YouTube</td>
+                    <td>8:55</td>
+                    <td>20.5 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight">
+            <strong>🎬 Jeff Su 频道：</strong> <a href="https://www.youtube.com/@JeffSu" target="_blank">https://www.youtube.com/@JeffSu</a>
+        </div>
+
+        <h3>4️⃣ 创哥 AI 实验室 (5 个核心资源) ⭐ 新增</h3>
+        <div class="info-box">
+            <strong>📺 创哥频道：</strong> <a href="https://space.bilibili.com/52807953" target="_blank">https://space.bilibili.com/52807953</a><br>
+            <strong>🎓 背景：</strong> 南大硕士，前阿里/字节技术专家<br>
+            <strong>👥 粉丝：</strong> 5.2 万 | <strong>📹 投稿：</strong> 219 个视频 | <strong>👍 获赞：</strong> 7.6 万
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>资源名称</th>
+                    <th>平台</th>
+                    <th>时长</th>
+                    <th>播放量</th>
+                    <th>质量评分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CG-01</td>
+                    <td>15 分钟用 OpenClaw 搭建一个开挂的人生系统</td>
+                    <td>B 站</td>
+                    <td>14:33</td>
+                    <td>6.6 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CG-02</td>
+                    <td>一个视频让你 OpenClaw 技术瞬间超越 90% 的人</td>
+                    <td>B 站</td>
+                    <td>09:55</td>
+                    <td>2.7 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CG-03</td>
+                    <td>在 AI 时代，程序员怎么做技术选型？</td>
+                    <td>B 站</td>
+                    <td>03:09</td>
+                    <td>4866</td>
+                    <td><span class="stars">⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CG-04</td>
+                    <td>谁才是 AI 生成网站的最强王者？</td>
+                    <td>B 站</td>
+                    <td>06:44</td>
+                    <td>3197</td>
+                    <td><span class="stars">⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>CG-05</td>
+                    <td>Cursor 1.0 更新，确实有亮点</td>
+                    <td>B 站</td>
+                    <td>04:52</td>
+                    <td>1720</td>
+                    <td><span class="stars">⭐⭐⭐⭐</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>5️⃣ 剪映 / 视频制作 (6 个核心资源)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>资源名称</th>
+                    <th>平台</th>
+                    <th>时长</th>
+                    <th>播放量</th>
+                    <th>质量评分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>VM-01</td>
+                    <td>【剪映教程】一口气学会剪辑</td>
+                    <td>B 站</td>
+                    <td>3h40min</td>
+                    <td>79.1 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>VM-02</td>
+                    <td>pr 教程 从零基础开始学剪辑</td>
+                    <td>B 站</td>
+                    <td>5h55min</td>
+                    <td>4113.6 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>VM-03</td>
+                    <td>【全 68 集】AI 视频制作入门</td>
+                    <td>B 站</td>
+                    <td>2h</td>
+                    <td>109.1 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>VM-04</td>
+                    <td>短视频运营教程</td>
+                    <td>B 站</td>
+                    <td>6h54min</td>
+                    <td>67.6 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>VM-05</td>
+                    <td>【2025 新版】PR 最新教程</td>
+                    <td>B 站</td>
+                    <td>8h7min</td>
+                    <td>19.5 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                </tr>
+                <tr>
+                    <td>VM-06</td>
+                    <td>剪映专业版教程</td>
+                    <td>B 站</td>
+                    <td>90 课时</td>
+                    <td>15.4 万</td>
+                    <td><span class="stars">⭐⭐⭐⭐</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page-break"></div>
+
+        <h2>📅 12 周详细学习计划</h2>
+
+        <div class="toc">
+            <h3>📑 目录</h3>
+            <ul>
+                <li>第 1-4 周：基础构建期 (W1-W4)</li>
+                <li>第 5-8 周：技能深化期 (W5-W8)</li>
+                <li>第 9-12 周：综合实战期 (W9-W12)</li>
+                <li>考核体系</li>
+                <li>学习建议</li>
+                <li>奖励机制</li>
+                <li>资源链接汇总</li>
+            </ul>
+        </div>
+
+        <h2>第 1-4 周：基础构建期</h2>
+
+        <h3>W1 详细计划（2026-03-09 ~ 2026-03-15）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>OpenClaw 基础 + 创哥入门 + 剪映入门 + Jeff Su AI 思维
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>Jeff Su (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W1D1</td>
+                    <td>OC-01 整体认知</td>
+                    <td>CG-01 OpenClaw 人生系统</td>
+                    <td>VM-01 P1-P2 界面认识</td>
+                    <td>JS-06 AI-Native 思维</td>
+                    <td>学习笔记</td>
+                </tr>
+                <tr>
+                    <td>W1D2</td>
+                    <td>OC-02 安装配置</td>
+                    <td>CG-02 OpenClaw 超越 90%</td>
+                    <td>VM-01 P3-P4 导入素材</td>
+                    <td>JS-05 AI 习惯</td>
+                    <td>环境搭建</td>
+                </tr>
+                <tr>
+                    <td>W1D3</td>
+                    <td>OC-02 Sub-Agent 概念</td>
+                    <td>CG-03 AI 时代技术选型</td>
+                    <td>VM-01 P5-P6 基础剪辑</td>
+                    <td>JS-04 Claude 应用</td>
+                    <td>概念图</td>
+                </tr>
+                <tr>
+                    <td>W1D4</td>
+                    <td>健康堡 MVP 开发</td>
+                    <td>CG-04 AI 生成网站评测</td>
+                    <td>VM-01 P7-P8 转场特效</td>
+                    <td>JS-03 NotebookLM</td>
+                    <td>健康堡运行</td>
+                </tr>
+                <tr>
+                    <td>W1D5</td>
+                    <td>OC-03 Skill 入门</td>
+                    <td>CG-05 Cursor 1.0 更新</td>
+                    <td>VM-01 P9-P10 字幕添加</td>
+                    <td>JS-02 Descript</td>
+                    <td>1 个简单 Skill</td>
+                </tr>
+                <tr>
+                    <td>W1D6</td>
+                    <td>健康堡优化调试</td>
+                    <td>复习 CG-01/02</td>
+                    <td>VM-01 P11-P12 音频处理</td>
+                    <td>JS-01 AI 视频</td>
+                    <td>优化版本</td>
+                </tr>
+                <tr>
+                    <td>W1D7</td>
+                    <td>周复习 + 整理笔记</td>
+                    <td>整理创哥笔记</td>
+                    <td>练习作品 15 秒</td>
+                    <td>复习 JS-05/06</td>
+                    <td>周总结</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W1 考核：</strong>
+            <ul>
+                <li>能解释 OpenClaw 架构</li>
+                <li>成功运行健康堡 MVP</li>
+                <li>剪映完成 15 秒视频</li>
+                <li>建立 3 个 AI 使用习惯</li>
+                <li>理解创哥技术选型思路</li>
+            </ul>
+        </div>
+
+        <h3>W2 详细计划（2026-03-16 ~ 2026-03-22）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>Skill 开发 + 创哥实战 + 剪映进阶 + Prompt 基础
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>Claude AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W2D1</td>
+                    <td>OC-03 Skill 开发</td>
+                    <td>CG-01 复习 + 实践</td>
+                    <td>CA-03 Prompt 公式</td>
+                    <td>VM-01 P13-P15 调色</td>
+                    <td>2 个 Skills</td>
+                </tr>
+                <tr>
+                    <td>W2D2</td>
+                    <td>成长堡 MVP 设计</td>
+                    <td>CG-02 复习 + 实践</td>
+                    <td>CA-04 ChatGPT 进阶</td>
+                    <td>VM-01 P16-P18 关键帧</td>
+                    <td>设计方案</td>
+                </tr>
+                <tr>
+                    <td>W2D3</td>
+                    <td>成长堡开发 (上)</td>
+                    <td>CG-03 技术选型实践</td>
+                    <td>CA-01 吴恩达 (前 30min)</td>
+                    <td>VM-01 P19-P21 蒙版</td>
+                    <td>基础功能</td>
+                </tr>
+                <tr>
+                    <td>W2D4</td>
+                    <td>成长堡开发 (下)</td>
+                    <td>CG-04 网站生成实践</td>
+                    <td>CA-01 吴恩达 (30-60min)</td>
+                    <td>VM-01 P22-P24 绿幕</td>
+                    <td>完整功能</td>
+                </tr>
+                <tr>
+                    <td>W2D5</td>
+                    <td>Claude 基础学习</td>
+                    <td>CG-05 Cursor 实践</td>
+                    <td>CA-06 AI 秘书团</td>
+                    <td>VM-03 AI 视频 P1-P3</td>
+                    <td>5 个 Prompt</td>
+                </tr>
+                <tr>
+                    <td>W2D6</td>
+                    <td>Castle 6 文档整理</td>
+                    <td>创哥合集学习</td>
+                    <td>CA-02 MCP 协议</td>
+                    <td>作品制作 (30min)</td>
+                    <td>项目文档</td>
+                </tr>
+                <tr>
+                    <td>W2D7</td>
+                    <td>周复习 + 测试</td>
+                    <td>整理技术选型笔记</td>
+                    <td>复习 CA-03/04</td>
+                    <td>作品导出发布</td>
+                    <td>测试报告</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W2 考核：</strong>
+            <ul>
+                <li>开发 2 个自定义 Skills</li>
+                <li>成长堡 MVP 完整运行</li>
+                <li>编写 5 个结构化 Prompt</li>
+                <li>发布 1 个剪映作品</li>
+                <li>完成创哥技术选型分析</li>
+            </ul>
+        </div>
+
+        <h3>W3 详细计划（2026-03-23 ~ 2026-03-29）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>Prompt 工程 + AI 视频 + 创哥评测 + 成长堡完善
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>Claude AI (30min)</th>
+                    <th>Jeff Su (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W3D1</td>
+                    <td>CA-05 提示词 (前 2h)</td>
+                    <td>JS-01 AI 视频复习</td>
+                    <td>CG-01 深度实践</td>
+                    <td>VM-03 AI 视频 P4-P6</td>
+                    <td>Prompt 模板</td>
+                </tr>
+                <tr>
+                    <td>W3D2</td>
+                    <td>CA-05 技巧 (2-4h)</td>
+                    <td>JS-02 Descript 复习</td>
+                    <td>CG-02 深度实践</td>
+                    <td>VM-03 AI 视频 P7-P9</td>
+                    <td>10 个技巧</td>
+                </tr>
+                <tr>
+                    <td>W3D3</td>
+                    <td>CA-01 实战 (60-90min)</td>
+                    <td>JS-04 Claude 复习</td>
+                    <td>CG-03 选型实践</td>
+                    <td>VM-03 AI 视频 P10-P12</td>
+                    <td>1 个脚本</td>
+                </tr>
+                <tr>
+                    <td>W3D4</td>
+                    <td>CA-06 工作流设计</td>
+                    <td>JS-03 NotebookLM 复习</td>
+                    <td>CG-04 生成实践</td>
+                    <td>VM-04 运营 P1-P3</td>
+                    <td>工作流方案</td>
+                </tr>
+                <tr>
+                    <td>W3D5</td>
+                    <td>Castle 6 集成实践</td>
+                    <td>JS-05 AI 习惯复习</td>
+                    <td>CG-05 Cursor 实践</td>
+                    <td>VM-04 运营 P4-P6</td>
+                    <td>Claude 辅助</td>
+                </tr>
+                <tr>
+                    <td>W3D6</td>
+                    <td>成长堡功能完善</td>
+                    <td>JS-06 AI-Native 复习</td>
+                    <td>创哥项目实战</td>
+                    <td>作品制作 (30min)</td>
+                    <td>优化版本</td>
+                </tr>
+                <tr>
+                    <td>W3D7</td>
+                    <td>周复习 + 测试</td>
+                    <td>整理 AI 工具笔记</td>
+                    <td>整理评测笔记</td>
+                    <td>作品发布</td>
+                    <td>测试报告</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W3 考核：</strong>
+            <ul>
+                <li>编写 10 个结构化 Prompt</li>
+                <li>用 Claude 完成 1 个实际任务</li>
+                <li>设计 1 个工作流方案</li>
+                <li>发布 1 个 AI 视频作品</li>
+                <li>完成创哥 AI 工具评测报告</li>
+            </ul>
+        </div>
+
+        <h3>W4 详细计划（2026-03-30 ~ 2026-04-05）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>SubAgent + 综合实战 + 创哥项目 + 阶段测试
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>Claude AI (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W4D1</td>
+                    <td>CA-02 MCP 协议</td>
+                    <td>CA-02 SubAgent</td>
+                    <td>CG-01 完整实践</td>
+                    <td>VM-02 PR 基础 P1-P3</td>
+                    <td>MCP 笔记</td>
+                </tr>
+                <tr>
+                    <td>W4D2</td>
+                    <td>SubAgent 开发</td>
+                    <td>CA-03 企业案例</td>
+                    <td>CG-02 完整实践</td>
+                    <td>VM-02 PR 基础 P4-P6</td>
+                    <td>1 个 SubAgent</td>
+                </tr>
+                <tr>
+                    <td>W4D3</td>
+                    <td>Hook 系统学习</td>
+                    <td>CA-03 案例</td>
+                    <td>CG-03 选型项目</td>
+                    <td>VM-02 PR 基础 P7-P9</td>
+                    <td>Hook 示例</td>
+                </tr>
+                <tr>
+                    <td>W4D4</td>
+                    <td>实战项目 (上)</td>
+                    <td>CA-05 提示词进阶</td>
+                    <td>CG-04 生成项目</td>
+                    <td>VM-02 PR 基础 P10-P12</td>
+                    <td>项目原型</td>
+                </tr>
+                <tr>
+                    <td>W4D5</td>
+                    <td>实战项目 (下)</td>
+                    <td>CA-06 秘书团复习</td>
+                    <td>CG-05 Cursor 项目</td>
+                    <td>VM-05 PR2025 P1-P3</td>
+                    <td>完整项目</td>
+                </tr>
+                <tr>
+                    <td>W4D6</td>
+                    <td>Castle 6 多堡测试</td>
+                    <td>整理 Prompt 库</td>
+                    <td>创哥综合实践</td>
+                    <td>作品精修 (30min)</td>
+                    <td>测试版本</td>
+                </tr>
+                <tr>
+                    <td>W4D7</td>
+                    <td><strong>阶段测试</strong></td>
+                    <td><strong>综合考核</strong></td>
+                    <td><strong>创哥考核</strong></td>
+                    <td><strong>作品发布</strong></td>
+                    <td><strong>测试报告</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight">
+            <strong>📊 W4 考核 (阶段测试 - 满分 100 分)：</strong>
+            <ul>
+                <li>OpenClaw 架构解释 (20 分)</li>
+                <li>5 个优质 Prompt (20 分)</li>
+                <li>1 个 SubAgent 开发 (25 分)</li>
+                <li>1 个完整视频作品 (20 分)</li>
+                <li>创哥技术选型报告 (15 分)</li>
+            </ul>
+            <strong>🎯 及格线：85 分</strong>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>第 5-8 周：技能深化期</h2>
+
+        <h3>W5 详细计划（2026-04-06 ~ 2026-04-12）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>AI 视频生成 + 创哥实战 + 高级剪辑 + 工作流整合
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>Jeff Su (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>Claude AI (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W5D1</td>
+                    <td>JS-01 AI 视频深度</td>
+                    <td>CG-01 实战项目</td>
+                    <td>VM-03 AI 视频 P13-P18</td>
+                    <td>CA-01 复习</td>
+                    <td>AI 视频 1</td>
+                </tr>
+                <tr>
+                    <td>W5D2</td>
+                    <td>JS-02 Descript 深度</td>
+                    <td>CG-02 实战项目</td>
+                    <td>VM-03 AI 视频 P19-P24</td>
+                    <td>CA-02 复习</td>
+                    <td>AI 视频 2</td>
+                </tr>
+                <tr>
+                    <td>W5D3</td>
+                    <td>JS-03 NotebookLM 应用</td>
+                    <td>CG-03 选型实践</td>
+                    <td>VM-05 PR2025 P4-P6</td>
+                    <td>CA-04 复习</td>
+                    <td>工作流设计</td>
+                </tr>
+                <tr>
+                    <td>W5D4</td>
+                    <td>JS-04 Claude 实战</td>
+                    <td>CG-04 生成实践</td>
+                    <td>VM-05 PR2025 P7-P9</td>
+                    <td>CA-05 复习</td>
+                    <td>AI 工作流</td>
+                </tr>
+                <tr>
+                    <td>W5D5</td>
+                    <td>JS-05 AI 习惯实践</td>
+                    <td>CG-05 Cursor 实践</td>
+                    <td>VM-05 PR2025 P10-P12</td>
+                    <td>CA-06 复习</td>
+                    <td>习惯清单</td>
+                </tr>
+                <tr>
+                    <td>W5D6</td>
+                    <td>JS-06 AI-Native 实践</td>
+                    <td>创哥综合项目</td>
+                    <td>作品制作 (30min)</td>
+                    <td>Prompt 优化</td>
+                    <td>AI-Native 系统</td>
+                </tr>
+                <tr>
+                    <td>W5D7</td>
+                    <td>周复习 + 整理</td>
+                    <td>整理创哥项目</td>
+                    <td>作品发布</td>
+                    <td>整理 Prompt 库</td>
+                    <td>周总结</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W5 考核：</strong>
+            <ul>
+                <li>完成 2 个 AI 视频作品</li>
+                <li>建立 AI 工作流系统</li>
+                <li>发布 1 个高质量视频</li>
+                <li>完成创哥实战项目</li>
+            </ul>
+        </div>
+
+        <h3>W6 详细计划（2026-04-13 ~ 2026-04-19）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>事业堡 MVP + 创哥评测 + 视频运营 + AI 工具整合
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>Jeff Su (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W6D1</td>
+                    <td>事业堡需求分析</td>
+                    <td>CG-01 工具评测</td>
+                    <td>VM-04 运营 P7-P12</td>
+                    <td>JS-01 复习</td>
+                    <td>需求文档</td>
+                </tr>
+                <tr>
+                    <td>W6D2</td>
+                    <td>事业堡设计</td>
+                    <td>CG-02 工具对比</td>
+                    <td>VM-04 运营 P13-P18</td>
+                    <td>JS-02 复习</td>
+                    <td>设计方案</td>
+                </tr>
+                <tr>
+                    <td>W6D3</td>
+                    <td>事业堡开发 (上)</td>
+                    <td>CG-03 选型报告</td>
+                    <td>作品制作 (30min)</td>
+                    <td>JS-03 复习</td>
+                    <td>基础功能</td>
+                </tr>
+                <tr>
+                    <td>W6D4</td>
+                    <td>事业堡开发 (下)</td>
+                    <td>CG-04 生成对比</td>
+                    <td>作品精修</td>
+                    <td>JS-04 复习</td>
+                    <td>完整功能</td>
+                </tr>
+                <tr>
+                    <td>W6D5</td>
+                    <td>事业堡测试</td>
+                    <td>CG-05 Cursor 对比</td>
+                    <td>VM-06 剪映专业 P1-P5</td>
+                    <td>JS-05 复习</td>
+                    <td>测试报告</td>
+                </tr>
+                <tr>
+                    <td>W6D6</td>
+                    <td>Castle 6 集成</td>
+                    <td>创哥工具库整理</td>
+                    <td>VM-06 剪映专业 P6-P10</td>
+                    <td>JS-06 复习</td>
+                    <td>集成版本</td>
+                </tr>
+                <tr>
+                    <td>W6D7</td>
+                    <td>周复习 + 整理</td>
+                    <td>整理评测体系</td>
+                    <td>作品发布</td>
+                    <td>整理工具库</td>
+                    <td>周总结</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W6 考核：</strong>
+            <ul>
+                <li>事业堡 MVP 运行</li>
+                <li>发布 1 个运营向视频</li>
+                <li>整合 5 个 AI 工具</li>
+                <li>完成创哥工具评测体系</li>
+            </ul>
+        </div>
+
+        <h3>W7 详细计划（2026-04-20 ~ 2026-04-26）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>关系堡 MVP + 高级 Prompt + 创哥项目 + 视频系列化
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>Claude AI (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W7D1</td>
+                    <td>关系堡需求分析</td>
+                    <td>CA-05 提示词 (5-8h)</td>
+                    <td>CG-01 项目实践</td>
+                    <td>系列视频策划</td>
+                    <td>需求文档</td>
+                </tr>
+                <tr>
+                    <td>W7D2</td>
+                    <td>关系堡设计</td>
+                    <td>CA-05 提示词 (8-12h)</td>
+                    <td>CG-02 项目实践</td>
+                    <td>系列视频 P1</td>
+                    <td>设计方案</td>
+                </tr>
+                <tr>
+                    <td>W7D3</td>
+                    <td>关系堡开发 (上)</td>
+                    <td>CA-01 复习</td>
+                    <td>CG-03 项目实践</td>
+                    <td>系列视频 P2</td>
+                    <td>基础功能</td>
+                </tr>
+                <tr>
+                    <td>W7D4</td>
+                    <td>关系堡开发 (下)</td>
+                    <td>CA-02 复习</td>
+                    <td>CG-04 项目实践</td>
+                    <td>系列视频 P3</td>
+                    <td>完整功能</td>
+                </tr>
+                <tr>
+                    <td>W7D5</td>
+                    <td>关系堡测试</td>
+                    <td>CA-03 复习</td>
+                    <td>CG-05 项目实践</td>
+                    <td>系列视频 P4</td>
+                    <td>测试报告</td>
+                </tr>
+                <tr>
+                    <td>W7D6</td>
+                    <td>Castle 6 集成</td>
+                    <td>CA-04 复习</td>
+                    <td>创哥综合项目</td>
+                    <td>系列视频 P5</td>
+                    <td>集成版本</td>
+                </tr>
+                <tr>
+                    <td>W7D7</td>
+                    <td>周复习 + 整理</td>
+                    <td>Prompt 库更新</td>
+                    <td>整理项目笔记</td>
+                    <td>系列发布</td>
+                    <td>周总结</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W7 考核：</strong>
+            <ul>
+                <li>关系堡 MVP 运行</li>
+                <li>发布 5 集系列视频</li>
+                <li>建立 Prompt 库 (20+)</li>
+                <li>完成创哥综合项目</li>
+            </ul>
+        </div>
+
+        <h3>W8 详细计划（2026-04-27 ~ 2026-05-03）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>财富堡 MVP + 创哥变现 + AI 变现 + 阶段测试
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>Jeff Su (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W8D1</td>
+                    <td>财富堡需求分析</td>
+                    <td>JS-04 Claude 变现</td>
+                    <td>CG-01 变现思路</td>
+                    <td>VM-04 运营 P19-P24</td>
+                    <td>需求文档</td>
+                </tr>
+                <tr>
+                    <td>W8D2</td>
+                    <td>财富堡设计</td>
+                    <td>JS-05 AI 习惯变现</td>
+                    <td>CG-02 变现案例</td>
+                    <td>VM-04 运营 P25-P30</td>
+                    <td>设计方案</td>
+                </tr>
+                <tr>
+                    <td>W8D3</td>
+                    <td>财富堡开发 (上)</td>
+                    <td>JS-06 AI-Native 变现</td>
+                    <td>CG-03 变现实践</td>
+                    <td>作品制作 (30min)</td>
+                    <td>基础功能</td>
+                </tr>
+                <tr>
+                    <td>W8D4</td>
+                    <td>财富堡开发 (下)</td>
+                    <td>JS-01 AI 视频变现</td>
+                    <td>CG-04 变现实践</td>
+                    <td>作品精修</td>
+                    <td>完整功能</td>
+                </tr>
+                <tr>
+                    <td>W8D5</td>
+                    <td>财富堡测试</td>
+                    <td>JS-02 Descript 变现</td>
+                    <td>CG-05 变现实践</td>
+                    <td>作品发布</td>
+                    <td>测试报告</td>
+                </tr>
+                <tr>
+                    <td>W8D6</td>
+                    <td>Castle 6 集成</td>
+                    <td>JS-03 NotebookLM 变现</td>
+                    <td>创哥变现方案</td>
+                    <td>整理作品集</td>
+                    <td>集成版本</td>
+                </tr>
+                <tr>
+                    <td>W8D7</td>
+                    <td><strong>阶段测试</strong></td>
+                    <td><strong>综合考核</strong></td>
+                    <td><strong>创哥考核</strong></td>
+                    <td><strong>作品展示</strong></td>
+                    <td><strong>测试报告</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight">
+            <strong>📊 W8 考核 (阶段测试 - 满分 100 分)：</strong>
+            <ul>
+                <li>Castle 6 四堡运行 (35 分)</li>
+                <li>AI 工作流系统 (25 分)</li>
+                <li>视频作品集 (5 个+) (25 分)</li>
+                <li>创哥变现方案 (15 分)</li>
+            </ul>
+            <strong>🎯 及格线：85 分</strong>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>第 9-12 周：综合实战期</h2>
+
+        <h3>W9 详细计划（2026-05-04 ~ 2026-05-10）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>成长堡完善 + 学习堡 + 创哥技术选型 + 视频品牌化
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>Claude AI (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W9D1</td>
+                    <td>成长堡功能完善</td>
+                    <td>CA-05 高级 Prompt</td>
+                    <td>CG-01 技术选型</td>
+                    <td>品牌视频策划</td>
+                    <td>优化版本</td>
+                </tr>
+                <tr>
+                    <td>W9D2</td>
+                    <td>学习堡需求分析</td>
+                    <td>CA-06 复习</td>
+                    <td>CG-02 工具对比</td>
+                    <td>品牌视频 P1</td>
+                    <td>需求文档</td>
+                </tr>
+                <tr>
+                    <td>W9D3</td>
+                    <td>学习堡设计</td>
+                    <td>CA-01 复习</td>
+                    <td>CG-03 选型报告</td>
+                    <td>品牌视频 P2</td>
+                    <td>设计方案</td>
+                </tr>
+                <tr>
+                    <td>W9D4</td>
+                    <td>学习堡开发 (上)</td>
+                    <td>CA-02 复习</td>
+                    <td>CG-04 生成对比</td>
+                    <td>品牌视频 P3</td>
+                    <td>基础功能</td>
+                </tr>
+                <tr>
+                    <td>W9D5</td>
+                    <td>学习堡开发 (下)</td>
+                    <td>CA-03 复习</td>
+                    <td>CG-05 Cursor 对比</td>
+                    <td>品牌视频 P4</td>
+                    <td>完整功能</td>
+                </tr>
+                <tr>
+                    <td>W9D6</td>
+                    <td>Castle 6 集成</td>
+                    <td>CA-04 复习</td>
+                    <td>创哥选型体系</td>
+                    <td>品牌视频 P5</td>
+                    <td>集成版本</td>
+                </tr>
+                <tr>
+                    <td>W9D7</td>
+                    <td>周复习 + 整理</td>
+                    <td>Prompt 最终库</td>
+                    <td>整理选型报告</td>
+                    <td>品牌发布</td>
+                    <td>周总结</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W9 考核：</strong>
+            <ul>
+                <li>成长堡完整功能</li>
+                <li>学习堡 MVP 运行</li>
+                <li>品牌视频发布</li>
+                <li>创哥技术选型体系</li>
+            </ul>
+        </div>
+
+        <h3>W10 详细计划（2026-05-11 ~ 2026-05-17）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>生活堡 MVP + 创哥综合 + 综合应用 + 作品优化
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>Jeff Su (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W10D1</td>
+                    <td>生活堡需求分析</td>
+                    <td>JS-01 复习</td>
+                    <td>CG-01 综合实践</td>
+                    <td>作品优化 P1</td>
+                    <td>需求文档</td>
+                </tr>
+                <tr>
+                    <td>W10D2</td>
+                    <td>生活堡设计</td>
+                    <td>JS-02 复习</td>
+                    <td>CG-02 综合实践</td>
+                    <td>作品优化 P2</td>
+                    <td>设计方案</td>
+                </tr>
+                <tr>
+                    <td>W10D3</td>
+                    <td>生活堡开发 (上)</td>
+                    <td>JS-03 复习</td>
+                    <td>CG-03 综合实践</td>
+                    <td>作品优化 P3</td>
+                    <td>基础功能</td>
+                </tr>
+                <tr>
+                    <td>W10D4</td>
+                    <td>生活堡开发 (下)</td>
+                    <td>JS-04 复习</td>
+                    <td>CG-04 综合实践</td>
+                    <td>作品优化 P4</td>
+                    <td>完整功能</td>
+                </tr>
+                <tr>
+                    <td>W10D5</td>
+                    <td>生活堡测试</td>
+                    <td>JS-05 复习</td>
+                    <td>CG-05 综合实践</td>
+                    <td>作品优化 P5</td>
+                    <td>测试报告</td>
+                </tr>
+                <tr>
+                    <td>W10D6</td>
+                    <td>Castle 6 集成</td>
+                    <td>JS-06 复习</td>
+                    <td>创哥完整项目</td>
+                    <td>作品精修</td>
+                    <td>集成版本</td>
+                </tr>
+                <tr>
+                    <td>W10D7</td>
+                    <td>周复习 + 整理</td>
+                    <td>工具库整理</td>
+                    <td>整理项目文档</td>
+                    <td>作品发布</td>
+                    <td>周总结</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W10 考核：</strong>
+            <ul>
+                <li>生活堡 MVP 运行</li>
+                <li>Castle 6 六堡完整</li>
+                <li>优化作品 3 个</li>
+                <li>创哥完整项目</li>
+            </ul>
+        </div>
+
+        <h3>W11 详细计划（2026-05-18 ~ 2026-05-24）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>总复盘堡 + 创哥总结 + 数据可视化 + 最终作品
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>OpenClaw (30min)</th>
+                    <th>Claude AI (30min)</th>
+                    <th>创哥 AI (30min)</th>
+                    <th>剪映 (30min)</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W11D1</td>
+                    <td>总复盘堡设计</td>
+                    <td>CA-05 数据 Prompt</td>
+                    <td>CG-01 总结报告</td>
+                    <td>最终作品策划</td>
+                    <td>设计方案</td>
+                </tr>
+                <tr>
+                    <td>W11D2</td>
+                    <td>总复盘堡开发 (上)</td>
+                    <td>CA-06 数据可视化</td>
+                    <td>CG-02 总结报告</td>
+                    <td>最终作品 P1</td>
+                    <td>基础功能</td>
+                </tr>
+                <tr>
+                    <td>W11D3</td>
+                    <td>总复盘堡开发 (下)</td>
+                    <td>CA-01 复习</td>
+                    <td>CG-03 总结报告</td>
+                    <td>最终作品 P2</td>
+                    <td>完整功能</td>
+                </tr>
+                <tr>
+                    <td>W11D4</td>
+                    <td>数据集成测试</td>
+                    <td>CA-02 复习</td>
+                    <td>CG-04 总结报告</td>
+                    <td>最终作品 P3</td>
+                    <td>测试报告</td>
+                </tr>
+                <tr>
+                    <td>W11D5</td>
+                    <td>跨堡洞察算法</td>
+                    <td>CA-03 复习</td>
+                    <td>CG-05 总结报告</td>
+                    <td>最终作品 P4</td>
+                    <td>算法版本</td>
+                </tr>
+                <tr>
+                    <td>W11D6</td>
+                    <td>综合简报模板</td>
+                    <td>CA-04 复习</td>
+                    <td>创哥学习总结</td>
+                    <td>最终作品 P5</td>
+                    <td>模板版本</td>
+                </tr>
+                <tr>
+                    <td>W11D7</td>
+                    <td>周复习 + 整理</td>
+                    <td>Prompt 最终库</td>
+                    <td>整理创哥笔记</td>
+                    <td>作品精修</td>
+                    <td>周总结</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ W11 考核：</strong>
+            <ul>
+                <li>总复盘堡运行</li>
+                <li>跨领域洞察功能</li>
+                <li>最终作品完成 80%</li>
+                <li>创哥学习总结报告</li>
+            </ul>
+        </div>
+
+        <h3>W12 详细计划（2026-05-25 ~ 2026-05-30）</h3>
+        <div class="info-box">
+            <strong>主题：</strong>最终测试 + 作品发布 + 创哥毕业 + 学习总结
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>任务</th>
+                    <th>产出</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W12D1</td>
+                    <td>Castle 6 完整测试</td>
+                    <td>测试报告</td>
+                </tr>
+                <tr>
+                    <td>W12D2</td>
+                    <td>最终作品发布</td>
+                    <td>作品集 (5 个+)</td>
+                </tr>
+                <tr>
+                    <td>W12D3</td>
+                    <td>12 周学习总结</td>
+                    <td>总结文档</td>
+                </tr>
+                <tr>
+                    <td>W12D4</td>
+                    <td><strong>最终考核</strong></td>
+                    <td><strong>综合测试</strong></td>
+                </tr>
+                <tr>
+                    <td>W12D5</td>
+                    <td>创哥毕业项目</td>
+                    <td>创哥项目集</td>
+                </tr>
+                <tr>
+                    <td>W12D6</td>
+                    <td>下一步规划</td>
+                    <td>进阶计划</td>
+                </tr>
+                <tr>
+                    <td>W12D7</td>
+                    <td><strong>毕业典礼 🎉</strong></td>
+                    <td><strong>证书 + 奖励</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight">
+            <strong>📊 W12 最终考核 (满分 100 分)：</strong>
+            <ul>
+                <li>Castle 6 六堡完整运行 (25 分)</li>
+                <li>视频作品集 (5 个+, 播放 1000+) (25 分)</li>
+                <li>AI 工作流系统 (20 分)</li>
+                <li>Prompt 库 (30+) (15 分)</li>
+                <li>创哥技术选型报告 (15 分)</li>
+            </ul>
+            <strong>🎯 及格线：85 分 | 优秀：95 分</strong>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>📊 考核体系</h2>
+
+        <h3>日常考核</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>类型</th>
+                    <th>频率</th>
+                    <th>分值</th>
+                    <th>说明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>每日问卷</td>
+                    <td>每日</td>
+                    <td>1 分</td>
+                    <td>完成学习打卡</td>
+                </tr>
+                <tr>
+                    <td>每周作品</td>
+                    <td>每周</td>
+                    <td>10 分</td>
+                    <td>发布 1 个作品</td>
+                </tr>
+                <tr>
+                    <td>阶段测试</td>
+                    <td>每 4 周</td>
+                    <td>100 分</td>
+                    <td>综合考核</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>最终考核</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>维度</th>
+                    <th>分值</th>
+                    <th>及格线</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Castle 6 系统</td>
+                    <td>25 分</td>
+                    <td>21 分</td>
+                </tr>
+                <tr>
+                    <td>视频作品集</td>
+                    <td>25 分</td>
+                    <td>21 分</td>
+                </tr>
+                <tr>
+                    <td>AI 工作流</td>
+                    <td>20 分</td>
+                    <td>17 分</td>
+                </tr>
+                <tr>
+                    <td>Prompt 库</td>
+                    <td>15 分</td>
+                    <td>13 分</td>
+                </tr>
+                <tr>
+                    <td>创哥技术选型</td>
+                    <td>15 分</td>
+                    <td>13 分</td>
+                </tr>
+                <tr>
+                    <td><strong>总计</strong></td>
+                    <td><strong>100 分</strong></td>
+                    <td><strong>85 分</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>💡 学习建议</h2>
+
+        <div class="info-box">
+            <strong>⏰ 时间管理：</strong>
+            <ul>
+                <li><strong>固定时段：</strong>每天同一时间学习，建立习惯</li>
+                <li><strong>番茄工作法：</strong>30 分钟专注 + 5 分钟休息</li>
+                <li><strong>周末复盘：</strong>周日下午整理本周学习</li>
+            </ul>
+        </div>
+
+        <div class="success-box">
+            <strong>📚 学习方法：</strong>
+            <ul>
+                <li><strong>费曼技巧：</strong>学完尝试教给别人</li>
+                <li><strong>输出倒逼输入：</strong>每周必须发布作品</li>
+                <li><strong>AI 辅助：</strong>用 Claude 帮助理解和练习</li>
+                <li><strong>创哥思维：</strong>技术选型前先评测对比</li>
+            </ul>
+        </div>
+
+        <div class="highlight">
+            <strong>⚠️ 注意事项：</strong>
+            <ul>
+                <li>不要追求完美，完成比完美重要</li>
+                <li>遇到困难先尝试，再寻求帮助</li>
+                <li>保持节奏，避免 burnout</li>
+                <li>定期回顾创哥的技术选型思路</li>
+            </ul>
+        </div>
+
+        <h2>🎁 奖励机制</h2>
+
+        <h3>里程碑奖励</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>里程碑</th>
+                    <th>奖励</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>W4 阶段测试通过</td>
+                    <td><span class="badge badge-success">一顿大餐</span></td>
+                </tr>
+                <tr>
+                    <td>W8 阶段测试通过</td>
+                    <td><span class="badge badge-warning">一个小礼物</span></td>
+                </tr>
+                <tr>
+                    <td>W12 最终考核通过</td>
+                    <td><span class="badge badge-primary">一个大奖励</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>连续打卡奖励</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>连续天数</th>
+                    <th>奖励</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7 天</td>
+                    <td><span class="badge badge-success">休息半天</span></td>
+                </tr>
+                <tr>
+                    <td>21 天</td>
+                    <td><span class="badge badge-warning">看一场电影</span></td>
+                </tr>
+                <tr>
+                    <td>84 天 (12 周)</td>
+                    <td><span class="badge badge-primary">毕业旅行</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🔗 资源链接汇总</h2>
+
+        <h3>OpenClaw 资源</h3>
+        <ul>
+            <li>OC-01: <a href="https://www.bilibili.com/video/BV1jEAaz3E6K/" target="_blank">https://www.bilibili.com/video/BV1jEAaz3E6K/</a></li>
+            <li>OC-02: <a href="https://www.bilibili.com/video/BV1TpAZzeEiZ/" target="_blank">https://www.bilibili.com/video/BV1TpAZzeEiZ/</a></li>
+            <li>OC-03: <a href="https://www.bilibili.com/video/BV1G3FNznEiS/" target="_blank">https://www.bilibili.com/video/BV1G3FNznEiS/</a></li>
+        </ul>
+
+        <h3>创哥 AI 实验室</h3>
+        <ul>
+            <li>频道：<a href="https://space.bilibili.com/52807953" target="_blank">https://space.bilibili.com/52807953</a></li>
+            <li>CG-01: <a href="https://www.bilibili.com/video/BV14TPgzAEvo/" target="_blank">https://www.bilibili.com/video/BV14TPgzAEvo/</a></li>
+            <li>CG-02: <a href="https://www.bilibili.com/video/BV17mAUzxETS/" target="_blank">https://www.bilibili.com/video/BV17mAUzxETS/</a></li>
+            <li>CG-03: <a href="https://www.bilibili.com/video/BV16k7tzuEqh/" target="_blank">https://www.bilibili.com/video/BV16k7tzuEqh/</a></li>
+            <li>CG-04: <a href="https://www.bilibili.com/video/BV1yv78zQERh/" target="_blank">https://www.bilibili.com/video/BV1yv78zQERh/</a></li>
+            <li>CG-05: <a href="https://www.bilibili.com/video/BV1NLTyziERN/" target="_blank">https://www.bilibili.com/video/BV1NLTyziERN/</a></li>
+        </ul>
+
+        <h3>Jeff Su</h3>
+        <ul>
+            <li>频道：<a href="https://www.youtube.com/@JeffSu" target="_blank">https://www.youtube.com/@JeffSu</a></li>
+            <li>JS-01: <a href="https://www.youtube.com/watch?v=0-0gFuDwmXI" target="_blank">https://www.youtube.com/watch?v=0-0gFuDwmXI</a></li>
+            <li>JS-02: <a href="https://www.youtube.com/watch?v=-mBKM7Aqmy8" target="_blank">https://www.youtube.com/watch?v=-mBKM7Aqmy8</a></li>
+            <li>JS-03: <a href="https://www.youtube.com/watch?v=EOmgC3-hznM" target="_blank">https://www.youtube.com/watch?v=EOmgC3-hznM</a></li>
+            <li>JS-04: <a href="https://www.youtube.com/watch?v=RudrWy9uPZE" target="_blank">https://www.youtube.com/watch?v=RudrWy9uPZE</a></li>
+            <li>JS-05: <a href="https://www.youtube.com/watch?v=31cp_OXKzkI" target="_blank">https://www.youtube.com/watch?v=31cp_OXKzkI</a></li>
+            <li>JS-06: <a href="https://www.youtube.com/watch?v=E7YiKBeOneo" target="_blank">https://www.youtube.com/watch?v=E7YiKBeOneo</a></li>
+        </ul>
+
+        <h3>Claude AI</h3>
+        <ul>
+            <li>CA-01: <a href="https://www.bilibili.com/video/BV1RSFUzVEAG/" target="_blank">https://www.bilibili.com/video/BV1RSFUzVEAG/</a></li>
+            <li>CA-02: <a href="https://www.bilibili.com/video/BV14rzQB9EJj/" target="_blank">https://www.bilibili.com/video/BV14rzQB9EJj/</a></li>
+            <li>CA-03: <a href="https://www.youtube.com/watch?v=jC4v5AS4RIM" target="_blank">https://www.youtube.com/watch?v=jC4v5AS4RIM</a></li>
+            <li>CA-04: <a href="https://www.youtube.com/watch?v=bkf3XBOj2PE" target="_blank">https://www.youtube.com/watch?v=bkf3XBOj2PE</a></li>
+            <li>CA-05: <a href="https://www.bilibili.com/video/BV1VEA8zYE6f/" target="_blank">https://www.bilibili.com/video/BV1VEA8zYE6f/</a></li>
+            <li>CA-06: <a href="https://www.bilibili.com/video/BV1zqeMzfEiQ/" target="_blank">https://www.bilibili.com/video/BV1zqeMzfEiQ/</a></li>
+        </ul>
+
+        <h3>剪映/视频制作</h3>
+        <ul>
+            <li>VM-01: <a href="https://www.bilibili.com/video/BV1CSpcz7ELp/" target="_blank">https://www.bilibili.com/video/BV1CSpcz7ELp/</a></li>
+            <li>VM-02: <a href="https://www.bilibili.com/video/BV1AK411g7xc/" target="_blank">https://www.bilibili.com/video/BV1AK411g7xc/</a></li>
+            <li>VM-03: <a href="https://www.bilibili.com/video/BV13it4zDE2K/" target="_blank">https://www.bilibili.com/video/BV13it4zDE2K/</a></li>
+            <li>VM-04: <a href="https://www.bilibili.com/video/BV1XE411j7y6/" target="_blank">https://www.bilibili.com/video/BV1XE411j7y6/</a></li>
+            <li>VM-05: <a href="https://www.bilibili.com/video/BV1v89wYzEKo/" target="_blank">https://www.bilibili.com/video/BV1v89wYzEKo/</a></li>
+            <li>VM-06: <a href="https://www.bilibili.com/cheese/play/ss4021/" target="_blank">https://www.bilibili.com/cheese/play/ss4021/</a></li>
+        </ul>
+
+        <div class="footer">
+            <p><strong>🏰 城堡成长堡 | 12 周蜕变，遇见更好的自己！💪</strong></p>
+            <p><strong>维护者：</strong>城堡 🏰 | <strong>开始日期：</strong>2026-03-09 | <strong>预计完成：</strong>2026-05-30</p>
+            <p><strong>版本历史：</strong>v1.0 (基础版) → v2.0 (Jeff Su 版) → v3.0 (剪映版) → v4.0 (创哥增强版)</p>
+        </div>
+    </div>
+</body>
+</html>
