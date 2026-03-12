@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💪 健康堡每日问卷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .date-picker {
+            margin-top: 15px;
+        }
+        
+        .date-picker input[type="date"] {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 2px solid rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+        }
+        
+        .date-picker input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
+        }
+        
+        .date-picker input[type="date"]:focus {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.8);
+        }
+        
+        .form-body {
+            padding: 30px 20px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .radio-option {
+            flex: 1;
+            min-width: 60px;
+        }
+        
+        .radio-option input {
+            display: none;
+        }
+        
+        .radio-option label {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background: #f5f5f5;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 13px;
+        }
+        
+        .radio-option input:checked + label {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .row-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        
+        /* 时间输入组样式（小时：分钟） */
+        .time-input-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .time-input-group .time-hour {
+            width: 60px;
+            text-align: center;
+        }
+        
+        .time-input-group .time-min {
+            width: 60px;
+            text-align: center;
+        }
+        
+        .time-input-group .time-separator {
+            font-size: 18px;
+            font-weight: bold;
+            color: #999;
+        }
+        
+        @media (max-width: 480px) {
+            .row, .row-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .success-message h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .success-message p {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .hint {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+        
+        .meal-row {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 10px;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+        
+        .meal-row input[type="time"] {
+            min-width: 140px;
+            font-size: 16px;
+            padding: 12px 10px;
+        }
+        
+        .meal-row textarea {
+            min-height: 70px;
+            font-size: 15px;
+        }
+        
+        @media (max-width: 480px) {
+            .meal-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .meal-row input[type="time"] {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💪 健康堡每日问卷</h1>
+            <p>花 1 分钟记录今天的健康数据</p>
+            <div class="date-picker">
+                <input type="date" id="datePicker" name="date" onchange="updateDateDisplay()">
+            </div>
+        </div>
+        
+        <div class="form-body">
+            <form id="healthForm">
+                
+                <!-- 运动部分 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>🏃</span>
+                        <span>今日运动</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>今天训练了吗？</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="exercise_status" id="exercise_no" value="0" onchange="toggleExerciseFields()">
+                                <label for="exercise_no">😴 休息</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="exercise_status" id="exercise_yes" value="1" onchange="toggleExerciseFields()" checked>
+                                <label for="exercise_yes">✅ 有训练</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="exerciseFields">
+                        <div class="form-group">
+                            <label>运动类型</label>
+                            <select name="exercise_type" id="exercise_type">
+                                <option value="骑行">🚴 骑行</option>
+                                <option value="跑步">🏃 跑步</option>
+                                <option value="力量训练">💪 力量训练</option>
+                                <option value="游泳">🏊 游泳</option>
+                                <option value="其他">📝 其他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group">
+                                <label>时长（分钟）</label>
+                                <input type="number" name="exercise_duration" id="exercise_duration" placeholder="90" min="1">
+                            </div>
+                            <div class="form-group">
+                                <label>距离（km，可选）</label>
+                                <input type="number" name="exercise_distance" id="exercise_distance" placeholder="30" step="0.1" min="0">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>运动感受</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="exercise_rating" id="rating_1" value="1">
+                                    <label for="rating_1">1<br>很累</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="exercise_rating" id="rating_2" value="2">
+                                    <label for="rating_2">2<br>较累</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="exercise_rating" id="rating_3" value="3" checked>
+                                    <label for="rating_3">3<br>适中</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="exercise_rating" id="rating_4" value="4">
+                                    <label for="rating_4">4<br>轻松</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="exercise_rating" id="rating_5" value="5">
+                                    <label for="rating_5">5<br>很轻松</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 饮食部分 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>🍽️</span>
+                        <span>饮食记录</span>
+                    </div>
+                    
+                    <div class="meal-row">
+                        <label>早餐</label>
+                        <div class="row">
+                            <input type="time" name="food_breakfast_time" id="food_breakfast_time" placeholder="时间">
+                            <textarea name="food_breakfast" id="food_breakfast" placeholder="内容（例：2 个包子 + 1 杯豆浆）"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="meal-row">
+                        <label>午餐</label>
+                        <div class="row">
+                            <input type="time" name="food_lunch_time" id="food_lunch_time" placeholder="时间">
+                            <textarea name="food_lunch" id="food_lunch" placeholder="内容（例：1 碗米饭 + 宫保鸡丁）"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="meal-row">
+                        <label>晚餐</label>
+                        <div class="row">
+                            <input type="time" name="food_dinner_time" id="food_dinner_time" placeholder="时间">
+                            <textarea name="food_dinner" id="food_dinner" placeholder="内容（例：清蒸鱼 + 蔬菜）"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="meal-row">
+                        <label>夜宵</label>
+                        <div class="row">
+                            <input type="time" name="food_snack_time" id="food_snack_time" placeholder="时间">
+                            <textarea name="food_snack" id="food_snack" placeholder="内容（可选，建议避免夜宵）"></textarea>
+                        </div>
+                        <div class="hint">💡 建议避免夜宵，有助于睡眠和减脂</div>
+                    </div>
+                </div>
+                
+                <!-- 睡眠部分 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>😴</span>
+                        <span>昨晚睡眠</span>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label>入睡时间</label>
+                            <input type="time" name="sleep_bedtime" id="sleep_bedtime" value="23:00">
+                        </div>
+                        <div class="form-group">
+                            <label>起床时间</label>
+                            <input type="time" name="sleep_waketime" id="sleep_waketime" value="07:00">
+                        </div>
+                    </div>
+                    
+                    <div class="row-3">
+                        <div class="form-group">
+                            <label>深睡时长</label>
+                            <div class="time-input-group">
+                                <input type="number" name="sleep_deep_hour" id="sleep_deep_hour" placeholder="2" min="0" class="time-hour">
+                                <span class="time-separator">:</span>
+                                <input type="number" name="sleep_deep_min" id="sleep_deep_min" placeholder="00" min="0" max="59" class="time-min">
+                            </div>
+                            <div class="hint">小时：分钟</div>
+                        </div>
+                        <div class="form-group">
+                            <label>浅睡时长</label>
+                            <div class="time-input-group">
+                                <input type="number" name="sleep_light_hour" id="sleep_light_hour" placeholder="4" min="0" class="time-hour">
+                                <span class="time-separator">:</span>
+                                <input type="number" name="sleep_light_min" id="sleep_light_min" placeholder="00" min="0" max="59" class="time-min">
+                            </div>
+                            <div class="hint">小时：分钟</div>
+                        </div>
+                        <div class="form-group">
+                            <label>REM 时长</label>
+                            <div class="time-input-group">
+                                <input type="number" name="sleep_rem_hour" id="sleep_rem_hour" placeholder="1" min="0" class="time-hour">
+                                <span class="time-separator">:</span>
+                                <input type="number" name="sleep_rem_min" id="sleep_rem_min" placeholder="30" min="0" max="59" class="time-min">
+                            </div>
+                            <div class="hint">快速眼动</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>静息心率（bpm）</label>
+                        <input type="number" name="sleep_rhr" id="sleep_rhr" placeholder="55" min="30">
+                        <div class="hint">晨起测量</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>睡眠质量自评</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="sleep_rating" id="sleep_1" value="1">
+                                <label for="sleep_1">1<br>很差</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="sleep_rating" id="sleep_2" value="2">
+                                <label for="sleep_2">2<br>一般</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="sleep_rating" id="sleep_3" value="3" checked>
+                                <label for="sleep_3">3<br>不错</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="sleep_rating" id="sleep_4" value="4">
+                                <label for="sleep_4">4<br>很好</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="sleep_rating" id="sleep_5" value="5">
+                                <label for="sleep_5">5<br>完美</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 体重部分（每天都可填写） -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>⚖️</span>
+                        <span>体重记录</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>今晨体重（kg）</label>
+                        <input type="number" name="weight" id="weight" placeholder="85.0" step="0.1" min="30">
+                        <div class="hint">建议每周一填写，其他时间可选填</div>
+                    </div>
+                </div>
+                
+                <!-- 提交按钮 -->
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    提交数据 🚀
+                </button>
+            </form>
+            
+            <!-- 成功消息 -->
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✅</div>
+                <h2>数据已提交！</h2>
+                <p>感谢你的记录，健康堡正在分析数据...</p>
+                <p style="margin-top: 20px; font-size: 14px; color: #999;">
+                    稍后会在飞书收到评分和建议
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 设置日期
+        function setDate() {
+            const today = new Date();
+            const yesterday = new Date(today);
+            yesterday.setDate(yesterday.getDate() - 1);
+            
+            // 设置日期选择器默认值为昨天
+            const dateStr = yesterday.toISOString().split('T')[0];
+            document.getElementById('datePicker').value = dateStr;
+            
+            updateDateDisplay();
+        }
+        
+        // 更新日期显示
+        function updateDateDisplay() {
+            // 日期选择器变化时更新显示（体重字段始终显示）
+            const selectedDate = new Date(document.getElementById('datePicker').value);
+            console.log('选择日期：', selectedDate);
+        }
+        
+        // 切换运动字段
+        function toggleExerciseFields() {
+            const isResting = document.getElementById('exercise_no').checked;
+            const fields = document.getElementById('exerciseFields');
+            fields.classList.toggle('hidden', isResting);
+        }
+        
+        // 表单提交
+        document.getElementById('healthForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMessage');
+            const form = document.getElementById('healthForm');
+            
+            // 禁用按钮
+            submitBtn.disabled = true;
+            submitBtn.textContent = '提交中...';
+            
+            // 收集表单数据
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            // 如果是休息日，设置运动数据
+            if (data.exercise_status === '0') {
+                data.exercise_type = '无';
+                data.exercise_duration = '0';
+                data.exercise_distance = '0';
+                data.exercise_rating = '0';
+            }
+            
+            // 合并睡眠时长的小时和分钟为总小时数
+            if (data.sleep_deep_hour !== undefined) {
+                const deepHour = parseFloat(data.sleep_deep_hour) || 0;
+                const deepMin = parseFloat(data.sleep_deep_min) || 0;
+                data.sleep_deep = (deepHour + deepMin / 60).toFixed(2);
+                delete data.sleep_deep_hour;
+                delete data.sleep_deep_min;
+            }
+            if (data.sleep_light_hour !== undefined) {
+                const lightHour = parseFloat(data.sleep_light_hour) || 0;
+                const lightMin = parseFloat(data.sleep_light_min) || 0;
+                data.sleep_light = (lightHour + lightMin / 60).toFixed(2);
+                delete data.sleep_light_hour;
+                delete data.sleep_light_min;
+            }
+            if (data.sleep_rem_hour !== undefined) {
+                const remHour = parseFloat(data.sleep_rem_hour) || 0;
+                const remMin = parseFloat(data.sleep_rem_min) || 0;
+                data.sleep_rem = (remHour + remMin / 60).toFixed(2);
+                delete data.sleep_rem_hour;
+                delete data.sleep_rem_min;
+            }
+            
+            // 重试逻辑（最多 3 次）
+            let success = false;
+            let attempts = 0;
+            const maxAttempts = 3;
+            
+            while (attempts < maxAttempts && !success) {
+                attempts++;
+                try {
+                    // 使用相对路径提交（自动适配当前服务器地址）
+                    const response = await fetch('/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data),
+                        // 增加超时时间
+                        signal: AbortSignal.timeout(30000)
+                    });
+                    
+                    if (response.ok) {
+                        success = true;
+                        // 显示成功消息
+                        form.classList.add('hidden');
+                        successMsg.classList.add('show');
+                        // 更改成功提示文字
+                        successMsg.querySelector('h2').textContent = '✅ 数据已提交！';
+                        successMsg.querySelector('p').textContent = '飞书将收到评分和建议，请稍后查看~';
+                    } else {
+                        throw new Error('提交失败');
+                    }
+                } catch (error) {
+                    console.error(`提交错误 (尝试 ${attempts}/${maxAttempts}):`, error);
+                    if (attempts >= maxAttempts) {
+                        // 最后一次失败，但仍然可能成功了
+                        alert('⚠️ 提交可能已成功！\n\n如收到飞书确认消息则无需担心。\n如未收到，请稍后重试。');
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = '提交数据 🚀';
+                        return;
+                    }
+                    // 等待 1 秒后重试
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    submitBtn.textContent = `重试中... (${attempts}/${maxAttempts})`;
+                }
+            }
+        });
+        
+        // 初始化
+        setDate();
+        toggleExerciseFields();
+    </script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 成长堡每日考题</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header .week-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .form-body {
+            padding: 30px 20px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .quiz-question {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .quiz-question h4 {
+            font-size: 16px;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .quiz-question p {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .options-group {
+            margin-top: 15px;
+        }
+        
+        .option {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px 15px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .option:hover {
+            border-color: #667eea;
+            background: #f5f6ff;
+        }
+        
+        .option input[type="radio"] {
+            margin-right: 12px;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+        
+        .option label {
+            cursor: pointer;
+            flex: 1;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .option input[type="radio"]:checked + label {
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .success-message h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .score-display {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        
+        .score-display .score-number {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        
+        .success-message p {
+            color: #666;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 成长堡每日考题</h1>
+            <p>完成今日考题，巩固学习成果</p>
+            <div class="week-badge" id="weekDisplay">第 1 周 第 3 天</div>
+        </div>
+        
+        <div class="form-body">
+            <form id="quizForm">
+                <!-- 日期 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>📅</span>
+                        <span>日期</span>
+                    </div>
+                    <input type="date" name="date" id="datePicker" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px;">
+                </div>
+                
+                <!-- 考题 1 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>📝</span>
+                        <span>考题 1（单选题）</span>
+                    </div>
+                    <div class="quiz-question">
+                        <p id="question1Text">OpenClaw 的核心架构包含哪三个主要组件？</p>
+                        <div class="options-group">
+                            <div class="option">
+                                <input type="radio" name="q1" id="q1_a" value="A">
+                                <label for="q1_a">A. Gateway、Agent、Skills</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q1" id="q1_b" value="B">
+                                <label for="q1_b">B. Browser、Canvas、Nodes</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q1" id="q1_c" value="C">
+                                <label for="q1_c">C. Cron、Message、TTS</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q1" id="q1_d" value="D">
+                                <label for="q1_d">D. Web、Mobile、Desktop</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 考题 2 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>📝</span>
+                        <span>考题 2（单选题）</span>
+                    </div>
+                    <div class="quiz-question">
+                        <p id="question2Text">在 Prompt 工程中，完美的 Prompt 公式包含哪些要素？</p>
+                        <div class="options-group">
+                            <div class="option">
+                                <input type="radio" name="q2" id="q2_a" value="A">
+                                <label for="q2_a">A. 角色 + 任务 + 约束 + 示例</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q2" id="q2_b" value="B">
+                                <label for="q2_b">B. 问题 + 分析 + 解决</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q2" id="q2_c" value="C">
+                                <label for="q2_c">C. 输入 + 处理 + 输出</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q2" id="q2_d" value="D">
+                                <label for="q2_d">D. 目标 + 方法 + 结果</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 考题 3 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>📝</span>
+                        <span>考题 3（单选题）</span>
+                    </div>
+                    <div class="quiz-question">
+                        <p id="question3Text">SubAgent 的主要作用是什么？</p>
+                        <div class="options-group">
+                            <div class="option">
+                                <input type="radio" name="q3" id="q3_a" value="A">
+                                <label for="q3_a">A. 提供图形界面</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q3" id="q3_b" value="B">
+                                <label for="q3_b">B. 执行独立的子任务</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q3" id="q3_c" value="C">
+                                <label for="q3_c">C. 管理数据库连接</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q3" id="q3_d" value="D">
+                                <label for="q3_d">D. 处理网络请求</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 提交按钮 -->
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    提交答案 🚀
+                </button>
+            </form>
+            
+            <!-- 成功消息 -->
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✅</div>
+                <h2>答案已提交！</h2>
+                <div class="score-display">
+                    <div>本次得分</div>
+                    <div class="score-number" id="scoreNumber">0/100</div>
+                </div>
+                <p>你的答案已记录到成长堡学习档案</p>
+                <p style="margin-top: 20px; font-size: 14px; color: #999;">
+                    分数将用于月度/季度报告分析
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 设置日期和周数
+        const today = new Date();
+        const startDate = new Date('2026-03-10');
+        const daysElapsed = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+        const weekNum = Math.floor(daysElapsed / 7) + 1;
+        const dayNum = (daysElapsed % 7) + 1;
+        
+        document.getElementById('datePicker').value = today.toISOString().split('T')[0];
+        document.getElementById('weekDisplay').textContent = `第${weekNum}周 第${dayNum}天`;
+        
+        // 根据周数加载考题
+        function loadQuizForWeek(week, day) {
+            // 这里可以根据周数动态加载不同考题
+            // 当前使用默认考题
+            console.log(`加载 W${week}D${day} 的考题`);
+        }
+        
+        loadQuizForWeek(weekNum, dayNum);
+        
+        // 表单提交
+        document.getElementById('quizForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMessage');
+            const form = document.getElementById('quizForm');
+            
+            // 禁用按钮
+            submitBtn.disabled = true;
+            submitBtn.textContent = '提交中...';
+            
+            // 收集表单数据
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            // 重试逻辑（最多 3 次）
+            let success = false;
+            let attempts = 0;
+            const maxAttempts = 3;
+            
+            while (attempts < maxAttempts && !success) {
+                attempts++;
+                try {
+                    const response = await fetch('/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data),
+                        signal: AbortSignal.timeout(30000)
+                    });
+                    
+                    if (response.ok) {
+                        const result = await response.json();
+                        success = true;
+                        form.classList.add('hidden');
+                        successMsg.classList.add('show');
+                        document.getElementById('scoreNumber').textContent = `${result.score || 0}/100`;
+                    } else {
+                        throw new Error('提交失败');
+                    }
+                } catch (error) {
+                    console.error(`提交错误 (尝试 ${attempts}/${maxAttempts}):`, error);
+                    if (attempts >= maxAttempts) {
+                        alert('⚠️ 提交可能已成功！\n\n如收到飞书确认消息则无需担心。\n如未收到，请稍后重试。');
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = '提交答案 🚀';
+                        return;
+                    }
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    submitBtn.textContent = `重试中... (${attempts}/${maxAttempts})`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

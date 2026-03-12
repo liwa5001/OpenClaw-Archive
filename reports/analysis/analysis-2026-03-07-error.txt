@@ -1,0 +1,23 @@
+⚠️ 运动数据分析 - 数据同步失败
+
+🔐 问题说明
+Strava API 授权失败，无法获取运动数据
+
+📋 可能原因
+1. Strava Token 已过期（需要重新授权）
+2. Strava 应用权限被撤销
+
+🔧 解决方案
+请重新获取 Strava Access Token：
+1. 访问 Strava API 设置页面
+2. 生成新的 Access Token
+3. 更新脚本中的 STRAVA_TOKEN 变量
+
+或者运行：
+cd /workspace && ./scripts/refresh-strava-token.sh
+
+📊 今日训练计划（正常执行）
+- 休息日
+
+---
+🏰 城堡健康追踪 | 请修复 Token 配置

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "apple-reminders": {
+      "version": "1.0.0",
+      "installedAt": 1772295796210
+    },
+    "nano-banana-pro": {
+      "version": "1.0.1",
+      "installedAt": 1772616845261
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1772849951520
+    },
+    "skill-9": {
+      "version": "0.1.0",
+      "installedAt": 1772850909434
+    },
+    "agent-memory": {
+      "version": "1.0.0",
+      "installedAt": 1772865252041
+    },
+    "searxng": {
+      "version": "1.0.3",
+      "installedAt": 1772866334282
+    },
+    "basename-agent": {
+      "version": "2.1.0",
+      "installedAt": 1772867347215
+    }
+  }
+}

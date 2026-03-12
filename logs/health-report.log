@@ -1,0 +1,23 @@
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+📊 生成日报 - 2026-03-09
+./scripts/health-report.sh: line 39: [: 0
+0: integer expression expected
+📰 健康日报 - 2026-03-09
+
+🏃 昨日运动
+昨天休息，今天继续加油！💪
+
+📋 今日训练计划
+- 查看 training-reminder.sh 获取今日训练
+- 运动前 1 小时会收到提醒
+
+💡 健康提示
+- 保持充足睡眠（7-8 小时）
+- 运动前后注意拉伸
+- 及时补充水分
+
+---
+🏰 城堡健康追踪

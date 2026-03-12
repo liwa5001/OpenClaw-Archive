@@ -1,0 +1,22 @@
+{
+  "app": {
+    "appId": "cli_a92ebaa37eb89cb0",
+    "appSecret": "NFgwZT7bEZlvo5jKmI814ggDcykrL5A7"
+  },
+  "webhook": {
+    "enabled": true,
+    "port": 8888,
+    "path": "/feishu/webhook",
+    "verifyToken": "P5DDNUDpNSVXIzL3zudjcfB71ZKRxnQg",
+    "encryptKey": ""
+  },
+  "sync": {
+    "feishuToWebchat": true,
+    "webchatToFeishu": true,
+    "targetFeishuUser": "ou_7781abd1e83eae23ccf01fe627f0747f"
+  },
+  "messageTypes": [
+    "receive_message",
+    "read_message"
+  ]
+}

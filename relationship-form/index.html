@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 关系堡每日问卷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .form-body {
+            padding: 30px 20px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #f093fb;
+            box-shadow: 0 0 0 3px rgba(240, 147, 251, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        /* 数字滚动条评分样式 */
+        .number-rating {
+            padding: 10px 0;
+        }
+        
+        .number-input {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .number-input input[type="number"] {
+            width: 80px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            border: 3px solid #f093fb;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            -moz-appearance: textfield;
+        }
+        
+        .number-input input[type="number"]::-webkit-outer-spin-button,
+        .number-input input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        .number-input input[type="number"]:focus {
+            outline: none;
+            border-color: #f5576c;
+            box-shadow: 0 0 0 3px rgba(245, 87, 108, 0.2);
+        }
+        
+        .number-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .number-labels span {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(240, 147, 251, 0.4);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .hint {
+            font-size: 13px;
+            color: #999;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💕 关系堡每日问卷</h1>
+            <p>花 2 分钟记录今天的关系状态</p>
+        </div>
+        
+        <div class="form-body">
+            <form id="relationshipForm">
+                <!-- 日期 -->
+                <div class="form-group">
+                    <label>日期</label>
+                    <input type="date" name="date" id="datePicker" required>
+                </div>
+                
+                <!-- 爱情关系 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>💕</span>
+                        <span>爱情关系（如有）</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>亲密感（1-10 分）</label>
+                        <div class="number-rating">
+                            <div class="number-input">
+                                <input type="number" name="love_intimacy" id="love_intimacy_input" min="1" max="10" value="5">
+                            </div>
+                            <div class="number-labels">
+                                <span>1<br>很低</span>
+                                <span>5<br>中等</span>
+                                <span>10<br>很高</span>
+                            </div>
+                        </div>
+                        <div class="hint">本周的亲密程度</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>沟通舒适度（1-10 分）</label>
+                        <div class="number-rating">
+                            <div class="number-input">
+                                <input type="number" name="love_communication" id="love_communication_input" min="1" max="10" value="5">
+                            </div>
+                            <div class="number-labels">
+                                <span>1<br>很差</span>
+                                <span>5<br>一般</span>
+                                <span>10<br>很好</span>
+                            </div>
+                        </div>
+                        <div class="hint">沟通是否顺畅自然</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>情感支持度（1-10 分）</label>
+                        <div class="number-rating">
+                            <div class="number-input">
+                                <input type="number" name="love_support" id="love_support_input" min="1" max="10" value="5">
+                            </div>
+                            <div class="number-labels">
+                                <span>1<br>很少</span>
+                                <span>5<br>一般</span>
+                                <span>10<br>很多</span>
+                            </div>
+                        </div>
+                        <div class="hint">互相支持的程度</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>信任感（1-10 分）</label>
+                        <div class="number-rating">
+                            <div class="number-input">
+                                <input type="number" name="love_trust" id="love_trust_input" min="1" max="10" value="5">
+                            </div>
+                            <div class="number-labels">
+                                <span>1<br>很低</span>
+                                <span>5<br>一般</span>
+                                <span>10<br>很高</span>
+                            </div>
+                        </div>
+                        <div class="hint">对彼此的信任程度</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>本周亮点事件</label>
+                        <textarea name="love_highlights" placeholder="记录本周的美好时刻...（可选）"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>需要改善的问题</label>
+                        <textarea name="love_issues" placeholder="记录冲突或需要改善的地方...（可选）"></textarea>
+                    </div>
+                </div>
+                
+                <!-- 家庭关系 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>👨‍👩‍👦</span>
+                        <span>家庭关系</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>本周家庭聚会次数</label>
+                        <input type="number" name="family_gatherings" placeholder="0" min="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>与家人沟通时长（小时/周）</label>
+                        <input type="number" name="family_communication_hours" placeholder="5" min="0" step="0.5">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>家庭活动满意度（1-10 分）</label>
+                        <div class="number-rating">
+                            <div class="number-input">
+                                <input type="number" name="family_satisfaction" id="family_satisfaction_input" min="1" max="10" value="5">
+                            </div>
+                            <div class="number-labels">
+                                <span>1<br>很差</span>
+                                <span>5<br>一般</span>
+                                <span>10<br>很好</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 社交关系 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>🤝</span>
+                        <span>社交关系</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>本周新朋友结识数</label>
+                        <input type="number" name="social_new_friends" placeholder="0" min="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>老友联系次数</label>
+                        <input type="number" name="social_old_friends_contact" placeholder="3" min="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>社交活动参与次数</label>
+                        <input type="number" name="social_events" placeholder="1" min="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>社交能量值（1-10 分）</label>
+                        <div class="number-rating">
+                            <div class="number-input">
+                                <input type="number" name="social_energy" id="social_energy_input" min="1" max="10" value="5">
+                            </div>
+                            <div class="number-labels">
+                                <span>1<br>很累</span>
+                                <span>5<br>适中</span>
+                                <span>10<br>充满电</span>
+                            </div>
+                        </div>
+                        <div class="hint">社交后的能量状态</div>
+                    </div>
+                </div>
+                
+                <!-- 本周总结 -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>📊</span>
+                        <span>本周关系总结</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>本周关系整体满意度（1-10 分）</label>
+                        <div class="rating-scale">
+                            <div class="rating-option">
+                                <input type="radio" name="overall_satisfaction" id="overall_1" value="1">
+                                <label for="overall_1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" name="overall_satisfaction" id="overall_5" value="5">
+                                <label for="overall_5">5</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" name="overall_satisfaction" id="overall_10" value="10" checked>
+                                <label for="overall_10">10</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>最大的关系收获</label>
+                        <textarea name="weekly_gains" placeholder="本周在关系方面最大的收获或感悟..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>下周关系目标</label>
+                        <textarea name="next_week_goals" placeholder="下周想要在关系方面做出的改进..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- 提交按钮 -->
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    提交数据 💕
+                </button>
+            </form>
+            
+            <!-- 成功消息 -->
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✅</div>
+                <h2>数据已提交！</h2>
+                <p>感谢你的记录，关系堡正在分析数据...</p>
+                <p style="margin-top: 20px; font-size: 14px; color: #999;">
+                    稍后会在飞书收到反馈和建议~
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 设置日期为本周
+        const today = new Date();
+        document.getElementById('datePicker').value = today.toISOString().split('T')[0];
+        
+        // 表单提交
+        document.getElementById('relationshipForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMessage');
+            const form = document.getElementById('relationshipForm');
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = '提交中...';
+            
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            let success = false;
+            let attempts = 0;
+            const maxAttempts = 3;
+            
+            while (attempts < maxAttempts && !success) {
+                attempts++;
+                try {
+                    const response = await fetch('/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data),
+                        signal: AbortSignal.timeout(30000)
+                    });
+                    
+                    if (response.ok) {
+                        success = true;
+                        form.classList.add('hidden');
+                        successMsg.classList.add('show');
+                    } else {
+                        throw new Error('提交失败');
+                    }
+                } catch (error) {
+                    console.error(`提交错误 (尝试 ${attempts}/${maxAttempts}):`, error);
+                    if (attempts >= maxAttempts) {
+                        alert('⚠️ 提交可能已成功！\n\n如收到飞书确认消息则无需担心。\n如未收到，请稍后重试。');
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = '提交数据 💕';
+                        return;
+                    }
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    submitBtn.textContent = `重试中... (${attempts}/${maxAttempts})`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
