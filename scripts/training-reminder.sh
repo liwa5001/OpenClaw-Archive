@@ -1,7 +1,5 @@
 #!/bin/bash
-# 训练提醒脚本 - 每天两次提醒
-# 1. 提前一天晚上 8 点（预告明天训练）
-# 2. 当天早上 8 点（提醒今天训练）
+# 训练提醒脚本 - 每天 11:00 发送当天训练提醒
 
 set -e
 
@@ -11,12 +9,8 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/
 cd /Users/liwang/.openclaw/workspace
 
 # 获取当前时间
-NOW_HOUR=$(date +%H)
 TODAY=$(date +%Y-%m-%d)
-# macOS 计算明天
-TOMORROW=$(date -v+1d +%Y-%m-%d)
 WEEKDAY=$(date +%u)  # 1=周一，7=周日
-WEEKDAY_TOMORROW=$(( (WEEKDAY % 7) + 1 ))
 
 # 获取天气（简化版，实际可以调用天气 API）
 get_weather_tips() {
@@ -67,77 +61,8 @@ parse_training() {
   IFS='|' read -r NAME DISTANCE INTENSITY HEART_RATE DURATION NOTE PREP <<< "$plan"
 }
 
-# 发送晚间提醒（提前一天）
-send_evening_reminder() {
-  local plan=$(get_training_plan $WEEKDAY_TOMORROW)
-  parse_training "$plan"
-  
-  # 计算日期
-  local tomorrow_weekday_name=""
-  case $WEEKDAY_TOMORROW in
-    1) tomorrow_weekday_name="周一" ;;
-    2) tomorrow_weekday_name="周二" ;;
-    3) tomorrow_weekday_name="周三" ;;
-    4) tomorrow_weekday_name="周四" ;;
-    5) tomorrow_weekday_name="周五" ;;
-    6) tomorrow_weekday_name="周六" ;;
-    7) tomorrow_weekday_name="周日" ;;
-  esac
-  
-  local weather_tips=$(get_weather_tips)
-  
-  local MESSAGE="🌙 明日训练预告 - $TOMORROW ($tomorrow_weekday_name)
-
-📋 训练内容：${NAME}
-📏 距离：${DISTANCE}
-💪 强度：${INTENSITY}
-💓 心率：${HEART_RATE}
-⏱️ 时长：${DURATION}
-
-💡 训练提示：
-${NOTE}
-
-⚠️ 注意事项：
-1. 训练前 2 小时进食（高碳水）
-2. 训练前 30 分钟补充能量（香蕉/能量棒）
-3. 全程保持心率在目标区间
-4. 如有不适立即停止休息
-5. 训练后 30 分钟内补充蛋白质
-
-🎒 准备清单：
-${PREP}
-
-🔧 自行车检查（5 分钟）：
-- [ ] 轮胎气压（60 PSI 左右）
-- [ ] 刹车是否正常
-- [ ] 链条润滑
-- [ ] 变速顺畅
-
-🪖 骑行装备：
-- [ ] 头盔（安全第一）
-- [ ] 骑行眼镜（防风防虫）
-- [ ] 心率带（监测数据）
-- [ ] 锁鞋（如使用自锁）
-
-🌤️ 天气提示：
-${weather_tips}
-
-📱 安全提醒：
-- 告知家人骑行路线
-- 携带身份证和紧急联系人
-- 遵守交通规则
-- 佩戴头盔和骑行服
-
----
-🏰 城堡健康追踪 | 晚安，明天见！😴"
-
-  # 发送到飞书
-  /opt/homebrew/bin/openclaw message send --channel feishu --target "ou_7781abd1e83eae23ccf01fe627f0747f" --message "$MESSAGE"
-  echo "✅ 晚间提醒已发送（飞书） - $(date)"
-}
-
-# 发送当天提醒（提前一小时）
-send_morning_reminder() {
+# 发送当天提醒（11:00）
+send_training_reminder() {
   local plan=$(get_training_plan $WEEKDAY)
   parse_training "$plan"
   
@@ -194,26 +119,17 @@ ${weather_tips}
 
   # 发送到飞书
   /opt/homebrew/bin/openclaw message send --channel feishu --target "ou_7781abd1e83eae23ccf01fe627f0747f" --message "$MESSAGE"
-  echo "✅ 当天提醒已发送（飞书） - $(date)"
+  echo "✅ 训练提醒已发送（飞书） - $(date)"
 }
 
 # 主逻辑
-echo "🔔 训练提醒检查 - $(date)"
+echo "🔔 训练提醒 - $(date)"
 
-# 晚上 8 点发送明天预告 (20:00)
-if [ "$NOW_HOUR" -eq 20 ]; then
-  send_evening_reminder
-fi
+# 发送训练提醒
+send_training_reminder()
 
-# 早上 8 点发送当天提醒 (08:00)
-if [ "$NOW_HOUR" -eq 8 ]; then
-  send_morning_reminder
-fi
-
-# 如果是手动运行，发送两次测试
+# 如果是手动运行，发送测试
 if [ "$1" = "test" ]; then
-  echo "🧪 测试模式：发送两次提醒"
-  send_evening_reminder
-  sleep 2
-  send_morning_reminder
+  echo "🧪 测试模式：发送训练提醒"
+  send_training_reminder
 fi

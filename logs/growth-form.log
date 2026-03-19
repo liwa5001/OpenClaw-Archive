@@ -32,3 +32,69 @@
 [2026-03-12T12:02:29.071Z] 📝 表单地址：http://0.0.0.0:8896/
 [2026-03-12T12:02:29.071Z] 📊 提交地址：http://0.0.0.0:8896/submit
 [2026-03-12T12:02:29.072Z] 🌐 局域网访问地址：http://192.168.2.58:8896/
+[2026-03-12T13:05:02.252Z] 收到表单提交：{"week_num":"1","day_in_week":"3","study_status":"1","oc_duration":"45","oc_content":"skills agent 1小时教程","claude_duration":"0","claude_content":"无","video_duration":"0","video_content":"无","quality_rating":"3","output_notes":"1","output_practice":"3","output_projects":"1","problems":"无","tomorrow_plan":"无","total_duration":"45"}
+[2026-03-12T13:05:02.279Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/growth/daily-stats/2026-03-12-growth-stats.md
+[2026-03-12T13:05:09.870Z] ✅ 确认消息已发送（飞书）
+[2026-03-12T13:07:16.275Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-12T13:07:16.279Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-12T13:07:16.279Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-12T13:07:16.280Z] 🌐 局域网访问地址：http://192.168.2.58:8896/
+[2026-03-13T02:57:44.812Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-13T02:57:44.817Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-13T02:57:44.817Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-13T02:57:44.818Z] 🌐 局域网访问地址：http://192.168.2.58:8896/
+[2026-03-13T13:04:15.587Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-13T13:04:15.590Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-13T13:04:15.590Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-13T13:04:15.591Z] 🌐 局域网访问地址：http://192.168.2.58:8896/
+[2026-03-13T13:11:50.870Z] 收到表单提交：{"week_num":"1","day_in_week":"5","study_status":"1","oc_duration":"30","oc_content":"Skills学习","claude_duration":"0","claude_content":"","video_duration":"60","video_content":"风变商单","quality_rating":"2","output_notes":"0","output_practice":"3","output_projects":"0","problems":"风变课程商单部分不在原计划中","tomorrow_plan":"暂无","total_duration":"90"}
+[2026-03-13T13:11:50.898Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/growth/daily-stats/2026-03-13-growth-stats.md
+[2026-03-13T13:12:08.288Z] ✅ 确认消息已发送（飞书）
+[2026-03-13T23:12:54.385Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-13T23:12:54.387Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-13T23:12:54.387Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-13T23:12:54.387Z] 🌐 局域网访问地址：http://192.168.2.73:8896/
+[2026-03-14T09:44:10.999Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-14T09:44:11.000Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-14T09:44:11.000Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-14T09:44:11.001Z] 🌐 局域网访问地址：http://192.168.2.73:8896/
+[2026-03-14T23:05:29.233Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-14T23:05:29.234Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-14T23:05:29.234Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-14T23:05:29.234Z] 🌐 局域网访问地址：http://192.168.2.73:8896/
+[2026-03-15T02:20:58.070Z] 收到表单提交：{"week_num":"1","day_in_week":"7","study_status":"1","oc_duration":"0","oc_content":"","claude_duration":"0","claude_content":"","video_duration":"60","video_content":"商单作业","quality_rating":"2","output_notes":"0","output_practice":"2","output_projects":"2","problems":"暂无","tomorrow_plan":"暂无","total_duration":"60"}
+[2026-03-15T02:20:58.101Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/growth/daily-stats/2026-03-15-growth-stats.md
+[2026-03-15T02:21:00.819Z] ✅ 确认消息已发送（飞书）
+[2026-03-15T08:37:11.982Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-15T08:37:11.983Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-15T08:37:11.983Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-15T08:37:11.983Z] 🌐 局域网访问地址：http://192.168.2.73:8896/
+[2026-03-15T13:24:21.865Z] 收到表单提交：{"week_num":"1","day_in_week":"7","study_status":"1","oc_duration":"10","oc_content":"李一舟分agent","claude_duration":"0","claude_content":"","video_duration":"0","video_content":"","quality_rating":"2","output_notes":"0","output_practice":"1","output_projects":"1","exam_answers":"B,B,A,D","problems":"无","tomorrow_plan":"无","total_duration":"10"}
+[2026-03-15T13:24:21.900Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/growth/daily-stats/2026-03-15-growth-stats.md
+[2026-03-15T13:24:26.501Z] ✅ 确认消息已发送（飞书）
+[2026-03-16T00:00:43.376Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-16T00:00:43.378Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-16T00:00:43.378Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-16T00:00:43.378Z] 🌐 局域网访问地址：http://192.168.2.73:8896/
+[2026-03-16T15:20:58.647Z] 收到表单提交：{"week_num":"2","day_in_week":"1","study_status":"1","oc_duration":"10","oc_content":"Agent","claude_duration":"8","claude_content":"Prompt from Jeff","video_duration":"60","video_content":"制作商单","quality_rating":"3","output_notes":"2","output_practice":"3","output_projects":"3","exam_answers":"ABC,ABC,BC,ABCD,ABD","problems":"无","tomorrow_plan":"无","total_duration":"78"}
+[2026-03-16T15:20:58.689Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/growth/daily-stats/2026-03-16-growth-stats.md
+[2026-03-16T15:21:03.133Z] ✅ 确认消息已发送（飞书）
+[2026-03-16T16:56:05.598Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-16T16:56:05.599Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-16T16:56:05.599Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-16T16:56:05.600Z] 🌐 局域网访问地址：http://192.168.71.16:8896/
+[2026-03-17T13:00:27.046Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-17T13:00:27.047Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-17T13:00:27.047Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-17T13:00:27.048Z] 🌐 局域网访问地址：http://192.168.71.27:8896/
+[2026-03-18T00:00:45.376Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-18T00:00:45.377Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-18T00:00:45.377Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-18T00:00:45.377Z] 🌐 局域网访问地址：http://192.168.71.27:8896/
+[2026-03-19T13:00:28.411Z] 🚀 成长堡表单服务器启动在端口 8896
+[2026-03-19T13:00:28.413Z] 📝 表单地址：http://0.0.0.0:8896/
+[2026-03-19T13:00:28.413Z] 📊 提交地址：http://0.0.0.0:8896/submit
+[2026-03-19T13:00:28.413Z] 🌐 局域网访问地址：http://192.168.71.21:8896/
+[2026-03-19T13:01:34.022Z] 收到表单提交：{"week_num":"2","day_in_week":"4","study_status":"1","oc_duration":"","oc_content":"","claude_duration":"","claude_content":"","video_duration":"20","video_content":"商单","quality_rating":"2","output_notes":"2","output_practice":"2","output_projects":"2","exam_answers":"","audiobook_status":"0","audiobook_day":"","audiobook_reflection":"","audiobook_rating":"3","problems":"书的Mp3链接还没有","tomorrow_plan":"","total_duration":"20"}
+[2026-03-19T13:01:34.048Z] ✅ 统计文件已更新：/Users/liwang/.openclaw/workspace/daily-output/growth/daily-stats/2026-03-19-growth-stats.md
+[2026-03-19T13:01:36.845Z] ✅ 确认消息已发送（飞书）

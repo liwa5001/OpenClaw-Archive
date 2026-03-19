@@ -1,0 +1,31 @@
+Function,Location,Internal,External,Total,Internal_2026_fcst,External_2026_fcst,Total_2026_fcst
+AMP DSP,Chengdu,3,0,3,0,0,0
+AMP DSP,Suzhou,16,7,23,16,7,23
+AMP DSP,Bangalore,19,4,23,19,4,23
+AMP DSP,Garching,10,0,10,5,0,5
+AMP DSP,Novi,6,0,6,6,0,6
+AMP DSP,Queretaro,5,8,13,5,8,13
+AMP DSP,Szekesfehervar,1,0,1,1,0,1
+AMP HW,Suzhou,53,4,57,53,4,57
+AMP HW,Queretaro,13,0,13,13,0,13
+AMP MCU,Chengdu,4,0,4,0,0,0
+AMP MCU,Shanghai,3,0,3,3,0,3
+AMP MCU,Suzhou,58,29,87,58,29,87
+AMP MCU,0,4,0,4,4,0,4
+AMP MCU,Bangalore,87,0,87,87,0,87
+AMP MCU,Garching,1,0,1,0,0,0
+AMP MCU,Queretaro,52,0,52,52,0,52
+AMP ME,Shanghai,5,0,5,5,0,5
+AMP ME,Suzhou,27,0,27,27,0,27
+AMP ME,Queretaro,6,0,6,6,0,6
+AMP PL,Suzhou,14,0,14,14,0,14
+AMP PL,Queretaro,4,0,4,4,0,4
+AMP SME,Garching,5,0,5,0,0,0
+AMP SME,Nagoya,11,0,11,11,0,11
+AMP SME,Novi,16,0,16,16,0,16
+AMP SYS,Suzhou,12,1,13,12,1,13
+AMP SYS,Bangalore,13,0,13,13,0,13
+AMP SYS,Queretaro,3,0,3,3,0,3
+ASE,Bangalore,1,0,1,1,0,1
+GPD Leader,Suzhou,2,0,2,2,0,2
+Software Only,0,3,0,3,3,0,3

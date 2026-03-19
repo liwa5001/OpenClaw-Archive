@@ -30,3 +30,139 @@
 [2026-03-12 16:33:12] ✅ 成长堡每日学习计划提醒已发送
 [2026-03-12 16:33:12] === Castle Six 每日任务发送完成 ===
 [2026-03-12 16:33:12] 🎉 健康堡问卷 + 成长堡学习计划已发送
+[2026-03-13 08:00:46] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-13 08:00:46] 启动健康堡服务器 (8897)...
+[2026-03-13 08:00:48] ✅ 健康堡服务器已启动
+[2026-03-13 08:00:48] 成长堡服务器已运行
+[2026-03-13 08:00:48] 发送健康堡问卷...
+[2026-03-13 08:00:56] ✅ 健康堡问卷已发送
+[2026-03-13 08:00:56] 发送成长堡每日学习计划提醒...
+[2026-03-13 08:01:02] ✅ 成长堡每日学习计划提醒已发送
+[2026-03-13 08:01:02] === Castle Six 每日任务发送完成 ===
+[2026-03-13 08:01:02] 🎉 健康堡问卷 + 成长堡学习计划已发送
+[2026-03-14 08:01:15] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-14 08:01:15] 健康堡服务器已运行
+[2026-03-14 08:01:15] 成长堡服务器已运行
+[2026-03-14 08:01:15] 发送健康堡问卷...
+[2026-03-14 08:01:18] ✅ 健康堡问卷已发送
+[2026-03-14 08:01:18] 发送成长堡每日学习计划提醒...
+[2026-03-14 08:01:21] ✅ 成长堡每日学习计划提醒已发送
+[2026-03-14 08:01:21] === Castle Six 每日任务发送完成 ===
+[2026-03-14 08:01:21] 🎉 健康堡问卷 + 成长堡学习计划已发送
+[2026-03-15 07:05:26] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-15 07:05:26] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-15 07:05:26] 启动健康堡服务器 (8897)...
+[2026-03-15 07:05:26] 启动健康堡服务器 (8897)...
+[2026-03-15 07:05:29] ✅ 健康堡服务器已启动
+[2026-03-15 07:05:29] ✅ 健康堡服务器已启动
+[2026-03-15 07:05:29] 启动成长堡服务器 (8896)...
+[2026-03-15 07:05:29] 启动成长堡服务器 (8896)...
+[2026-03-15 07:05:31] ✅ 成长堡服务器已启动
+[2026-03-15 07:05:31] ✅ 成长堡服务器已启动
+[2026-03-15 07:05:31] 发送健康堡问卷...
+[2026-03-15 07:05:31] 发送健康堡问卷...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b546ad538b0a0c12797ed7351866 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+[2026-03-15 07:05:35] ✅ 健康堡问卷已发送
+[2026-03-15 07:05:35] ✅ 健康堡问卷已发送
+[2026-03-15 07:05:35] 发送成长堡每日学习计划提醒...
+[2026-03-15 07:05:35] 发送成长堡每日学习计划提醒...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b546ad2d200a0c352d889ba3ee78 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+[2026-03-15 07:05:38] ✅ 成长堡每日学习计划提醒已发送
+[2026-03-15 07:05:38] ✅ 成长堡每日学习计划提醒已发送
+[2026-03-15 07:05:38] === Castle Six 每日任务发送完成 ===
+[2026-03-15 07:05:38] === Castle Six 每日任务发送完成 ===
+[2026-03-15 07:05:38] 🎉 健康堡问卷 + 成长堡学习计划已发送
+[2026-03-15 07:05:38] 🎉 健康堡问卷 + 成长堡学习计划已发送
+[2026-03-16 08:00:41] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-16 08:00:41] 启动健康堡服务器 (8897)...
+[2026-03-16 08:00:43] ✅ 健康堡服务器已启动
+[2026-03-16 08:00:43] 启动成长堡服务器 (8896)...
+[2026-03-16 08:00:45] ✅ 成长堡服务器已启动
+[2026-03-16 08:00:45] 发送健康堡问卷...
+[2026-03-16 08:00:49] ✅ 健康堡问卷已发送
+[2026-03-16 08:00:49] 发送成长堡每日学习计划提醒...
+[2026-03-16 08:00:51] ✅ 成长堡每日学习计划提醒已发送
+[2026-03-16 08:00:51] 发送每日考题 HTML 表单...
+[2026-03-16 08:00:54] ✅ 每日考题已发送
+[2026-03-16 08:00:54] === Castle Six 每日任务发送完成 ===
+[2026-03-16 08:00:54] 🎉 健康堡问卷 + 成长堡学习计划 + 每日考题已发送
+[2026-03-18 08:00:45] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-18 08:00:45] 健康堡服务器已运行
+[2026-03-18 08:00:45] 启动成长堡服务器 (8896)...
+[2026-03-18 08:00:47] ✅ 成长堡服务器已启动
+[2026-03-18 08:00:47] 发送健康堡问卷...
+[2026-03-18 08:00:50] ✅ 健康堡问卷已发送
+[2026-03-18 08:00:50] 发送成长堡每日学习计划提醒...
+[2026-03-18 08:00:53] ✅ 成长堡每日学习计划提醒已发送
+[2026-03-18 08:00:53] 发送每日考题 HTML 表单...
+[2026-03-18 08:00:56] ✅ 每日考题已发送
+[2026-03-18 08:00:56] === Castle Six 每日任务发送完成 ===
+[2026-03-18 08:00:56] 🎉 健康堡问卷 + 成长堡学习计划 + 每日考题已发送
+[2026-03-19 00:11:50] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-19 00:11:50] 健康堡服务器已运行
+[2026-03-19 00:11:50] 成长堡服务器已运行
+[2026-03-19 00:11:50] 发送健康堡问卷...
+[2026-03-19 00:11:53] ✅ 健康堡问卷已发送
+[2026-03-19 00:11:53] 发送成长堡每日学习计划提醒...
+[2026-03-19 00:11:56] ✅ 成长堡每日学习计划提醒已发送
+[2026-03-19 00:11:56] 发送每日考题 HTML 表单...
+[2026-03-19 00:11:58] ✅ 每日考题已发送
+[2026-03-19 00:11:58] === Castle Six 每日任务发送完成 ===
+[2026-03-19 00:11:58] 🎉 健康堡问卷 + 成长堡学习计划 + 每日考题已发送
+[2026-03-19 00:12:30] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-19 00:12:30] 健康堡服务器已运行
+[2026-03-19 00:12:30] 成长堡服务器已运行
+[2026-03-19 00:12:30] 发送健康堡问卷...
+[2026-03-19 00:12:33] ✅ 健康堡问卷已发送
+[2026-03-19 00:12:33] 发送成长堡每日学习计划提醒...
+[2026-03-19 00:12:35] ✅ 成长堡每日学习计划提醒已发送
+[2026-03-19 00:12:35] 发送每日考题 HTML 表单...
+[2026-03-19 00:12:38] ✅ 每日考题已发送
+[2026-03-19 00:12:38] === Castle Six 每日任务发送完成 ===
+[2026-03-19 00:12:38] 🎉 健康堡问卷 + 成长堡学习计划 + 每日考题已发送
+[2026-03-19 00:13:10] === Castle Six 问卷 + 学习计划发送开始 ===
+[2026-03-19 00:13:10] 健康堡服务器已运行
+[2026-03-19 00:13:10] 成长堡服务器已运行
+[2026-03-19 00:13:10] 发送健康堡问卷...

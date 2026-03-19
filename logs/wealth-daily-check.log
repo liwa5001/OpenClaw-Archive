@@ -1,0 +1,192 @@
+[2026-03-14 14:09:19] === 财富堡每日检查开始 ===
+[2026-03-14 14:09:19] 🚀 启动财富堡服务器...
+[2026-03-14 14:09:22] ❌ 财富堡服务器启动失败
+[2026-03-14 14:10:00] === 财富堡每日检查开始 ===
+[2026-03-14 14:10:00] 🚀 启动财富堡服务器...
+[2026-03-14 14:10:02] ✅ 财富堡服务器已启动 (端口 8898)
+[2026-03-14 14:10:02] 💰 财富堡访问地址：http://:8898
+[2026-03-14 14:10:02] 📨 发送飞书消息...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b547bf51370a0c1041b168a4ecf9 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+[2026-03-14 14:10:06] ✅ 飞书消息发送成功
+[2026-03-14 14:10:06] === 财富堡每日检查完成 ===
+[2026-03-14 14:10:06] 
+[2026-03-15 07:06:09] === 财富堡每日检查开始 ===
+[2026-03-15 07:06:09] === 财富堡每日检查开始 ===
+[2026-03-15 07:06:09] 🚀 启动财富堡服务器...
+[2026-03-15 07:06:09] 🚀 启动财富堡服务器...
+[2026-03-15 07:06:11] ✅ 财富堡服务器已启动 (端口 8898)
+[2026-03-15 07:06:11] ✅ 财富堡服务器已启动 (端口 8898)
+[2026-03-15 07:06:11] 💰 财富堡访问地址：http://192.168.2.73:8898
+[2026-03-15 07:06:11] 💰 财富堡访问地址：http://192.168.2.73:8898
+[2026-03-15 07:06:11] 📨 发送飞书消息...
+[2026-03-15 07:06:11] 📨 发送飞书消息...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b546ad0a8a4a0c3685bd5183ada6 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ Sent via Feishu. Message ID: om_x100b546ad0a8a4a0c3685bd5183ada6 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+[2026-03-15 07:06:14] ✅ 飞书消息发送成功
+[2026-03-15 07:06:14] ✅ 飞书消息发送成功
+[2026-03-15 07:06:14] === 财富堡每日检查完成 ===
+[2026-03-15 07:06:14] === 财富堡每日检查完成 ===
+[2026-03-15 07:06:14] 
+[2026-03-15 07:06:14] 
+[2026-03-15 08:01:11] === 财富堡每日检查开始 ===
+[2026-03-15 08:01:11] ✅ 财富堡服务器已在运行 (端口 8898)
+[2026-03-15 08:01:11] 💰 财富堡访问地址：http://192.168.2.73:8898
+[2026-03-15 08:01:11] 📨 发送飞书消息...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b546b226ee8a4c4ec2981ca36640 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+[2026-03-15 08:01:14] ✅ 飞书消息发送成功
+[2026-03-15 08:01:14] === 财富堡每日检查完成 ===
+[2026-03-15 08:01:14] 
+[2026-03-15 08:08:16] === 财富堡每日检查开始 ===
+[2026-03-15 08:08:16] ✅ 财富堡服务器已在运行 (端口 8898)
+[2026-03-15 08:08:16] 💰 财富堡访问地址：http://192.168.2.73:8898
+[2026-03-15 08:08:16] 📨 发送飞书消息...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b546bc9f1e8a0c49c4ed99426133 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+[2026-03-15 08:08:20] ✅ 飞书消息发送成功
+[2026-03-15 08:08:20] === 财富堡每日检查完成 ===
+[2026-03-15 08:08:20] 
+[2026-03-15 10:22:47] === 财富堡每日检查开始 ===
+[2026-03-15 10:22:47] ✅ 财富堡服务器已在运行 (端口 8898)
+[2026-03-15 10:22:47] 💰 财富堡访问地址：http://192.168.2.73:8898
+[2026-03-15 10:22:47] 📨 发送飞书消息...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b5455315454a0c352288c13f76e4 (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+[2026-03-15 10:22:49] ✅ 飞书消息发送成功
+[2026-03-15 10:22:49] === 财富堡每日检查完成 ===
+[2026-03-15 10:22:49] 

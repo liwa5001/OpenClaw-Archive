@@ -4,3 +4,197 @@
 [2026-03-07T06:18:28.426Z] Webhook URL: http://your-public-ip:8888/feishu/webhook
 [2026-03-11T03:42:20.722Z] 飞书 Webhook 服务器启动在端口 8888
 [2026-03-11T03:42:20.724Z] Webhook URL: http://your-public-ip:8888/feishu/webhook
+[2026-03-13T03:23:34.156Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T03:23:34.156Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T03:23:34.159Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T03:23:34.159Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T03:23:34.159Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T03:23:34.159Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T03:53:55.267Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T03:53:55.267Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T03:53:55.272Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T03:53:55.272Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T03:53:55.272Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T03:53:55.272Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T03:56:06.535Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T03:56:06.535Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T03:56:06.538Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T03:56:06.538Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T03:56:06.538Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T03:56:06.538Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:11:00.756Z] 📥 收到事件：undefined
+[2026-03-13T04:11:00.756Z] 📥 收到事件：undefined
+[2026-03-13T04:11:00.756Z] 收到消息事件：undefined
+[2026-03-13T04:11:00.756Z] 收到消息事件：undefined
+[2026-03-13T04:11:00.756Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:11:00.756Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:13:03.236Z] 🔐 验证请求：timestamp=null
+[2026-03-13T04:13:03.236Z] 🔐 验证请求：timestamp=null
+[2026-03-13T04:13:03.237Z] 警告：verifyToken 未配置，跳过验证
+[2026-03-13T04:13:03.237Z] 警告：verifyToken 未配置，跳过验证
+[2026-03-13T04:13:03.238Z] ✅ 验证成功
+[2026-03-13T04:13:03.238Z] ✅ 验证成功
+[2026-03-13T04:13:11.091Z] 🔐 验证请求：timestamp=null
+[2026-03-13T04:13:11.091Z] 🔐 验证请求：timestamp=null
+[2026-03-13T04:13:11.092Z] 警告：verifyToken 未配置，跳过验证
+[2026-03-13T04:13:11.092Z] 警告：verifyToken 未配置，跳过验证
+[2026-03-13T04:13:11.092Z] ✅ 验证成功
+[2026-03-13T04:13:11.092Z] ✅ 验证成功
+[2026-03-13T04:13:11.253Z] 🔐 验证请求：timestamp=null
+[2026-03-13T04:13:11.253Z] 🔐 验证请求：timestamp=null
+[2026-03-13T04:13:11.253Z] 警告：verifyToken 未配置，跳过验证
+[2026-03-13T04:13:11.253Z] 警告：verifyToken 未配置，跳过验证
+[2026-03-13T04:13:11.253Z] ✅ 验证成功
+[2026-03-13T04:13:11.253Z] ✅ 验证成功
+[2026-03-13T04:13:44.714Z] 📥 收到事件：undefined
+[2026-03-13T04:13:44.714Z] 📥 收到事件：undefined
+[2026-03-13T04:13:44.715Z] 收到消息事件：undefined
+[2026-03-13T04:13:44.715Z] 收到消息事件：undefined
+[2026-03-13T04:13:44.716Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:13:44.716Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:13:47.298Z] 📥 收到事件：undefined
+[2026-03-13T04:13:47.298Z] 📥 收到事件：undefined
+[2026-03-13T04:13:47.298Z] 收到消息事件：undefined
+[2026-03-13T04:13:47.298Z] 收到消息事件：undefined
+[2026-03-13T04:13:47.298Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:13:47.298Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:14:02.113Z] 📥 收到事件：undefined
+[2026-03-13T04:14:02.113Z] 📥 收到事件：undefined
+[2026-03-13T04:14:02.113Z] 收到消息事件：undefined
+[2026-03-13T04:14:02.113Z] 收到消息事件：undefined
+[2026-03-13T04:14:02.113Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:14:02.113Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:14:42.288Z] 📥 收到事件：undefined
+[2026-03-13T04:14:42.288Z] 📥 收到事件：undefined
+[2026-03-13T04:14:42.288Z] 收到消息事件：undefined
+[2026-03-13T04:14:42.288Z] 收到消息事件：undefined
+[2026-03-13T04:14:42.289Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:14:42.289Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:15:38.541Z] 🔐 验证请求：timestamp=123
+[2026-03-13T04:15:38.541Z] 🔐 验证请求：timestamp=123
+[2026-03-13T04:15:38.542Z] 警告：verifyToken 未配置，跳过验证
+[2026-03-13T04:15:38.542Z] 警告：verifyToken 未配置，跳过验证
+[2026-03-13T04:15:38.542Z] ✅ 验证成功
+[2026-03-13T04:15:38.542Z] ✅ 验证成功
+[2026-03-13T04:15:49.655Z] 📥 收到事件：url_verification
+[2026-03-13T04:15:49.655Z] 📥 收到事件：url_verification
+[2026-03-13T04:15:49.655Z] 收到消息事件：{"event_type":"url_verification"}
+[2026-03-13T04:15:49.655Z] 收到消息事件：{"event_type":"url_verification"}
+[2026-03-13T04:15:49.655Z] 跳过事件类型：url_verification
+[2026-03-13T04:15:49.655Z] 跳过事件类型：url_verification
+[2026-03-13T04:15:49.814Z] 📥 收到事件：url_verification
+[2026-03-13T04:15:49.814Z] 📥 收到事件：url_verification
+[2026-03-13T04:15:49.814Z] 收到消息事件：{"event_type":"url_verification"}
+[2026-03-13T04:15:49.814Z] 收到消息事件：{"event_type":"url_verification"}
+[2026-03-13T04:15:49.814Z] 跳过事件类型：url_verification
+[2026-03-13T04:15:49.814Z] 跳过事件类型：url_verification
+[2026-03-13T04:16:12.229Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:16:12.229Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:16:12.234Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:16:12.234Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:16:12.234Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:16:12.234Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:16:14.171Z] 📥 收到事件：url_verification
+[2026-03-13T04:16:14.171Z] 📥 收到事件：url_verification
+[2026-03-13T04:16:14.171Z] 🔐 URL 验证请求
+[2026-03-13T04:16:14.171Z] 🔐 URL 验证请求
+[2026-03-13T04:16:14.172Z] ✅ URL 验证成功，返回 challenge: test123
+[2026-03-13T04:16:14.172Z] ✅ URL 验证成功，返回 challenge: test123
+[2026-03-13T04:16:22.712Z] 📥 收到事件：undefined
+[2026-03-13T04:16:22.712Z] 📥 收到事件：undefined
+[2026-03-13T04:16:22.712Z] 收到消息事件：undefined
+[2026-03-13T04:16:22.712Z] 收到消息事件：undefined
+[2026-03-13T04:16:22.713Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:16:22.713Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:16:25.576Z] 📥 收到事件：undefined
+[2026-03-13T04:16:25.576Z] 📥 收到事件：undefined
+[2026-03-13T04:16:25.576Z] 收到消息事件：undefined
+[2026-03-13T04:16:25.576Z] 收到消息事件：undefined
+[2026-03-13T04:16:25.576Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:16:25.576Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:16:35.114Z] 📥 收到事件：undefined
+[2026-03-13T04:16:35.114Z] 📥 收到事件：undefined
+[2026-03-13T04:16:35.114Z] 收到消息事件：undefined
+[2026-03-13T04:16:35.114Z] 收到消息事件：undefined
+[2026-03-13T04:16:35.115Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:16:35.115Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:17:13.868Z] 📥 收到事件：undefined
+[2026-03-13T04:17:13.868Z] 📥 收到事件：undefined
+[2026-03-13T04:17:13.868Z] 收到消息事件：undefined
+[2026-03-13T04:17:13.868Z] 收到消息事件：undefined
+[2026-03-13T04:17:13.869Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:17:13.869Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:18:03.434Z] 📥 收到事件：url_verification
+[2026-03-13T04:18:03.434Z] 📥 收到事件：url_verification
+[2026-03-13T04:18:03.436Z] 🔐 URL 验证请求
+[2026-03-13T04:18:03.436Z] 🔐 URL 验证请求
+[2026-03-13T04:18:03.436Z] ✅ URL 验证成功，返回 challenge: abc123
+[2026-03-13T04:18:03.436Z] ✅ URL 验证成功，返回 challenge: abc123
+[2026-03-13T04:18:08.186Z] 📥 收到事件：url_verification
+[2026-03-13T04:18:08.186Z] 📥 收到事件：url_verification
+[2026-03-13T04:18:08.186Z] 🔐 URL 验证请求
+[2026-03-13T04:18:08.186Z] 🔐 URL 验证请求
+[2026-03-13T04:18:08.187Z] ✅ URL 验证成功，返回 challenge: test
+[2026-03-13T04:18:08.187Z] ✅ URL 验证成功，返回 challenge: test
+[2026-03-13T04:18:21.233Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:18:21.233Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:18:21.237Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:18:21.237Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:18:21.237Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:18:21.237Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:21:13.781Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:21:13.781Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:21:13.784Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:21:13.784Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:21:13.784Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:21:13.784Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:21:50.259Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:21:50.259Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:21:50.262Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:21:50.262Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:21:50.262Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:21:50.262Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:22:49.947Z] 📝 POST 原始请求体：{"challenge":"1febcea8-d422-4dfc-affd-bb9401fdf99e","token":"P5DDNUDpNSVXIzL3zudjcfB71ZKRxnQg","type":"url_verification"}
+[2026-03-13T04:22:49.947Z] 📝 POST 原始请求体：{"challenge":"1febcea8-d422-4dfc-affd-bb9401fdf99e","token":"P5DDNUDpNSVXIzL3zudjcfB71ZKRxnQg","type":"url_verification"}
+[2026-03-13T04:22:49.949Z] 📥 收到事件：undefined
+[2026-03-13T04:22:49.949Z] 📥 收到事件：undefined
+[2026-03-13T04:22:49.950Z] 收到消息事件：undefined
+[2026-03-13T04:22:49.950Z] 收到消息事件：undefined
+[2026-03-13T04:22:49.950Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:22:49.950Z] ❌ 解析失败：Cannot read properties of undefined (reading 'event_type')
+[2026-03-13T04:22:49.950Z] ❌ 原始请求体：{"challenge":"1febcea8-d422-4dfc-affd-bb9401fdf99e","token":"P5DDNUDpNSVXIzL3zudjcfB71ZKRxnQg","type":"url_verification"}
+[2026-03-13T04:22:49.950Z] ❌ 原始请求体：{"challenge":"1febcea8-d422-4dfc-affd-bb9401fdf99e","token":"P5DDNUDpNSVXIzL3zudjcfB71ZKRxnQg","type":"url_verification"}
+[2026-03-13T04:23:16.720Z] 📝 POST 原始请求体：{"header":{"event_type":"url_verification"},"event":{"challenge":"test123"}}
+[2026-03-13T04:23:16.720Z] 📝 POST 原始请求体：{"header":{"event_type":"url_verification"},"event":{"challenge":"test123"}}
+[2026-03-13T04:23:16.720Z] 📥 收到事件：url_verification
+[2026-03-13T04:23:16.720Z] 📥 收到事件：url_verification
+[2026-03-13T04:23:16.721Z] 🔐 URL 验证请求
+[2026-03-13T04:23:16.721Z] 🔐 URL 验证请求
+[2026-03-13T04:23:16.721Z] ✅ URL 验证成功，返回 challenge: test123
+[2026-03-13T04:23:16.721Z] ✅ URL 验证成功，返回 challenge: test123
+[2026-03-13T04:23:39.593Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:23:39.593Z] 🚀 飞书 Webhook 服务器 v2.0 启动在端口 8899
+[2026-03-13T04:23:39.596Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:23:39.596Z] 🌐 Webhook URL: http://your-public-ip:8899/feishu/webhook
+[2026-03-13T04:23:39.596Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:23:39.596Z] 📊 状态检查：http://localhost:8899/status
+[2026-03-13T04:23:41.586Z] 📝 POST 原始请求体：{"challenge":"test123","token":"abc","type":"url_verification"}
+[2026-03-13T04:23:41.586Z] 📝 POST 原始请求体：{"challenge":"test123","token":"abc","type":"url_verification"}
+[2026-03-13T04:23:41.587Z] 🔐 URL 验证请求
+[2026-03-13T04:23:41.587Z] 🔐 URL 验证请求
+[2026-03-13T04:23:41.587Z] ✅ URL 验证成功，返回 challenge: test123
+[2026-03-13T04:23:41.587Z] ✅ URL 验证成功，返回 challenge: test123
+[2026-03-13T04:23:53.215Z] 📝 POST 原始请求体：{"challenge":"b1a3164c-7832-4fa4-82ce-f3e61bc676de","token":"P5DDNUDpNSVXIzL3zudjcfB71ZKRxnQg","type":"url_verification"}
+[2026-03-13T04:23:53.215Z] 📝 POST 原始请求体：{"challenge":"b1a3164c-7832-4fa4-82ce-f3e61bc676de","token":"P5DDNUDpNSVXIzL3zudjcfB71ZKRxnQg","type":"url_verification"}
+[2026-03-13T04:23:53.215Z] 🔐 URL 验证请求
+[2026-03-13T04:23:53.215Z] 🔐 URL 验证请求
+[2026-03-13T04:23:53.216Z] ✅ URL 验证成功，返回 challenge: b1a3164c-7832-4fa4-82ce-f3e61bc676de
+[2026-03-13T04:23:53.216Z] ✅ URL 验证成功，返回 challenge: b1a3164c-7832-4fa4-82ce-f3e61bc676de
+[2026-03-13T04:31:36.418Z] 📝 POST 原始请求体：{"header":{"event_type":"test"},"event":{}}
+[2026-03-13T04:31:36.418Z] 📝 POST 原始请求体：{"header":{"event_type":"test"},"event":{}}
+[2026-03-13T04:31:36.420Z] 📥 收到事件：test
+[2026-03-13T04:31:36.420Z] 📥 收到事件：test
+[2026-03-13T04:31:36.421Z] 收到消息事件：{"event_type":"test"}
+[2026-03-13T04:31:36.421Z] 收到消息事件：{"event_type":"test"}
+[2026-03-13T04:31:36.421Z] 跳过事件类型：test
+[2026-03-13T04:31:36.421Z] 跳过事件类型：test

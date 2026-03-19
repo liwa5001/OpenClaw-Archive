@@ -5,41 +5,62 @@
 # 修复 cron 环境变量问题
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
+# ==================== Cleanup 机制 ====================
+cleanup() {
+  local exit_code=$?
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] 清理临时资源..." >> logs/daily-hot-report.log
+  
+  # 清理临时文件
+  rm -f /tmp/huxiu_*.tmp /tmp/kr_*.tmp /tmp/bilibili_*.tmp 2>/dev/null || true
+  
+  if [ $exit_code -eq 0 ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✅ 爆款日报任务完成" >> logs/daily-hot-report.log
+  else
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ❌ 爆款日报任务失败 (退出码：$exit_code)" >> logs/daily-hot-report.log
+  fi
+  
+  exit $exit_code
+}
+trap cleanup EXIT INT TERM
+
 set -e
 cd /Users/liwang/.openclaw/workspace
-mkdir -p reports/daily-hot
+mkdir -p reports/daily-hot logs
 
 TODAY=$(date +%Y-%m-%d)
 OUTPUT_FILE="reports/daily-hot/hot-report-ultimate-${TODAY}.md"
 
+echo "========================================" >> logs/daily-hot-report.log
 echo "🔥 生成终极优化版日报 - ${TODAY}"
+echo "超时设置：300 秒" >> logs/daily-hot-report.log
 
 # ==================== 1. 虎嗅 Top10 ====================
 echo "📰 抓取虎嗅..."
 HUXIU_CONTENT=""
-HUXIU_URLS=$(curl -s "https://r.jina.ai/https://www.huxiu.com/" 2>/dev/null | grep -oE "https://www\.huxiu\.com/article/[0-9]+\.html" | head -10 | uniq)
+# 添加超时设置（30 秒）
+HUXIU_URLS=$(curl -s --max-time 30 "https://r.jina.ai/https://www.huxiu.com/" 2>/dev/null | grep -oE "https://www\.huxiu\.com/article/[0-9]+\.html" | head -10 | uniq)
 idx=1
 while IFS= read -r url; do
   [ -z "$url" ] && continue
-  title=$(curl -s "https://r.jina.ai/$url" 2>/dev/null | grep "^Title:" | cut -d: -f2- | head -1)
+  title=$(curl -s --max-time 10 "https://r.jina.ai/$url" 2>/dev/null | grep "^Title:" | cut -d: -f2- | head -1)
   [ -n "$title" ] && HUXIU_CONTENT="${HUXIU_CONTENT}${idx}. ${title}\n   ${url}\n\n" && idx=$((idx+1))
 done <<< "$HUXIU_URLS"
 
 # ==================== 2. 36 氪 Top10 ====================
 echo "📰 抓取 36 氪..."
 KR_CONTENT=""
-KR_URLS=$(curl -s "https://r.jina.ai/https://36kr.com/" 2>/dev/null | grep -oE "https://36kr\.com/p/[0-9]+" | head -10 | uniq)
+KR_URLS=$(curl -s --max-time 30 "https://r.jina.ai/https://36kr.com/" 2>/dev/null | grep -oE "https://36kr\.com/p/[0-9]+" | head -10 | uniq)
 idx=1
 while IFS= read -r url; do
   [ -z "$url" ] && continue
-  title=$(curl -s "https://r.jina.ai/$url" 2>/dev/null | grep "^Title:" | cut -d: -f2- | head -1)
+  title=$(curl -s --max-time 10 "https://r.jina.ai/$url" 2>/dev/null | grep "^Title:" | cut -d: -f2- | head -1)
   [ -n "$title" ] && KR_CONTENT="${KR_CONTENT}${idx}. ${title}\n   ${url}\n\n" && idx=$((idx+1))
 done <<< "$KR_URLS"
 
 # ==================== 3. B 站 Top10 ====================
 echo "📺 抓取 B 站..."
 # 获取 B 站热门视频链接并抓取标题
-BILIBILI_URLS=$(curl -s "https://r.jina.ai/https://www.bilibili.com/v/popular/ranking/all" 2>/dev/null | \
+BILIBILI_URLS=$(curl -s --max-time 30 "https://r.jina.ai/https://www.bilibili.com/v/popular/ranking/all" 2>/dev/null | \
   grep -oE "https://www\.bilibili\.com/video/BV[a-zA-Z0-9]+" | head -10 | uniq)
 
 BILIBILI_CONTENT=""
@@ -89,7 +110,7 @@ except Exception as e:
 
 # ==================== 6. GitHub Trending Top10 ====================
 echo "🐙 抓取 GitHub..."
-GITHUB_CONTENT=$(curl -s "https://api.github.com/search/repositories?q=stars:>1000&sort=stars&order=desc&per_page=10" 2>/dev/null | python3 -c "
+GITHUB_CONTENT=$(curl -s --max-time 30 "https://api.github.com/search/repositories?q=stars:>1000&sort=stars&order=desc&per_page=10" 2>/dev/null | python3 -c "
 import sys,json
 try:
     d=json.load(sys.stdin)
@@ -244,42 +265,6 @@ $(echo -e "$GITHUB_TOP5")
 
 /opt/homebrew/bin/openclaw message send --channel feishu --target "ou_7781abd1e83eae23ccf01fe627f0747f" --message "$FEISHU_MSG"
 
-━━━━━━━━━━━━━━━━━━
-
-📰 国内科技媒体
-
-【虎嗅 Top5】
-$(echo -e "$HUXIU_TOP5")
-
-【36 氪 Top5】
-$(echo -e "$KR_TOP5")
-
-━━━━━━━━━━━━━━━━━━
-
-📺 B 站热门 Top5
-$(echo "$BILIBILI_TOP5")
-
-━━━━━━━━━━━━━━━━━━
-
-📕 小红书热门 Top5
-$(echo -e "$XHS_TOP5")
-
-━━━━━━━━━━━━━━━━━━
-
-🐙 GitHub Trending Top5
-$(echo -e "$GITHUB_TOP5")
-
-━━━━━━━━━━━━━━━━━━
-
-📊 渠道状态
-✅ 虎嗅/36 氪/B 站/小红书/GitHub - 10 条带链接
-✅ 抖音/Boss 直聘 - MCP 可解析
-⚠️ Reddit - 需要代理
-
-📁 完整报告见 workspace
-
----
-🏰 城堡日报 | 自动发送
-"
-
 echo "✅ 飞书发送完成！"
+echo "✅ 爆款日报任务完成 - $(date '+%Y-%m-%d %H:%M:%S')" >> logs/daily-hot-report.log
+echo "💡 合并音频将由独立 cron 任务在 7:35 生成" >> logs/daily-hot-report.log

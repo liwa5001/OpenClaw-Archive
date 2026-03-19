@@ -302,6 +302,83 @@ function getVideoProgressText(progress) {
     return '⏳ 未开始';
 }
 
+/**
+ * 获取当日考题
+ */
+function getDailyQuiz() {
+    try {
+        const today = new Date();
+        const startDate = new Date('2026-03-10'); // 12 周计划开始日期
+        
+        // 计算第几周第几天
+        const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+        const weekNum = Math.floor(diffDays / 7) + 1;
+        const dayNum = (diffDays % 7) + 1;
+        
+        // 读取考题文件
+        const quizFilePath = path.join(WORKSPACE, 'goals/appendix1-w1-daily-plans.md');
+        if (!fs.existsSync(quizFilePath)) {
+            return { error: '考题文件不存在' };
+        }
+        
+        const content = fs.readFileSync(quizFilePath, 'utf8');
+        
+        // 解析当日考题（查找 W{week}D{day} 部分）
+        const dayPattern = new RegExp(`## W${weekNum}D${dayNum}.*?### ❓ 每日考题.*?(?=---|## W|$)`, 's');
+        const match = content.match(dayPattern);
+        
+        if (!match) {
+            return { 
+                week: weekNum, 
+                day: dayNum, 
+                questions: [],
+                message: '未找到今日考题（可能是休息日或计划外日期）'
+            };
+        }
+        
+        const dayContent = match[0];
+        
+        // 提取考题（解析 **1. 问题** 格式）
+        const questions = [];
+        const questionPattern = /\*\*(\d+)\.\s*([^*]+)\*\*\s*\n((?:-\s*\S.*\n)+)/g;
+        let qMatch;
+        
+        while ((qMatch = questionPattern.exec(dayContent)) !== null) {
+            const qNum = qMatch[1];
+            const qText = qMatch[2].trim();
+            const optionsText = qMatch[3];
+            
+            // 解析选项
+            const options = [];
+            const optionPattern = /-\s*([A-D])\.\s*(.+)/g;
+            let oMatch;
+            
+            while ((oMatch = optionPattern.exec(optionsText)) !== null) {
+                options.push({
+                    key: oMatch[1],
+                    text: oMatch[2].trim()
+                });
+            }
+            
+            questions.push({
+                number: parseInt(qNum),
+                question: qText,
+                options: options
+            });
+        }
+        
+        return {
+            week: weekNum,
+            day: dayNum,
+            date: today.toISOString().split('T')[0],
+            questions: questions
+        };
+    } catch (e) {
+        console.error('获取考题失败:', e);
+        return { error: e.message };
+    }
+}
+
 // HTTP 服务器
 const server = http.createServer((req, res) => {
     // CORS
@@ -312,6 +389,14 @@ const server = http.createServer((req, res) => {
     if (req.method === 'OPTIONS') {
         res.writeHead(200);
         res.end();
+        return;
+    }
+    
+    // 获取当日考题 API
+    if (req.method === 'GET' && req.url === '/api/quiz') {
+        const quiz = getDailyQuiz();
+        res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(quiz, null, 2));
         return;
     }
     

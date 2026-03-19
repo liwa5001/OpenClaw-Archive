@@ -1,0 +1,91 @@
+{
+  "userId": "default",
+  "currentDay": 1,
+  "currentTime": {
+    "1": 0,
+    "2": 0
+  },
+  "completedDays": [],
+  "totalTime": 0,
+  "lastListen": "2026-03-16T17:09:46.888Z",
+  "history": [
+    {
+      "day": 1,
+      "time": 0,
+      "duration": null,
+      "timestamp": "2026-03-16T16:55:08.836Z"
+    },
+    {
+      "day": 1,
+      "time": 0,
+      "duration": null,
+      "timestamp": "2026-03-16T16:55:13.711Z"
+    },
+    {
+      "day": 2,
+      "time": 0,
+      "duration": null,
+      "timestamp": "2026-03-16T16:55:18.636Z"
+    },
+    {
+      "day": 1,
+      "time": 0,
+      "duration": null,
+      "timestamp": "2026-03-16T16:55:23.660Z"
+    },
+    {
+      "day": 1,
+      "time": 1.2801674193322639,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T16:59:04.059Z"
+    },
+    {
+      "day": 1,
+      "time": 6.2798577633272865,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T16:59:09.052Z"
+    },
+    {
+      "day": 1,
+      "time": 11.157548633988101,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T16:59:13.924Z"
+    },
+    {
+      "day": 1,
+      "time": 11.157548633988101,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T16:59:14.025Z"
+    },
+    {
+      "day": 1,
+      "time": 11.157548633988101,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T16:59:19.057Z"
+    },
+    {
+      "day": 1,
+      "time": 0,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T17:03:59.446Z"
+    },
+    {
+      "day": 1,
+      "time": 0,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T17:04:04.383Z"
+    },
+    {
+      "day": 1,
+      "time": 0,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T17:07:37.239Z"
+    },
+    {
+      "day": 1,
+      "time": 0,
+      "duration": 56.94,
+      "timestamp": "2026-03-16T17:09:46.888Z"
+    }
+  ]
+}

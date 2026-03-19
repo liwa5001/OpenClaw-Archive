@@ -197,3 +197,286 @@ Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id d
 
 🏰 晨报已准时送达！
 ✅ 晨报任务完成 - 2026-03-12 07:01:16
+📰 晨报任务已触发 - 2026-03-13 07:00:00
+🤖 正在调用 AI 执行新闻抓取...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+我来执行晨报任务。首先抓取各个新闻源的最新内容。
+现在我来整理新闻并发送到飞书，同时记录到 memory 文件。
+✅ **晨报任务已完成！**
+
+**执行摘要：**
+
+1. **新闻抓取** - 成功抓取 5 个新闻源：
+   - 澎湃新闻、联合早报、虎嗅、钛媒体、新华网汽车
+
+2. **新闻整理** - 分类整理 20 条新闻：
+   - 🌍 国际新闻：5 条（伊朗局势、停火条件、霍尔木兹海峡等）
+   - 🇨🇳 国内新闻：5 条（中朝列车、国有房东降租、香港反腐、跨海大桥等）
+   - 🤖 AI 新闻：5 条（龙虾爆雷、腾讯抄袭争议、Qwen/Seedance、滴普科技等）
+   - 🚗 汽车新闻：5 条（保时捷利润暴跌、本田亏损、蔚来盈利、比亚迪闪充等）
+
+3. **飞书发送** - ✅ 成功发送
+   - 目标：ou_7781abd1e83eae23ccf01fe627f0747f
+   - 消息 ID：om_x100b540015eca8a4c1419d6101b680c
+   - 格式：Markdown 链接
+
+4. **记录归档** - 已保存至 `memory/2026-03-13.md`
+
+🏰 晨报已准时送达！
+✅ 晨报任务完成 - 2026-03-13 07:01:53
+📰 晨报任务已触发 - 2026-03-14 07:00:00
+🤖 正在调用 AI 执行新闻抓取...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+gateway connect failed: Error: gateway closed (1000): 
+Gateway agent failed; falling back to embedded: Error: gateway closed (1000 normal closure): no close reason
+Gateway target: ws://127.0.0.1:18789
+Source: local loopback
+Config: /Users/liwang/.openclaw/openclaw.json
+Bind: loopback
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+我来执行晨报任务。首先抓取各个新闻源的最新内容。
+现在我来整理新闻并发送到飞书，同时记录到 memory 文件。
+✅ **晨报任务已完成！**
+
+**执行摘要：**
+
+1. **新闻抓取** - 成功抓取 5 个新闻源：
+   - 澎湃新闻、联合早报、虎嗅、钛媒体、新华网汽车
+
+2. **新闻整理** - 分类整理 20 条新闻：
+   - 🌍 国际新闻：5 条（伊朗战争误判、最高领袖声明、霍尔木兹海峡等）
+   - 🇨🇳 国内新闻：5 条（十五五规划、3·15 晚会、食品安全、中美磋商、苹果佣金下调等）
+   - 🤖 AI 新闻：5 条（高校禁龙虾、腾讯抄袭争议、龙虾概念股、美国 AI 等）
+   - 🚗 汽车新闻：5 条（李想/理想汽车、蔚来盈利、岚图、吉利 AI 人才培养等）
+
+3. **飞书发送** - ✅ 成功发送
+   - 目标：ou_7781abd1e83eae23ccf01fe627f0747f
+   - 消息 ID：om_x100b547d3690d4a0c3bc38c7c72ed48
+   - 格式：Markdown 链接
+
+4. **记录归档** - 已保存至 `memory/2026-03-14.md`
+
+🏰 晨报已准时送达！
+✅ 晨报任务完成 - 2026-03-14 07:02:50
+📰 晨报任务已触发 - 2026-03-15 07:00:00
+🤖 正在调用 AI 执行新闻抓取...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+我来执行晨报任务。首先抓取各个新闻源的最新内容。
+现在我来整理新闻并发送到飞书，同时记录到 memory 文件。
+✅ **晨报任务已完成！**
+
+**执行摘要：**
+
+1. **新闻抓取** - 成功抓取 5 个新闻源：
+   - 澎湃新闻、联合早报、虎嗅、钛媒体、新华网汽车
+
+2. **新闻整理** - 分类整理 20 条新闻：
+   - 🌍 国际新闻：5 条（伊朗战争升级、朝鲜导弹发射、美国悬赏等）
+   - 🇨🇳 国内新闻：5 条（社会工作队伍建设、国台办表态、问题乳膏下架、财政补贴清单、中美会谈等）
+   - 🤖 AI 新闻：5 条（高校禁龙虾、养虾人卸载、龙虾横评、木头姐研判、Block 员工拒薪等）
+   - 🚗 汽车新闻：5 条（比亚迪海外订单、岚图发展、吉利 AI 人才培养、宁德时代转型等）
+
+3. **飞书发送** - ✅ 成功发送
+   - 目标：ou_7781abd1e83eae23ccf01fe627f0747f
+   - 消息 ID：om_x100b546ac3e52ca4c31445f9bf47f80
+   - 格式：Markdown 链接
+
+4. **记录归档** - 已保存至 `memory/2026-03-15.md`
+
+🏰 晨报已准时送达！
+✅ 晨报任务完成 - 2026-03-15 07:02:34
+📰 晨报任务已触发 - 2026-03-16 07:00:01
+🤖 正在调用 AI 执行新闻抓取...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+我来执行晨报任务。首先抓取各个新闻源的最新内容。
+现在我来整理新闻并发送到飞书，同时记录到 memory 文件。
+✅ **晨报任务已完成！**
+
+**执行摘要：**
+
+1. **新闻抓取** - 成功抓取 5 个新闻源：
+   - 澎湃新闻、联合早报、虎嗅、钛媒体、新华网汽车
+
+2. **新闻整理** - 分类整理 20 条新闻：
+   - 🌍 国际新闻：5 条（霍尔木兹海峡危机、伊朗战争、TikTok 交易等）
+   - 🇨🇳 国内新闻：5 条（315 彻查、哈啰电动车调查、酒类治理、中美磋商等）
+   - 🤖 AI 新闻：5 条（Meta 裁员、龙虾成本、手机龙虾应用、马斯克 xAI 等）
+   - 🚗 汽车新闻：5 条（比亚迪收购 F1、玛莎拉蒂接洽小米小鹏、岚图发展等）
+
+3. **飞书发送** - ✅ 成功发送
+   - 目标：ou_7781abd1e83eae23ccf01fe627f0747f
+   - 消息 ID：om_x100b5447e60498a0c356e4c04a4de8a
+   - 格式：Markdown 链接
+
+4. **记录归档** - 已保存至 `memory/2026-03-16.md`
+
+🏰 晨报已准时送达！
+✅ 晨报任务完成 - 2026-03-16 07:03:23
+📰 晨报任务已触发 - 2026-03-17 07:00:00
+🤖 正在调用 AI 执行新闻抓取...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+gateway connect failed: Error: gateway closed (1000): 
+Gateway agent failed; falling back to embedded: Error: gateway closed (1000 normal closure): no close reason
+Gateway target: ws://127.0.0.1:18789
+Source: local loopback
+Config: /Users/liwang/.openclaw/openclaw.json
+Bind: loopback
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+我来执行晨报任务。首先抓取各个新闻源的最新内容。
+现在我来整理新闻并发送到飞书，同时记录到 memory 文件。
+✅ **晨报任务已完成！**
+
+**执行摘要：**
+
+1. **新闻抓取** - 成功抓取 5 个新闻源：
+   - 澎湃新闻、联合早报、虎嗅、钛媒体、新华网汽车
+
+2. **新闻整理** - 分类整理 20 条新闻：
+   - 🌍 国际新闻：5 条（伊朗战争、中美关系、中东能源安全等）
+   - 🇨🇳 国内新闻：5 条（中美经贸磋商、氢能政策、315 晚会等）
+   - 🤖 AI 新闻：5 条（阿里 Token 事业群、龙虾健忘症、AI 投毒、腾讯龙虾特攻队、英伟达 GTC 等）
+   - 🚗 汽车新闻：5 条（理想失速、换电模式、东风奕派、岚图发展等）
+
+3. **飞书发送** - ✅ 成功发送
+   - 目标：ou_7781abd1e83eae23ccf01fe627f0747f
+   - 消息 ID：om_x100b54bc8e1178a0c14583a9fa53a3b
+   - 格式：Markdown 链接
+
+4. **记录归档** - 已保存至 `memory/2026-03-17.md`
+
+🏰 晨报已准时送达！
+✅ 晨报任务完成 - 2026-03-17 07:03:33
+📰 晨报任务已触发 - 2026-03-18 07:00:00
+🤖 正在调用 AI 执行新闻抓取...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+我来执行晨报任务。首先抓取各个新闻源的最新内容。
+现在我来整理新闻并发送到飞书，同时记录到 memory 文件。
+✅ **晨报任务已完成！**
+
+**执行摘要：**
+
+1. **新闻抓取** - 成功抓取 5 个新闻源：
+   - 澎湃新闻、联合早报、虎嗅、钛媒体、新华网汽车
+
+2. **新闻整理** - 分类整理 20 条新闻：
+   - 🌍 国际新闻：5 条（美反恐主任辞职、欧洲拒护航、达利欧论霍尔木兹、欧洲气价等）
+   - 🇨🇳 国内新闻：5 条（钓鱼岛驱离、甘肃副省长被查、中考改革、蒋超良被公诉、女足亚洲杯等）
+   - 🤖 AI 新闻：5 条（韩国芯片、AI 吞噬软件、DeepSeek 改名争议、月之暗面估值、黄仁勋 GTC 演讲等）
+   - 🚗 汽车新闻：5 条（理想失速、黄牛垄断车源、零跑盈利、Momenta R7、东风奕派等）
+
+3. **飞书发送** - ✅ 成功发送
+   - 目标：ou_7781abd1e83eae23ccf01fe627f0747f
+   - 消息 ID：om_x100b54a9982d44a8c4af50b99366bdd
+   - 格式：Markdown 链接
+
+4. **记录归档** - 已保存至 `memory/2026-03-18.md`
+
+🏰 晨报已准时送达！
+✅ 晨报任务完成 - 2026-03-18 07:02:47
+⏳ 等待爆款日报生成后合并音频...
+========================================
+📰 晨报任务已触发 - 2026-03-19 07:00:01
+超时设置：300秒
+🤖 正在调用 AI 执行新闻抓取...
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+gateway connect failed: Error: gateway closed (1000): 
+Gateway agent failed; falling back to embedded: Error: gateway closed (1000 normal closure): no close reason
+Gateway target: ws://127.0.0.1:18789
+Source: local loopback
+Config: /Users/liwang/.openclaw/openclaw.json
+Bind: loopback
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+我来执行晨报任务。首先抓取各个新闻源的最新内容。
+现在我来整理新闻并发送到飞书，同时记录到 memory 文件。
+✅ **晨报任务已完成！**
+
+**执行摘要：**
+
+1. **新闻抓取** - 成功抓取 5 个新闻源：
+   - 澎湃新闻、联合早报、虎嗅、钛媒体、新华网汽车
+
+2. **新闻整理** - 分类整理 20 条新闻：
+   - 🌍 国际新闻：5 条（伊朗情报部长、美国结扎潮、霍尔木兹石油战、阿富汗塔利班、美国负移民增长等）
+   - 🇨🇳 国内新闻：5 条（外资偏爱上海、农村承包地延包、黄岩岛驱离、网易 AI 清退外包、碧桂园召回员工等）
+   - 🤖 AI 新闻：5 条（Kimi 论文、AI 替代研究员、腾讯 QClaw 更新、Token 经济学、中国 AI 出海等）
+   - 🚗 汽车新闻：5 条（速腾 S 上市、岚图泰山 Ultra、启境品牌发布、吉利-NVIDIA 合作、F1 赛车等）
+
+3. **飞书发送** - ✅ 成功发送
+   - 目标：ou_7781abd1e83eae23ccf01fe627f0747f
+   - 消息 ID：om_x100b5486a0156ca4c2c029644afa5bc
+   - 格式：Markdown 链接
+
+4. **记录归档** - 已保存至 `memory/2026-03-19.md`
+
+🏰 晨报已准时送达！
+✅ 晨报任务完成 - 2026-03-19 07:02:54
+⏳ 等待爆款日报生成后合并音频...
+[2026-03-19 07:02:54] 清理临时资源...
+[2026-03-19 07:02:54] ✅ 晨报任务完成

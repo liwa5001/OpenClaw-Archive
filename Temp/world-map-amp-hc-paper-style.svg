@@ -1,0 +1,119 @@
+<svg viewBox="0 0 1650 1650" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- 凹凸效果滤镜 -->
+    <filter id="emboss" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feSpecularLighting in="blur" surfaceScale="3" specularConstant="0.8" specularExponent="10" lighting-color="#white" result="specular">
+        <fePointLight x="-1000" y="-1000" z="1000"/>
+      </feSpecularLighting>
+      <feComposite in="specular" in2="SourceAlpha" operator="in" result="specularOut"/>
+      <feComposite in="SourceGraphic" in2="specularOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    </filter>
+    
+    <!-- 蓝色标记点渐变 -->
+    <radialGradient id="markerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:0.9" />
+      <stop offset="40%" style="stop-color:#4a9eff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#4a9eff;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- 基础地图图片 -->
+  <image xlink:href="map_base.png" x="0" y="0" width="1650" height="1650"/>
+  
+  <!-- 凹凸效果层 -->
+  <image xlink:href="map_base.png" x="0" y="0" width="1650" height="1650" filter="url(#emboss)" style="mix-blend-mode: overlay; opacity: 0.6"/>
+  
+  <!-- 标记点和标签 -->
+  <g font-family="Arial, sans-serif">
+    
+    <!-- Novi (美国) -->
+    <g>
+      <circle cx="600" cy="520" r="50" fill="url(#markerGlow)"/>
+      <circle cx="600" cy="520" r="18" fill="url(#markerGlow)"/>
+      <circle cx="600" cy="520" r="8" fill="#3a8ee6"/>
+      <line x1="600" y1="520" x2="500" y2="420" stroke="#5a9ee6" stroke-width="2" opacity="0.7"/>
+      <rect x="440" y="370" width="120" height="45" fill="white" stroke="#4a9eff" stroke-width="2" rx="5" filter="url(#shadow)"/>
+      <text x="500" y="390" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Novi</text>
+      <text x="500" y="408" text-anchor="middle" font-size="15" fill="#666">2025: 27 → 2026: 23</text>
+    </g>
+    
+    <!-- Queretaro (墨西哥) -->
+    <g>
+      <circle cx="480" cy="720" r="55" fill="url(#markerGlow)"/>
+      <circle cx="480" cy="720" r="20" fill="url(#markerGlow)"/>
+      <circle cx="480" cy="720" r="8" fill="#3a8ee6"/>
+      <line x1="480" y1="720" x2="280" y2="800" stroke="#5a9ee6" stroke-width="2" opacity="0.7"/>
+      <rect x="180" y="800" width="140" height="45" fill="white" stroke="#4a9eff" stroke-width="2" rx="5" filter="url(#shadow)"/>
+      <text x="250" y="820" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Queretaro</text>
+      <text x="250" y="838" text-anchor="middle" font-size="15" fill="#666">2025: 100 → 2026: 91</text>
+    </g>
+    
+    <!-- Lodz (波兰) -->
+    <g>
+      <circle cx="880" cy="360" r="48" fill="url(#markerGlow)"/>
+      <circle cx="880" cy="360" r="17" fill="url(#markerGlow)"/>
+      <circle cx="880" cy="360" r="8" fill="#3a8ee6"/>
+      <line x1="880" y1="360" x2="880" y2="260" stroke="#5a9ee6" stroke-width="2" opacity="0.7"/>
+      <rect x="830" y="210" width="100" height="45" fill="white" stroke="#4a9eff" stroke-width="2" rx="5" filter="url(#shadow)"/>
+      <text x="880" y="230" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Lodz</text>
+      <text x="880" y="248" text-anchor="middle" font-size="15" fill="#666">2025: 13 → 2026: 7</text>
+    </g>
+    
+    <!-- Garching (德国) -->
+    <g>
+      <circle cx="830" cy="410" r="50" fill="url(#markerGlow)"/>
+      <circle cx="830" cy="410" r="18" fill="url(#markerGlow)"/>
+      <circle cx="830" cy="410" r="8" fill="#3a8ee6"/>
+      <line x1="830" y1="410" x2="830" y2="490" stroke="#5a9ee6" stroke-width="2" opacity="0.7"/>
+      <rect x="775" y="490" width="110" height="45" fill="white" stroke="#4a9eff" stroke-width="2" rx="5" filter="url(#shadow)"/>
+      <text x="830" y="510" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Garching</text>
+      <text x="830" y="528" text-anchor="middle" font-size="15" fill="#666">2025: 16 → 2026: 16</text>
+    </g>
+    
+    <!-- Chengdu (成都) -->
+    <g>
+      <circle cx="1280" cy="530" r="52" fill="url(#markerGlow)"/>
+      <circle cx="1280" cy="530" r="19" fill="url(#markerGlow)"/>
+      <circle cx="1280" cy="530" r="8" fill="#3a8ee6"/>
+      <circle cx="1310" cy="500" r="48" fill="url(#markerGlow)"/>
+      <circle cx="1310" cy="500" r="17" fill="url(#markerGlow)"/>
+      <circle cx="1310" cy="500" r="7" fill="#3a8ee6"/>
+      <line x1="1280" y1="530" x2="1280" y2="610" stroke="#5a9ee6" stroke-width="2" opacity="0.7"/>
+      <rect x="1225" y="610" width="110" height="45" fill="white" stroke="#4a9eff" stroke-width="2" rx="5" filter="url(#shadow)"/>
+      <text x="1280" y="630" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Chengdu</text>
+      <text x="1280" y="648" text-anchor="middle" font-size="15" fill="#666">2025: 11 → 2026: 7</text>
+    </g>
+    
+    <!-- Bangalore (印度) -->
+    <g>
+      <circle cx="1220" cy="650" r="54" fill="url(#markerGlow)"/>
+      <circle cx="1220" cy="650" r="19" fill="url(#markerGlow)"/>
+      <circle cx="1220" cy="650" r="8" fill="#3a8ee6"/>
+      <line x1="1220" y1="650" x2="1220" y2="730" stroke="#5a9ee6" stroke-width="2" opacity="0.7"/>
+      <rect x="1155" y="730" width="130" height="45" fill="white" stroke="#4a9eff" stroke-width="2" rx="5" filter="url(#shadow)"/>
+      <text x="1220" y="750" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Bangalore</text>
+      <text x="1220" y="768" text-anchor="middle" font-size="15" fill="#666">2025: 143 → 2026: 124</text>
+    </g>
+    
+    <!-- Suzhou (苏州) -->
+    <g>
+      <circle cx="1420" cy="510" r="52" fill="url(#markerGlow)"/>
+      <circle cx="1420" cy="510" r="19" fill="url(#markerGlow)"/>
+      <circle cx="1420" cy="510" r="8" fill="#3a8ee6"/>
+      <circle cx="1470" cy="490" r="50" fill="url(#markerGlow)"/>
+      <circle cx="1470" cy="490" r="18" fill="url(#markerGlow)"/>
+      <circle cx="1470" cy="490" r="8" fill="#3a8ee6"/>
+      <line x1="1420" y1="510" x2="1420" y2="420" stroke="#5a9ee6" stroke-width="2" opacity="0.7"/>
+      <rect x="1360" y="370" width="120" height="45" fill="white" stroke="#4a9eff" stroke-width="2" rx="5" filter="url(#shadow)"/>
+      <text x="1420" y="390" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Suzhou</text>
+      <text x="1420" y="408" text-anchor="middle" font-size="15" fill="#666">2025: 269 → 2026: 231</text>
+    </g>
+    
+  </g>
+</svg>

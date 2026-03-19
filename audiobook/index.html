@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 每天懂点人情世故 - 有声读本</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #888;
+            font-size: 14px;
+        }
+        
+        .day-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        
+        .day-btn {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .day-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .day-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .day-btn.completed {
+            background: #4ade80;
+            border-color: #4ade80;
+            color: white;
+        }
+        
+        .player-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .chapter-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .audio-player {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 0.1s;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .control-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .control-btn:hover {
+            background: #764ba2;
+            transform: scale(1.1);
+        }
+        
+        .control-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .speed-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .speed-btn {
+            padding: 5px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .speed-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .status-section {
+            background: #f0f9ff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+        }
+        
+        .status-item:last-child {
+            border-bottom: none;
+        }
+        
+        .status-label {
+            color: #666;
+        }
+        
+        .status-value {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .message {
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .message.success {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .message.info {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 每天懂点人情世故</h1>
+            <div class="subtitle">有声读本 · 女生朗读版</div>
+        </div>
+        
+        <div id="message-area"></div>
+        
+        <div class="status-section" style="margin-bottom: 20px;">
+            <div class="status-item">
+                <span class="status-label">📊 总进度</span>
+                <span class="status-value" id="total-progress">0%</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">📚 已完成</span>
+                <span class="status-value" id="completed-chapters">0/13 章</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">⏱️ 已听时长</span>
+                <span class="status-value" id="total-time-listened">0 分钟</span>
+            </div>
+        </div>
+        
+        <div class="day-selector" id="day-selector">
+            <!-- 动态生成 -->
+        </div>
+        
+        <div class="status-section" style="margin-top: 20px;">
+            <div class="status-item" style="flex-direction: column; align-items: flex-start;">
+                <span class="status-label" style="margin-bottom: 10px; font-weight: bold;">📖 全书目录</span>
+                <div id="chapter-list" style="width: 100%;"></div>
+            </div>
+        </div>
+        
+        <div class="player-section">
+            <div class="chapter-title" id="chapter-title">加载中...</div>
+            
+            <audio id="audio-player" class="audio-player" controls>
+                <source src="" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            
+            <div class="progress-info">
+                <span id="current-time">00:00</span>
+                <span id="duration">00:00</span>
+            </div>
+            
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="prev-btn" onclick="prevChapter()">⏮</button>
+                <button class="control-btn" id="play-btn" onclick="togglePlay()">▶</button>
+                <button class="control-btn" id="next-btn" onclick="nextChapter()">⏭</button>
+            </div>
+            
+            <div class="speed-selector">
+                <button class="speed-btn" onclick="setSpeed(0.75)">0.75x</button>
+                <button class="speed-btn active" onclick="setSpeed(1.0)">1.0x</button>
+                <button class="speed-btn" onclick="setSpeed(1.25)">1.25x</button>
+                <button class="speed-btn" onclick="setSpeed(1.5)">1.5x</button>
+            </div>
+        </div>
+        
+        <div class="status-section">
+            <div class="status-item">
+                <span class="status-label">📖 当前进度</span>
+                <span class="status-value" id="progress-text">第 1 天 / 共 13 天</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">⏱️ 已听时长</span>
+                <span class="status-value" id="total-time">0 分钟</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">✅ 完成天数</span>
+                <span class="status-value" id="completed-days">0/13</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">🎯 预计完成</span>
+                <span class="status-value" id="estimated-finish">--</span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 配置
+        const TOTAL_DAYS = 13;
+        const CHAPTERS = [
+            { day: 1, title: '第 1 章 序言', file: 'day01.aiff' },
+            { day: 2, title: '第 2-4 章 大智若愚 (上)', file: 'day02.aiff' },
+            { day: 3, title: '第 2-4 章 大智若愚 (下)', file: 'day03.aiff' },
+            { day: 4, title: '第 5-8 章 吃亏是福 (上)', file: 'day04.aiff' },
+            { day: 5, title: '第 5-8 章 吃亏是福 (下)', file: 'day05.aiff' },
+            { day: 6, title: '第 9-11 章 谦虚忍耐', file: 'day06.aiff' },
+            { day: 7, title: '第 12-14 章 宽容大度 (上)', file: 'day07.aiff' },
+            { day: 8, title: '第 12-14 章 宽容大度 (下)', file: 'day08.aiff' },
+            { day: 9, title: '第 15-18 章 管住舌头 (上)', file: 'day09.aiff' },
+            { day: 10, title: '第 15-18 章 管住舌头 (下)', file: 'day10.aiff' },
+            { day: 11, title: '第 19-21 章 韬光养晦', file: 'day11.aiff' },
+            { day: 12, title: '第 22-27 章 方圆哲学 + 知足常乐', file: 'day12.aiff' },
+            { day: 13, title: '第 28-39 章 人情往来 + 感恩有爱', file: 'day13.aiff' }
+        ];
+        
+        // 状态
+        let currentDay = 1;
+        let currentSpeed = 1.0;
+        let progress = JSON.parse(localStorage.getItem('audiobook-progress')) || {
+            currentDay: 1,
+            currentTime: {},
+            completedDays: [],
+            totalTime: 0,
+            lastListen: null
+        };
+        
+        // 初始化
+        function init() {
+            renderDaySelector();
+            loadChapter(progress.currentDay || 1);
+            updateStatus();
+            
+            // 加载上次播放位置
+            const savedTime = progress.currentTime[currentDay];
+            if (savedTime) {
+                document.getElementById('audio-player').currentTime = savedTime;
+            }
+        }
+        
+        // 渲染天数选择器
+        function renderDaySelector() {
+            const container = document.getElementById('day-selector');
+            container.innerHTML = CHAPTERS.map(chapter => `
+                <button class="day-btn ${chapter.day === currentDay ? 'active' : ''} ${progress.completedDays.includes(chapter.day) ? 'completed' : ''}" 
+                        onclick="loadChapter(${chapter.day})">
+                    Day ${chapter.day}
+                </button>
+            `).join('');
+            
+            // 渲染目录列表
+            renderChapterList();
+            
+            // 更新总进度
+            updateTotalProgress();
+        }
+        
+        // 渲染目录列表
+        function renderChapterList() {
+            const container = document.getElementById('chapter-list');
+            container.innerHTML = CHAPTERS.map(chapter => {
+                const isCompleted = progress.completedDays.includes(chapter.day);
+                const isCurrent = chapter.day === currentDay;
+                return `
+                    <div class="status-item" style="cursor: pointer; padding: 10px;" onclick="loadChapter(${chapter.day})">
+                        <span class="status-label" style="${isCurrent ? 'color: #667eea; font-weight: bold;' : ''}">
+                            ${isCompleted ? '✅' : isCurrent ? '▶️' : '⏳'} 
+                            第${chapter.day}天：${chapter.title}
+                        </span>
+                        <span class="status-value" style="font-size: 12px; color: #999;">
+                            ${isCompleted ? '已完成' : isCurrent ? '播放中' : '未开始'}
+                        </span>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // 更新总进度
+        function updateTotalProgress() {
+            const completedCount = progress.completedDays.length;
+            const percentage = Math.round((completedCount / TOTAL_DAYS) * 100);
+            
+            document.getElementById('total-progress').textContent = percentage + '%';
+            document.getElementById('completed-chapters').textContent = `${completedCount}/${TOTAL_DAYS} 章`;
+            
+            // 计算已听时长（估算）
+            const estimatedMinutes = completedCount * 30; // 每天约 30 分钟
+            document.getElementById('total-time-listened').textContent = `${estimatedMinutes} 分钟`;
+        }
+        
+        // 加载章节
+        function loadChapter(day) {
+            currentDay = day;
+            const chapter = CHAPTERS.find(c => c.day === day);
+            
+            document.getElementById('chapter-title').textContent = chapter.title;
+            document.getElementById('audio-player').src = `/audio/${chapter.file}`;
+            
+            // 恢复播放进度
+            const savedTime = progress.currentTime[day] || 0;
+            document.getElementById('audio-player').currentTime = savedTime;
+            
+            // 更新按钮状态
+            document.getElementById('play-btn').textContent = '▶';
+            
+            // 更新选择器高亮
+            renderDaySelector();
+            updateStatus();
+            
+            showMessage(`已加载：${chapter.title}`, 'info');
+        }
+        
+        // 播放控制
+        function togglePlay() {
+            const audio = document.getElementById('audio-player');
+            const btn = document.getElementById('play-btn');
+            
+            if (audio.paused) {
+                audio.play();
+                btn.textContent = '⏸';
+            } else {
+                audio.pause();
+                btn.textContent = '▶';
+                saveProgress();
+            }
+        }
+        
+        function prevChapter() {
+            if (currentDay > 1) {
+                saveProgress();
+                loadChapter(currentDay - 1);
+            }
+        }
+        
+        function nextChapter() {
+            if (currentDay < TOTAL_DAYS) {
+                saveProgress();
+                loadChapter(currentDay + 1);
+            }
+        }
+        
+        // 语速控制
+        function setSpeed(speed) {
+            currentSpeed = speed;
+            document.getElementById('audio-player').playbackRate = speed;
+            
+            document.querySelectorAll('.speed-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(speed.toFixed(2).replace('.00', ''))) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+        
+        // 保存进度
+        function saveProgress() {
+            const audio = document.getElementById('audio-player');
+            progress.currentTime[currentDay] = audio.currentTime;
+            progress.lastListen = new Date().toISOString();
+            localStorage.setItem('audiobook-progress', JSON.stringify(progress));
+            
+            // 同步到服务器
+            fetch('/api/progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    day: currentDay,
+                    time: audio.currentTime,
+                    duration: audio.duration
+                })
+            }).catch(console.error);
+        }
+        
+        // 更新状态显示
+        function updateStatus() {
+            document.getElementById('progress-text').textContent = `第 ${currentDay} 天 / 共 ${TOTAL_DAYS} 天`;
+            document.getElementById('total-time').textContent = `${Math.round(progress.totalTime / 60)} 分钟`;
+            document.getElementById('completed-days').textContent = `${progress.completedDays.length}/${TOTAL_DAYS}`;
+            
+            // 预计完成日期
+            if (progress.lastListen) {
+                const lastDate = new Date(progress.lastListen);
+                const remaining = TOTAL_DAYS - progress.completedDays.length;
+                const estimated = new Date(lastDate.getTime() + remaining * 24 * 60 * 60 * 1000);
+                document.getElementById('estimated-finish').textContent = 
+                    `${estimated.getMonth() + 1}/${estimated.getDate()}`;
+            }
+        }
+        
+        // 显示消息
+        function showMessage(text, type = 'info') {
+            const area = document.getElementById('message-area');
+            area.innerHTML = `<div class="message ${type}">${text}</div>`;
+            setTimeout(() => area.innerHTML = '', 3000);
+        }
+        
+        // 事件监听
+        document.getElementById('audio-player').addEventListener('timeupdate', () => {
+            const audio = document.getElementById('audio-player');
+            const percent = (audio.currentTime / audio.duration) * 100;
+            document.getElementById('progress-fill').style.width = `${percent}%`;
+            document.getElementById('current-time').textContent = formatTime(audio.currentTime);
+            document.getElementById('duration').textContent = formatTime(audio.duration);
+        });
+        
+        document.getElementById('audio-player').addEventListener('ended', () => {
+            // 标记为完成
+            if (!progress.completedDays.includes(currentDay)) {
+                progress.completedDays.push(currentDay);
+                progress.totalTime += 1800; // 30 分钟
+                localStorage.setItem('audiobook-progress', JSON.stringify(progress));
+                renderDaySelector();
+                updateStatus();
+                showMessage(`🎉 第 ${currentDay} 天已完成！`, 'success');
+            }
+            
+            // 自动播放下一章
+            if (currentDay < TOTAL_DAYS) {
+                setTimeout(() => nextChapter(), 2000);
+            }
+        });
+        
+        document.getElementById('progress-bar').addEventListener('click', (e) => {
+            const audio = document.getElementById('audio-player');
+            const rect = e.target.getBoundingClientRect();
+            const percent = (e.clientX - rect.left) / rect.width;
+            audio.currentTime = percent * audio.duration;
+        });
+        
+        // 格式化时间
+        function formatTime(seconds) {
+            if (!seconds || isNaN(seconds)) return '00:00';
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+        
+        // 自动保存进度（每 5 秒）
+        setInterval(saveProgress, 5000);
+        
+        // 页面关闭前保存
+        window.addEventListener('beforeunload', saveProgress);
+        
+        // 启动
+        init();
+    </script>
+</body>
+</html>

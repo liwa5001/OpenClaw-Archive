@@ -1,0 +1,9 @@
+
+💰 财富堡服务器已启动
+📊 端口：8898
+💾 数据目录：/Users/liwang/.openclaw/workspace/daily-output/wealth/daily-stats
+🌐 访问地址：http://localhost:8898
+
+按 Ctrl+C 停止服务
+
+[2026-03-15T02:34:21.278Z] 财富数据已保存：2026-03-15-wealth-stats.md

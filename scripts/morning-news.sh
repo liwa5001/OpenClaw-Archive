@@ -15,12 +15,36 @@ set -e
 # 修复 cron 环境 PATH 问题 - 确保 node 和 openclaw 可用
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
+# ==================== Cleanup 机制 ====================
+cleanup() {
+  local exit_code=$?
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] 清理临时资源..." >> logs/morning-news.log
+  
+  # 清理临时文件
+  rm -f /tmp/morning-news-task.txt 2>/dev/null || true
+  
+  if [ $exit_code -eq 0 ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✅ 晨报任务完成" >> logs/morning-news.log
+  else
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ❌ 晨报任务失败 (退出码：$exit_code)" >> logs/morning-news.log
+  fi
+  
+  exit $exit_code
+}
+trap cleanup EXIT INT TERM
+
+# ==================== 超时设置 ====================
+# 整个脚本最大执行时间：5 分钟
+TIMEOUT_SECONDS=300
+
 cd /Users/liwang/.openclaw/workspace
 
 # 创建日志目录
 mkdir -p logs
 
+echo "========================================" >> logs/morning-news.log
 echo "📰 晨报任务已触发 - $(date '+%Y-%m-%d %H:%M:%S')" >> logs/morning-news.log
+echo "超时设置：${TIMEOUT_SECONDS}秒" >> logs/morning-news.log
 
 # 使用 OpenClaw 执行 AI 新闻抓取任务
 cat > /tmp/morning-news-task.txt << 'TASK'
@@ -81,3 +105,4 @@ echo "🤖 正在调用 AI 执行新闻抓取..." >> logs/morning-news.log
 /opt/homebrew/bin/openclaw agent --session-id "morning-news" --message "$(cat /tmp/morning-news-task.txt)" >> logs/morning-news.log 2>&1 || echo "⚠️ AI 任务执行失败" >> logs/morning-news.log
 
 echo "✅ 晨报任务完成 - $(date '+%Y-%m-%d %H:%M:%S')" >> logs/morning-news.log
+echo "⏳ 等待爆款日报生成后合并音频..." >> logs/morning-news.log

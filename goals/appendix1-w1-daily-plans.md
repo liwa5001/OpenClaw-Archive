@@ -18,22 +18,22 @@
 ### 📝 学习内容详情
 
 **OpenClaw (30min):**
-- 观看 OC-01《一个视频搞懂 OpenClaw！》(10min)
+- 观看 OC-01《[一个视频搞懂 OpenClaw！](https://www.bilibili.com/video/BV1jEAaz3E6K/)》(10min)
 - 阅读 OpenClaw 文档 (15min)
 - 整理架构笔记 (5min)
 
 **创哥 AI (30min):**
-- 观看 CG-01《15 分钟用 OpenClaw 搭建人生系统》(14:33)
+- 观看 CG-01《[15 分钟用 OpenClaw 搭建人生系统](https://www.bilibili.com/video/BV14TPgzAEvo/)》(14:33)
 - 记录创哥的技术选型思路
 - 思考如何应用到自己的项目
 
 **Jeff Su (30min):**
-- 观看 JS-06《Give Me 9 Minutes, I'll Make You AI-Native》(8:55)
+- 观看 JS-06《[Give Me 9 Minutes, I'll Make You AI-Native](https://www.youtube.com/watch?v=E7YiKBeOneo)》(8:55)
 - 列出 3 个 AI 使用习惯
 - 规划明日实践
 
 **剪映 (30min):**
-- 观看 VM-01 P1-P2 界面认识
+- 观看 VM-01《[剪映教程 P1-P2 界面认识](https://www.bilibili.com/video/BV1CSpcz7ELp/)》
 - 安装剪映专业版
 - 熟悉界面布局
 
@@ -87,23 +87,23 @@
 ### 📝 学习内容详情
 
 **OpenClaw (30min):**
-- 观看 OC-02《保姆级 OpenClaw 全网最细教学》前 20 分钟
+- 观看 OC-02《[保姆级 OpenClaw 全网最细教学](https://www.bilibili.com/video/BV1TpAZzeEiZ/)》前 20 分钟
 - 按照视频安装 Node.js
 - 安装 OpenClaw 依赖
 - 运行第一个 demo
 
 **创哥 AI (30min):**
-- 观看 CG-02《一个视频让你 OpenClaw 技术瞬间超越 90% 的人》(9:55)
+- 观看 CG-02《[一个视频让你 OpenClaw 技术瞬间超越 90% 的人](https://www.bilibili.com/video/BV17mAUzxETS/)》(9:55)
 - 实践创哥演示的技巧
 - 记录遇到的问题和解决方案
 
 **Jeff Su (30min):**
-- 观看 JS-05《3 AI Habits So Powerful》(10:50)
+- 观看 JS-05《[3 AI Habits So Powerful](https://www.youtube.com/watch?v=31cp_OXKzkI)》(10:50)
 - 实践 3 个 AI 习惯
 - 记录使用感受
 
 **剪映 (30min):**
-- 观看 VM-01 P3-P4 导入素材
+- 观看 VM-01《[剪映教程 P3-P4 导入素材](https://www.bilibili.com/video/BV1CSpcz7ELp/)》
 - 导入自己的视频素材
 - 练习素材管理
 
@@ -157,22 +157,22 @@
 ### 📝 学习内容详情
 
 **OpenClaw (30min):**
-- 观看 OC-02 Sub-Agent 概念部分
+- 观看 OC-02《[保姆级 OpenClaw 全网最细教学](https://www.bilibili.com/video/BV1TpAZzeEiZ/)》Sub-Agent 概念部分
 - 理解 Sub-Agent 与 Agent 的区别
 - 绘制概念图
 
 **创哥 AI (30min):**
-- 观看 CG-03《在 AI 时代，程序员怎么做技术选型？》(3:09)
+- 观看 CG-03《[在 AI 时代，程序员怎么做技术选型？](https://www.bilibili.com/video/BV16k7tzuEqh/)》(3:09)
 - 学习创哥的技术选型框架
 - 应用到自己的项目
 
 **Jeff Su (30min):**
-- 观看 JS-04《I Switched 50% of My AI Work to Claude》(12:44)
+- 观看 JS-04《[I Switched 50% of My AI Work to Claude](https://www.youtube.com/watch?v=RudrWy9uPZE)》(12:44)
 - 了解 Claude 的优势场景
 - 规划 Claude 使用计划
 
 **剪映 (30min):**
-- 观看 VM-01 P5-P6 基础剪辑
+- 观看 VM-01《[剪映教程 P5-P6 基础剪辑](https://www.bilibili.com/video/BV1CSpcz7ELp/)》
 - 练习切割、删除、移动片段
 - 导出第一个剪辑作品
 
@@ -231,17 +231,17 @@
 - 测试基本功能
 
 **创哥 AI (30min):**
-- 观看 CG-04《谁才是 AI 生成网站的最强王者？》(6:44)
+- 观看 CG-04《[谁才是 AI 生成网站的最强王者？](https://www.bilibili.com/video/BV1yv78zQERh/)》(6:44)
 - 对比不同 AI 生成网站工具
 - 记录优缺点
 
 **Jeff Su (30min):**
-- 观看 JS-03《Learn 80% of NotebookLM in Under 13 Minutes》(12:36)
+- 观看 JS-03《[Learn 80% of NotebookLM in Under 13 Minutes](https://www.youtube.com/watch?v=EOmgC3-hznM)》(12:36)
 - 注册 NotebookLM
 - 创建第一个项目
 
 **剪映 (30min):**
-- 观看 VM-01 P7-P8 转场特效
+- 观看 VM-01《[剪映教程 P7-P8 转场特效](https://www.bilibili.com/video/BV1CSpcz7ELp/)》
 - 练习添加转场效果
 - 调整转场时长
 
@@ -295,22 +295,22 @@
 ### 📝 学习内容详情
 
 **OpenClaw (30min):**
-- 观看 OC-03《手把手彻底学会 Agent Skills！》前 10 分钟
+- 观看 OC-03《[手把手彻底学会 Agent Skills！](https://www.bilibili.com/video/BV1G3FNznEiS/)》前 10 分钟
 - 理解 Skill 的概念
 - 创建第一个简单 Skill
 
 **创哥 AI (30min):**
-- 观看 CG-05《Cursor 1.0 更新，确实有亮点》(4:52)
+- 观看 CG-05《[Cursor 1.0 更新，确实有亮点](https://www.bilibili.com/video/BV1NLTyziERN/)》(4:52)
 - 了解 Cursor 新功能
 - 对比其他 AI 编程工具
 
 **Jeff Su (30min):**
-- 观看 JS-02《Complete AI Video Editing Tutorial》(27:00)
+- 观看 JS-02《[Complete AI Video Editing Tutorial](https://www.youtube.com/watch?v=-mBKM7Aqmy8)》(27:00)
 - 了解 Descript 功能
 - 注册 Descript 账号
 
 **剪映 (30min):**
-- 观看 VM-01 P9-P10 字幕添加
+- 观看 VM-01《[剪映教程 P9-P10 字幕添加](https://www.bilibili.com/video/BV1CSpcz7ELp/)》
 - 练习添加字幕
 - 调整字幕样式
 
@@ -369,17 +369,17 @@
 - 优化用户体验
 
 **创哥 AI (30min):**
-- 复习 CG-01 和 CG-02
+- 复习 CG-01《[15 分钟用 OpenClaw 搭建人生系统](https://www.bilibili.com/video/BV14TPgzAEvo/)》和 CG-02《[一个视频让你 OpenClaw 技术瞬间超越 90% 的人](https://www.bilibili.com/video/BV17mAUzxETS/)》
 - 整理创哥的技术选型思路
 - 实践创哥的方法论
 
 **Jeff Su (30min):**
-- 观看 JS-01《How to Create Cinematic AI Videos》(17:01)
+- 观看 JS-01《[How to Create Cinematic AI Videos](https://www.youtube.com/watch?v=0-0gFuDwmXI)》(17:01)
 - 了解 AI 视频生成流程
 - 规划自己的 AI 视频项目
 
 **剪映 (30min):**
-- 观看 VM-01 P11-P12 音频处理
+- 观看 VM-01《[剪映教程 P11-P12 音频处理](https://www.bilibili.com/video/BV1CSpcz7ELp/)》
 - 练习添加背景音乐
 - 调整音频音量
 
@@ -433,7 +433,9 @@
 ### 📝 学习内容详情
 
 **OpenClaw (30min):**
-- 复习本周 OC-01/02/03
+- 复习 OC-01《[一个视频搞懂 OpenClaw！](https://www.bilibili.com/video/BV1jEAaz3E6K/)》
+- 复习 OC-02《[保姆级 OpenClaw 全网最细教学](https://www.bilibili.com/video/BV1TpAZzeEiZ/)》
+- 复习 OC-03《[手把手彻底学会 Agent Skills！](https://www.bilibili.com/video/BV1G3FNznEiS/)》
 - 整理架构笔记
 - 准备 W1 考核
 
@@ -443,7 +445,8 @@
 - 规划 W2 实践方向
 
 **Jeff Su (30min):**
-- 复习 JS-05 和 JS-06
+- 复习 JS-05《[3 AI Habits So Powerful](https://www.youtube.com/watch?v=31cp_OXKzkI)》
+- 复习 JS-06《[Give Me 9 Minutes, I'll Make You AI-Native](https://www.youtube.com/watch?v=E7YiKBeOneo)》
 - 实践 AI 习惯
 - 更新 AI-Native 系统
 
@@ -526,3 +529,38 @@
 **[← 返回主文档](growth-12week-plan-v5.md)**
 
 **下一周：** [W2 每日计划与考题](#w2-daily-plans)
+
+---
+
+## 🔗 视频链接汇总
+
+### OpenClaw 系列
+| 编号 | 视频名称 | 链接 |
+|------|---------|------|
+| OC-01 | 一个视频搞懂 OpenClaw！ | [📺 B 站](https://www.bilibili.com/video/BV1jEAaz3E6K/) |
+| OC-02 | 保姆级 OpenClaw 全网最细教学 | [📺 B 站](https://www.bilibili.com/video/BV1TpAZzeEiZ/) |
+| OC-03 | 手把手彻底学会 Agent Skills！ | [📺 B 站](https://www.bilibili.com/video/BV1G3FNznEiS/) |
+
+### 创哥 AI 系列
+| 编号 | 视频名称 | 链接 |
+|------|---------|------|
+| CG-01 | 15 分钟用 OpenClaw 搭建人生系统 | [📺 B 站](https://www.bilibili.com/video/BV14TPgzAEvo/) |
+| CG-02 | 一个视频让你 OpenClaw 技术瞬间超越 90% 的人 | [📺 B 站](https://www.bilibili.com/video/BV17mAUzxETS/) |
+| CG-03 | 在 AI 时代，程序员怎么做技术选型？ | [📺 B 站](https://www.bilibili.com/video/BV16k7tzuEqh/) |
+| CG-04 | 谁才是 AI 生成网站的最强王者？ | [📺 B 站](https://www.bilibili.com/video/BV1yv78zQERh/) |
+| CG-05 | Cursor 1.0 更新，确实有亮点 | [📺 B 站](https://www.bilibili.com/video/BV1NLTyziERN/) |
+
+### Jeff Su 系列
+| 编号 | 视频名称 | 链接 |
+|------|---------|------|
+| JS-01 | How to Create Cinematic AI Videos | [📺 YouTube](https://www.youtube.com/watch?v=0-0gFuDwmXI) |
+| JS-02 | Complete AI Video Editing Tutorial | [📺 YouTube](https://www.youtube.com/watch?v=-mBKM7Aqmy8) |
+| JS-03 | Learn 80% of NotebookLM in Under 13 Minutes | [📺 YouTube](https://www.youtube.com/watch?v=EOmgC3-hznM) |
+| JS-04 | I Switched 50% of My AI Work to Claude | [📺 YouTube](https://www.youtube.com/watch?v=RudrWy9uPZE) |
+| JS-05 | 3 AI Habits So Powerful | [📺 YouTube](https://www.youtube.com/watch?v=31cp_OXKzkI) |
+| JS-06 | Give Me 9 Minutes, I'll Make You AI-Native | [📺 YouTube](https://www.youtube.com/watch?v=E7YiKBeOneo) |
+
+### 剪映教程系列
+| 编号 | 视频名称 | 链接 |
+|------|---------|------|
+| VM-01 | 剪映教程 - 一口气学会剪辑 | [📺 B 站](https://www.bilibili.com/video/BV1CSpcz7ELp/) |

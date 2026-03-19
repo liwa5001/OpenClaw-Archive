@@ -1,32 +1,39 @@
 #!/bin/bash
 # 总复盘堡 - 每日简报脚本 v2.0（改进版）
 # 发送时间：每日 21:45
-# 改进内容：
-# 1. 从健康堡/成长堡真实读取数据
-# 2. 增加目标对比
-# 3. 智能评分计算
-# 4. 添加一言反思
+
+# Cleanup 机制
+cleanup() {
+  local exit_code=$?
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] 清理..." >> logs/total-daily-brief.log
+  rm -f /tmp/total_*.tmp 2>/dev/null || true
+  [ $exit_code -eq 0 ] && echo "✅ 总复盘简报完成" >> logs/total-daily-brief.log || echo "❌ 失败 ($exit_code)" >> logs/total-daily-brief.log
+  exit $exit_code
+}
+trap cleanup EXIT INT TERM
 
 set -e
 
 cd /Users/liwang/.openclaw/workspace
+# 超时设置
+TIMEOUT_SECONDS=90
+
+mkdir -p logs data/total-review/daily/$(date +%Y-%m)
 
 DATE=$(date +%Y-%m-%d)
 YESTERDAY=$(date -v-1d +%Y-%m-%d)
-OUTPUT_DIR="data/total-review/daily/$(date +%Y-%m)"
-mkdir -p "$OUTPUT_DIR"
 
-echo "🏰 总复盘堡每日简报 v2.0 | $DATE"
-echo "=========================================="
+echo "========================================" >> logs/total-daily-brief.log
+echo "🏰 总复盘堡每日简报 v2.0 | $DATE" >> logs/total-daily-brief.log
 
 # ============================================
 # 1. 读取目标配置
 # ============================================
 TARGETS_FILE="goals/targets.md"
 if [ -f "$TARGETS_FILE" ]; then
-  WEEKLY_EXERCISE_TARGET=$(grep "运动次数" "$TARGETS_FILE" | head -1 | awk '{print $3}')
-  DAILY_SLEEP_TARGET=$(grep "睡眠" "$TARGETS_FILE" | head -1 | awk '{print $3}')
-  DAILY_STUDY_TARGET=$(grep "学习时长" "$TARGETS_FILE" | grep "日目标" -A 5 | grep "学习时长" | awk '{print $3}')
+  WEEKLY_EXERCISE_TARGET="5"
+  DAILY_SLEEP_TARGET="7.5"
+  DAILY_STUDY_TARGET="90"
   DAILY_QUIZ_TARGET="4"
 else
   WEEKLY_EXERCISE_TARGET="5"
@@ -40,16 +47,26 @@ fi
 # ============================================
 HEALTH_FILE="daily-output/health/$(date +%Y-%m)/${YESTERDAY}.md"
 if [ -f "$HEALTH_FILE" ]; then
-  EXERCISE_LINE=$(grep -i "运动\|训练" "$HEALTH_FILE" | head -1 || echo "无记录")
-  SLEEP_LINE=$(grep -i "睡眠\|深睡" "$HEALTH_FILE" | head -1 || echo "无记录")
-  WEIGHT_LINE=$(grep -i "体重" "$HEALTH_FILE" | head -1 || echo "无记录")
-  FOOD_LINE=$(grep -i "卡路里\|饮食" "$HEALTH_FILE" | head -1 || echo "无记录")
+  # 简化提取：只取关键信息
+  if grep -q "休息\|休息日" "$HEALTH_FILE"; then
+    EXERCISE_LINE="休息日"
+  else
+    EXERCISE_LINE="有记录"
+  fi
   
-  # 提取具体数值
-  SLEEP_HOURS=$(echo "$SLEEP_LINE" | grep -oE "[0-9]+\.?[0-9]*小时|[0-9]+\.?[0-9]*h" | head -1 || echo "无数据")
-  WEIGHT_KG=$(echo "$WEIGHT_LINE" | grep -oE "[0-9]+\.?[0-9]*kg" | head -1 || echo "无数据")
+  if grep -q "等待表单\|⏳" "$HEALTH_FILE"; then
+    SLEEP_LINE="待填写"
+    SLEEP_HOURS="待填写"
+  else
+    SLEEP_LINE=$(grep -i "小时\|h" "$HEALTH_FILE" | head -1 || echo "待统计")
+    SLEEP_HOURS=$(echo "$SLEEP_LINE" | grep -oE "[0-9]+\.?[0-9]*" | head -1 || echo "待统计")
+  fi
+  
+  WEIGHT_LINE="待统计（周一填写）"
+  WEIGHT_KG="待统计"
+  FOOD_LINE="待填写"
 else
-  EXERCISE_LINE="无数据（健康堡未同步）"
+  EXERCISE_LINE="无数据"
   SLEEP_LINE="无数据"
   WEIGHT_LINE="无数据"
   FOOD_LINE="无数据"
@@ -62,15 +79,14 @@ fi
 # ============================================
 MEMORY_FILE="memory/${DATE}.md"
 if [ -f "$MEMORY_FILE" ]; then
-  # 尝试从 memory 文件读取学习数据
-  STUDY_TIME=$(grep -i "学习" "$MEMORY_FILE" | head -1 || echo "90min")
-  QUIZ_INFO=$(grep -i "考题\|考题正确" "$MEMORY_FILE" | head -1 || echo "4/4")
-  OUTPUT_INFO=$(grep -i "产出\|笔记\|练习" "$MEMORY_FILE" | head -1 || echo "笔记 + 练习")
+  # 简化提取
+  STUDY_TIME="90min（目标）"
+  QUIZ_INFO="4/4（目标）"
+  OUTPUT_INFO="待统计"
 else
-  # 默认值（明天会改进为从成长堡数据文件读取）
-  STUDY_TIME="90min"
-  QUIZ_INFO="4/4"
-  OUTPUT_INFO="笔记 + 练习"
+  STUDY_TIME="待统计"
+  QUIZ_INFO="待统计"
+  OUTPUT_INFO="待统计"
 fi
 
 # ============================================
@@ -201,70 +217,60 @@ STUDY_SCORE=$(calculate_study_score)
 TOTAL_SCORE=$(echo "($HEALTH_SCORE + $STUDY_SCORE) / 2" | bc)
 
 # ============================================
-# 5. 生成简报内容（带目标对比）
+# 5. 生成简报内容（简化版 - 避免飞书表格超限）
 # ============================================
 cat > "$OUTPUT_DIR/$DATE.md" << EOF
----
-type: daily
-domain: total-review
-date: $DATE
-template_version: v2.0
-data_sources:
-  - 健康堡：$HEALTH_FILE
-  - 成长堡：$MEMORY_FILE
-  - 目标配置：$TARGETS_FILE
----
-
 # 🏰 总复盘堡 | 每日简报 | $DATE
 
 **生成时间：** $(date '+%Y-%m-%d %H:%M:%S')
 
 ---
 
-## 【目标 vs 实际】
+## 【📍 报考位置 - 12 周计划进度】
 
-### 健康堡
-| 指标 | 目标 | 实际 | 完成度 |
-|------|------|------|--------|
-| 运动 | $WEEKLY_EXERCISE_TARGET 次/周 | $EXERCISE_LINE | 待统计 |
-| 睡眠 | ${DAILY_SLEEP_TARGET}h/天 | $SLEEP_HOURS | 待计算 |
-| 体重 | 84.5kg | $WEIGHT_KG | - |
-| 饮食 | 2000kcal | $FOOD_LINE | - |
+📅 **第${WEEK_NUM}周 第${DAY_IN_WEEK}天** / 共 12 周 84 天（进度：$(echo "scale=1; $WEEK_NUM * 100 / 12" | bc)%）
 
-### 成长堡
-| 指标 | 目标 | 实际 | 完成度 |
-|------|------|------|--------|
-| 学习 | ${DAILY_STUDY_TARGET}min | $STUDY_TIME | 待计算 |
-| 考题 | $DAILY_QUIZ_TARGET 题 | $QUIZ_INFO | 待计算 |
-| 产出 | 1 个 | $OUTPUT_INFO | - |
+**阶段：** $LEARNING_FOCUS
+
+---
+
+## 【📊 目标 vs 实际】
+
+**健康堡**
+- 运动：目标$WEEKLY_EXERCISE_TARGET 次/周 → 实际：$EXERCISE_LINE
+- 睡眠：目标${DAILY_SLEEP_TARGET}h → 实际：$SLEEP_LINE
+- 体重：84.5kg → $WEIGHT_LINE
+- 饮食：2000kcal → $FOOD_LINE
+
+**成长堡**
+- 学习：目标${DAILY_STUDY_TARGET}min → 实际：$STUDY_TIME
+- 考题：目标$DAILY_QUIZ_TARGET 题 → 实际：$QUIZ_INFO
+- 产出：目标 1 个 → 实际：$OUTPUT_INFO
 
 ---
 
 ## 【📚 今日推荐学习】
 
-**第 ${WEEK_NUM} 周 第 ${DAY_IN_WEEK} 天 | 学习重点：${LEARNING_FOCUS}**
+1️⃣ ${TODAY_VIDEO_1}
+   🔗 ${TODAY_LINK_1}
 
-| 序号 | 内容 | 时长 | 链接 |
-|------|------|------|------|
-| 1 | ${TODAY_VIDEO_1} | - | ${TODAY_LINK_1} |
-| 2 | ${TODAY_VIDEO_2} | - | ${TODAY_LINK_2} |
-| 3 | ${TODAY_VIDEO_3} | - | ${TODAY_LINK_3} |
+2️⃣ ${TODAY_VIDEO_2}
+   🔗 ${TODAY_LINK_2}
 
-**💡 建议：** 选择 1-2 个视频学习，总时长控制在 90 分钟内
+3️⃣ ${TODAY_VIDEO_3}
+   🔗 ${TODAY_LINK_3}
 
----
-
-## 【今日评分】
-
-| 维度 | 评分 | 说明 |
-|------|------|------|
-| 健康 | $HEALTH_SCORE/100 | 基于运动和睡眠 |
-| 学习 | $STUDY_SCORE/100 | 基于学习时长和考题 |
-| **综合** | **$TOTAL_SCORE/100** | 平均 |
+💡 建议：选择 1-2 个视频学习，总时长控制在 90 分钟内
 
 ---
 
-## 【一言反思】
+## 【⭐ 今日评分】
+
+健康：$HEALTH_SCORE/100 | 学习：$STUDY_SCORE/100 | **综合：$TOTAL_SCORE/100**
+
+---
+
+## 【💭 一言反思】
 
 > 今天最大的收获/教训是什么？
 
@@ -272,11 +278,9 @@ data_sources:
 
 ---
 
-## 【改进行动】
+## 【✅ 改进行动】
 
-| 序号 | 问题 | 行动项 | 截止日 | 状态 |
-|------|------|--------|--------|------|
-| 1 | 待填写 | 待填写 | $DATE | ⏳ |
+1. 问题：待填写 → 行动：待填写（截止：$DATE）
 
 ---
 

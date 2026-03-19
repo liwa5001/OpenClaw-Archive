@@ -28,6 +28,26 @@
     "basename-agent": {
       "version": "2.1.0",
       "installedAt": 1772867347215
+    },
+    "self-improving-agent": {
+      "version": "3.0.5",
+      "installedAt": 1773922082256
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1773922142209
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1773922201296
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1773922501756
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1773923042637
     }
   }
 }

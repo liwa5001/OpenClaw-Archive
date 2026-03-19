@@ -1,21 +1,19 @@
 {
-<<<<<<< HEAD
-  "devDependencies": {
-    "puppeteer": "^24.38.0"
-=======
-  "name": "relationship-form",
+  "name": "openclaw-workspace",
   "version": "1.0.0",
-  "description": "",
-  "main": "cumulative-summary.js",
+  "description": "OpenClaw Workspace",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@xenova/transformers": "^2.17.2"
->>>>>>> 3c53e07be71090069fe0806eb0375a34445aa249
+    "@xenova/transformers": "^2.17.2",
+    "exceljs": "^4.4.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.38.0"
   }
 }

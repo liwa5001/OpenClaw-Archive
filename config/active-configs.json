@@ -61,22 +61,20 @@
       ]
     },
     
-    "training-reminder-morning": {
-      "name": "训练提醒（当天）",
+    "training-reminder": {
+      "name": "训练提醒",
       "status": "active",
       "script": "/workspace/scripts/training-reminder.sh",
-      "schedule": "0 8 * * *",
+      "schedule": "0 11 * * *",
       "channel": "feishu",
-      "logFile": "/workspace/logs/health-tracker.log"
-    },
-    
-    "training-reminder-evening": {
-      "name": "训练提醒（预告）",
-      "status": "active",
-      "script": "/workspace/scripts/training-reminder.sh",
-      "schedule": "0 20 * * *",
-      "channel": "feishu",
-      "logFile": "/workspace/logs/health-tracker.log"
+      "logFile": "/workspace/logs/health-tracker.log",
+      "history": [
+        {
+          "date": "2026-03-19",
+          "change": "从每天两次（8:00+20:00）改为每天一次 11:00",
+          "reason": "用户要求统一为 11:00 发送"
+        }
+      ]
     },
     
     "workout-analysis": {

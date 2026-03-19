@@ -1,0 +1,82 @@
+{
+  "Bangalore": {
+    "Internal_2025": 131,
+    "External_2025": 12,
+    "Total_2025": 143,
+    "Internal_2026": 120,
+    "External_2026": 4,
+    "Total_2026": 124
+  },
+  "Chengdu": {
+    "Internal_2025": 11,
+    "External_2025": 0,
+    "Total_2025": 11,
+    "Internal_2026": 7,
+    "External_2026": 0,
+    "Total_2026": 7
+  },
+  "Garching": {
+    "Internal_2025": 15,
+    "External_2025": 0,
+    "Total_2025": 15,
+    "Internal_2026": 15,
+    "External_2026": 0,
+    "Total_2026": 15
+  },
+  "Karlsbad": {
+    "Internal_2025": 1,
+    "External_2025": 0,
+    "Total_2025": 1,
+    "Internal_2026": 1,
+    "External_2026": 0,
+    "Total_2026": 1
+  },
+  "Nagoya": {
+    "Internal_2025": 11,
+    "External_2025": 1,
+    "Total_2025": 12,
+    "Internal_2026": 11,
+    "External_2026": 0,
+    "Total_2026": 11
+  },
+  "Novi": {
+    "Internal_2025": 25,
+    "External_2025": 2,
+    "Total_2025": 27,
+    "Internal_2026": 23,
+    "External_2026": 0,
+    "Total_2026": 23
+  },
+  "Queretaro": {
+    "Internal_2025": 95,
+    "External_2025": 5,
+    "Total_2025": 100,
+    "Internal_2026": 83,
+    "External_2026": 8,
+    "Total_2026": 91
+  },
+  "Shanghai": {
+    "Internal_2025": 8,
+    "External_2025": 0,
+    "Total_2025": 8,
+    "Internal_2026": 8,
+    "External_2026": 0,
+    "Total_2026": 8
+  },
+  "Suzhou": {
+    "Internal_2025": 210,
+    "External_2025": 51,
+    "Total_2025": 261,
+    "Internal_2026": 182,
+    "External_2026": 41,
+    "Total_2026": 223
+  },
+  "Szekesfehervar": {
+    "Internal_2025": 2,
+    "External_2025": 0,
+    "Total_2025": 2,
+    "Internal_2026": 1,
+    "External_2026": 0,
+    "Total_2026": 1
+  }
+}

@@ -14,6 +14,10 @@ log() {
 
 log "=== 健康堡每日问卷发送开始 ==="
 
+# 同步 Strava 数据
+log "🔄 同步 Strava 数据..."
+cd "$WORKSPACE" && ./scripts/sync-strava-data.sh >> "$LOG_FILE" 2>&1 || log "⚠️ Strava 同步失败"
+
 # 获取本机 IP
 LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
 

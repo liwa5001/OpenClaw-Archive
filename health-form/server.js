@@ -380,6 +380,48 @@ const server = http.createServer((req, res) => {
         return;
     }
     
+    // Strava 数据 API
+    if (req.method === 'GET' && req.url === '/api/strava/today') {
+        try {
+            const stravaFile = path.join(WORKSPACE, 'data/strava/latest-activities.json');
+            const today = new Date().toISOString().split('T')[0];
+            
+            if (!fs.existsSync(stravaFile)) {
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ found: false, message: '无 Strava 数据' }));
+                return;
+            }
+            
+            const activities = JSON.parse(fs.readFileSync(stravaFile, 'utf8'));
+            const todayActivity = activities.find(act => {
+                const startDate = act.start_date_local.split('T')[0];
+                return startDate === today;
+            });
+            
+            if (todayActivity) {
+                const result = {
+                    found: true,
+                    name: todayActivity.name,
+                    type: todayActivity.sport_type || todayActivity.type,
+                    distance: (todayActivity.distance / 1000).toFixed(2),
+                    duration: Math.round(todayActivity.moving_time / 60),
+                    date: todayActivity.start_date_local
+                };
+                log(`🏃 Strava 今日数据：${result.name} (${result.distance}km, ${result.duration}分钟)`);
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify(result));
+            } else {
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ found: false, message: '今天暂无 Strava 记录' }));
+            }
+        } catch (e) {
+            log(`❌ Strava API 错误：${e.message}`);
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: e.message }));
+        }
+        return;
+    }
+    
     // 提交数据
     if (req.method === 'POST' && req.url === '/submit') {
         let body = '';
@@ -409,6 +451,18 @@ const server = http.createServer((req, res) => {
     res.end('Not Found');
 });
 
+// 启动时自动同步 Strava 数据
+function syncStravaOnStartup() {
+    log('🔄 启动时同步 Strava 数据...');
+    try {
+        const { execSync } = require('child_process');
+        const result = execSync('cd /Users/liwang/.openclaw/workspace && ./scripts/sync-strava-data.sh 2>&1', { encoding: 'utf8' });
+        log('✅ Strava 同步完成:\\n' + result.split('\\n').slice(-5).join('\\n'));
+    } catch (e) {
+        log('⚠️ Strava 同步失败：' + e.message);
+    }
+}
+
 server.listen(PORT, '0.0.0.0', () => {
     log(`🚀 健康堡表单服务器启动在端口 ${PORT}`);
     log(`📝 表单地址：http://0.0.0.0:${PORT}/`);
@@ -428,4 +482,7 @@ server.listen(PORT, '0.0.0.0', () => {
         if (localIp !== 'localhost') break;
     }
     log(`🌐 局域网访问地址：http://${localIp}:${PORT}/`);
+    
+    // 启动时同步 Strava
+    syncStravaOnStartup();
 });

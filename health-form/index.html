@@ -564,6 +564,60 @@
             fields.classList.toggle('hidden', isResting);
         }
         
+        // 加载 Strava 数据并预填充表单
+        async function loadStravaData() {
+            try {
+                const response = await fetch('/api/strava/today');
+                const data = await response.json();
+                
+                if (data.found) {
+                    console.log('✅ 找到 Strava 数据:', data.name);
+                    
+                    // 自动设置为"有训练"
+                    document.getElementById('exercise_yes').checked = true;
+                    toggleExerciseFields();
+                    
+                    // 填充运动类型
+                    const typeSelect = document.getElementById('exercise_type');
+                    const typeValue = data.type.toLowerCase();
+                    if (typeValue.includes('ride') || typeValue.includes('virtualride')) {
+                        typeSelect.value = '骑行';
+                    } else if (typeValue.includes('run')) {
+                        typeSelect.value = '跑步';
+                    } else if (typeValue.includes('walk')) {
+                        typeSelect.value = '步行';
+                    } else if (typeValue.includes('swim')) {
+                        typeSelect.value = '游泳';
+                    } else if (typeValue.includes('workout')) {
+                        typeSelect.value = '健身';
+                    } else {
+                        typeSelect.value = '其他';
+                    }
+                    
+                    // 填充运动时长
+                    document.getElementById('exercise_duration').value = data.duration;
+                    
+                    // 填充运动距离
+                    document.getElementById('exercise_distance').value = data.distance;
+                    
+                    // 显示提示信息
+                    const stravaNote = document.createElement('div');
+                    stravaNote.id = 'stravaNote';
+                    stravaNote.style.cssText = 'background: #e8f5e9; padding: 10px; border-radius: 8px; margin-bottom: 15px; font-size: 13px; color: #2e7d32;';
+                    stravaNote.innerHTML = `✅ Strava 数据已自动加载：<strong>${data.name}</strong> (${data.distance}km, ${data.duration}分钟)<br>如有其他补充，可在下方继续填写~`;
+                    
+                    const exerciseSection = document.querySelector('#exerciseFields .form-group');
+                    if (exerciseSection && !document.getElementById('stravaNote')) {
+                        exerciseSection.parentNode.insertBefore(stravaNote, exerciseSection);
+                    }
+                } else {
+                    console.log('ℹ️ 今天暂无 Strava 记录');
+                }
+            } catch (error) {
+                console.error('❌ 加载 Strava 数据失败:', error);
+            }
+        }
+        
         // 表单提交
         document.getElementById('healthForm').addEventListener('submit', async function(e) {
             e.preventDefault();
@@ -660,6 +714,7 @@
         // 初始化
         setDate();
         toggleExerciseFields();
+        loadStravaData(); // 加载 Strava 数据
     </script>
 </body>
 </html>

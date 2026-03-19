@@ -1,0 +1,567 @@
+🚨 六堡系统全面测试 v2.0
+开始时间：2026-03-19 01:37:21
+日志文件：logs/test-20260319/full-test-20260319_013720.log
+========================================
+
+========================================
+📋 阶段 1: 单任务功能测试
+========================================
+
+--- 测试 T01: 每日晨报 ---
+[0;34m[INFO][0m 测试 #1: T01-01 脚本可执行
+[0;32m[PASS][0m ✓ T01-01 脚本可执行
+[0;34m[INFO][0m 测试 #2: T01-02 语法检查
+[0;32m[PASS][0m ✓ T01-02 语法检查
+[1;33m[WARN][0m T01-03 无测试模式，跳过实际运行
+[0;34m[INFO][0m 测试 #3: T01-04 检查依赖
+[0;32m[PASS][0m ✓ T01-04 检查依赖
+[0;34m[INFO][0m 测试 #4: T01-05 错误处理
+[0;32m[PASS][0m ✓ T01-05 错误处理
+[0;34m[INFO][0m 测试 #5: T01-06 日志记录
+[0;32m[PASS][0m ✓ T01-06 日志记录
+[0;34m[INFO][0m 测试 #6: T01-07 超时设置
+[0;31m[FAIL][0m ✗ T01-07 超时设置 - 执行失败
+[1;33m[WARN][0m T01-07 未设置超时
+[0;34m[INFO][0m 测试 #7: T01-08 清理机制
+[0;31m[FAIL][0m ✗ T01-08 清理机制 - 执行失败
+[1;33m[WARN][0m T01-08 无 cleanup 机制
+
+--- 测试 T02: 每日爆款日报 ---
+[0;34m[INFO][0m 测试 #8: T02-01 脚本可执行
+[0;32m[PASS][0m ✓ T02-01 脚本可执行
+[0;34m[INFO][0m 测试 #9: T02-02 语法检查
+[0;32m[PASS][0m ✓ T02-02 语法检查
+[1;33m[WARN][0m T02-03 无测试模式，跳过实际运行
+[0;34m[INFO][0m 测试 #10: T02-04 检查依赖
+[0;32m[PASS][0m ✓ T02-04 检查依赖
+[0;34m[INFO][0m 测试 #11: T02-05 错误处理
+[0;32m[PASS][0m ✓ T02-05 错误处理
+[0;34m[INFO][0m 测试 #12: T02-06 日志记录
+[0;32m[PASS][0m ✓ T02-06 日志记录
+[0;34m[INFO][0m 测试 #13: T02-07 超时设置
+[0;32m[PASS][0m ✓ T02-07 超时设置
+[0;34m[INFO][0m 测试 #14: T02-08 清理机制
+[0;31m[FAIL][0m ✗ T02-08 清理机制 - 执行失败
+[1;33m[WARN][0m T02-08 无 cleanup 机制
+
+--- 测试 T03: Castle Six 问卷 ---
+[0;34m[INFO][0m 测试 #15: T03-01 脚本可执行
+[0;32m[PASS][0m ✓ T03-01 脚本可执行
+[0;34m[INFO][0m 测试 #16: T03-02 语法检查
+[0;32m[PASS][0m ✓ T03-02 语法检查
+[1;33m[WARN][0m T03-03 无测试模式，跳过实际运行
+[0;34m[INFO][0m 测试 #17: T03-04 检查依赖
+[0;32m[PASS][0m ✓ T03-04 检查依赖
+[0;34m[INFO][0m 测试 #18: T03-05 错误处理
+[0;32m[PASS][0m ✓ T03-05 错误处理
+[0;34m[INFO][0m 测试 #19: T03-06 日志记录
+[0;32m[PASS][0m ✓ T03-06 日志记录
+[0;34m[INFO][0m 测试 #20: T03-07 超时设置
+[0;31m[FAIL][0m ✗ T03-07 超时设置 - 执行失败
+[1;33m[WARN][0m T03-07 未设置超时
+[0;34m[INFO][0m 测试 #21: T03-08 清理机制
+[0;31m[FAIL][0m ✗ T03-08 清理机制 - 执行失败
+[1;33m[WARN][0m T03-08 无 cleanup 机制
+
+--- 测试 T04: 健康堡每日复盘 ---
+[0;34m[INFO][0m 测试 #22: T04-01 脚本可执行
+[0;32m[PASS][0m ✓ T04-01 脚本可执行
+[0;34m[INFO][0m 测试 #23: T04-02 语法检查
+[0;32m[PASS][0m ✓ T04-02 语法检查
+[0;34m[INFO][0m 测试 #24: T04-03 测试运行
+💪 健康堡每日复盘 v3.0 (表单版) | 2026-03-19
+==========================================
+📊 获取 2026-03-18 运动数据...
+✅ 统计文件已生成：daily-output/health/daily-stats/2026-03-18-health-stats.md
+✅ 归档文件已生成：daily-output/health/2026-03/2026-03-18.md
+🌐 使用公网链接：https://violation-proposals-hamilton-glasses.trycloudflare.com
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b549a639b4534c397aae5a937b1d (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 表单链接已发送（飞书） - Thu Mar 19 01:37:25 CST 2026
+
+==========================================
+✅ 健康堡每日复盘 v3.0 (表单版) 完成！
+   - 统计文件：daily-output/health/daily-stats/2026-03-18-health-stats.md ✅
+   - 归档文件：daily-output/health/2026-03/2026-03-18.md ✅
+   - 表单链接：https://violation-proposals-hamilton-glasses.trycloudflare.com ✅
+   - 飞书消息已发送 ✅
+   - 等待用户填写表单 ⏳
+==========================================
+
+📝 用户操作流程：
+   1. 点击飞书消息中的链接
+   2. 填写健康数据表单
+   3. 提交后自动保存 + 发送确认
+
+[0;32m[PASS][0m ✓ T04-03 测试运行
+[0;34m[INFO][0m 测试 #25: T04-04 检查依赖
+[0;32m[PASS][0m ✓ T04-04 检查依赖
+[0;34m[INFO][0m 测试 #26: T04-05 错误处理
+[0;32m[PASS][0m ✓ T04-05 错误处理
+[0;34m[INFO][0m 测试 #27: T04-06 日志记录
+[0;32m[PASS][0m ✓ T04-06 日志记录
+[0;34m[INFO][0m 测试 #28: T04-07 超时设置
+[0;31m[FAIL][0m ✗ T04-07 超时设置 - 执行失败
+[1;33m[WARN][0m T04-07 未设置超时
+[0;34m[INFO][0m 测试 #29: T04-08 清理机制
+[0;32m[PASS][0m ✓ T04-08 清理机制
+
+--- 测试 T05: 成长堡每日复盘 ---
+[0;34m[INFO][0m 测试 #30: T05-01 脚本可执行
+[0;32m[PASS][0m ✓ T05-01 脚本可执行
+[0;34m[INFO][0m 测试 #31: T05-02 语法检查
+[0;32m[PASS][0m ✓ T05-02 语法检查
+[1;33m[WARN][0m T05-03 无测试模式，跳过实际运行
+[0;34m[INFO][0m 测试 #32: T05-04 检查依赖
+[0;32m[PASS][0m ✓ T05-04 检查依赖
+[0;34m[INFO][0m 测试 #33: T05-05 错误处理
+[0;32m[PASS][0m ✓ T05-05 错误处理
+[0;34m[INFO][0m 测试 #34: T05-06 日志记录
+[0;32m[PASS][0m ✓ T05-06 日志记录
+[0;34m[INFO][0m 测试 #35: T05-07 超时设置
+[0;31m[FAIL][0m ✗ T05-07 超时设置 - 执行失败
+[1;33m[WARN][0m T05-07 未设置超时
+[0;34m[INFO][0m 测试 #36: T05-08 清理机制
+[0;31m[FAIL][0m ✗ T05-08 清理机制 - 执行失败
+[1;33m[WARN][0m T05-08 无 cleanup 机制
+
+--- 测试 T06: 总复盘堡每日简报 ---
+[0;34m[INFO][0m 测试 #37: T06-01 脚本可执行
+[0;32m[PASS][0m ✓ T06-01 脚本可执行
+[0;34m[INFO][0m 测试 #38: T06-02 语法检查
+[0;32m[PASS][0m ✓ T06-02 语法检查
+[1;33m[WARN][0m T06-03 无测试模式，跳过实际运行
+[0;34m[INFO][0m 测试 #39: T06-04 检查依赖
+[0;32m[PASS][0m ✓ T06-04 检查依赖
+[0;34m[INFO][0m 测试 #40: T06-05 错误处理
+[0;32m[PASS][0m ✓ T06-05 错误处理
+[0;34m[INFO][0m 测试 #41: T06-06 日志记录
+[0;31m[FAIL][0m ✗ T06-06 日志记录 - 执行失败
+[0;34m[INFO][0m 测试 #42: T06-07 超时设置
+[0;31m[FAIL][0m ✗ T06-07 超时设置 - 执行失败
+[1;33m[WARN][0m T06-07 未设置超时
+[0;34m[INFO][0m 测试 #43: T06-08 清理机制
+[0;31m[FAIL][0m ✗ T06-08 清理机制 - 执行失败
+[1;33m[WARN][0m T06-08 无 cleanup 机制
+
+--- 测试 T07: 财富堡每周复盘 ---
+[0;34m[INFO][0m 测试 #44: T07-01 脚本可执行
+[0;32m[PASS][0m ✓ T07-01 脚本可执行
+[0;34m[INFO][0m 测试 #45: T07-02 语法检查
+[0;32m[PASS][0m ✓ T07-02 语法检查
+[1;33m[WARN][0m T07-03 无测试模式，跳过实际运行
+[0;34m[INFO][0m 测试 #46: T07-04 检查依赖
+[0;32m[PASS][0m ✓ T07-04 检查依赖
+[0;34m[INFO][0m 测试 #47: T07-05 错误处理
+[0;32m[PASS][0m ✓ T07-05 错误处理
+[0;34m[INFO][0m 测试 #48: T07-06 日志记录
+[0;32m[PASS][0m ✓ T07-06 日志记录
+[0;34m[INFO][0m 测试 #49: T07-07 超时设置
+[0;31m[FAIL][0m ✗ T07-07 超时设置 - 执行失败
+[1;33m[WARN][0m T07-07 未设置超时
+[0;34m[INFO][0m 测试 #50: T07-08 清理机制
+[0;31m[FAIL][0m ✗ T07-08 清理机制 - 执行失败
+[1;33m[WARN][0m T07-08 无 cleanup 机制
+
+--- 测试 T08: 关系堡每周问卷 ---
+[0;34m[INFO][0m 测试 #51: T08-01 脚本可执行
+[0;32m[PASS][0m ✓ T08-01 脚本可执行
+[0;34m[INFO][0m 测试 #52: T08-02 语法检查
+[0;32m[PASS][0m ✓ T08-02 语法检查
+[1;33m[WARN][0m T08-03 无测试模式，跳过实际运行
+[0;34m[INFO][0m 测试 #53: T08-04 检查依赖
+[0;32m[PASS][0m ✓ T08-04 检查依赖
+[0;34m[INFO][0m 测试 #54: T08-05 错误处理
+[0;32m[PASS][0m ✓ T08-05 错误处理
+[0;34m[INFO][0m 测试 #55: T08-06 日志记录
+[0;32m[PASS][0m ✓ T08-06 日志记录
+[0;34m[INFO][0m 测试 #56: T08-07 超时设置
+[0;31m[FAIL][0m ✗ T08-07 超时设置 - 执行失败
+[1;33m[WARN][0m T08-07 未设置超时
+[0;34m[INFO][0m 测试 #57: T08-08 清理机制
+[0;31m[FAIL][0m ✗ T08-08 清理机制 - 执行失败
+[1;33m[WARN][0m T08-08 无 cleanup 机制
+
+--- 测试 T09: Gateway 重启 ---
+[1;33m[WARN][0m 跳过系统任务：Gateway 重启
+
+--- 测试 T10: Strava 数据同步 ---
+[0;34m[INFO][0m 测试 #58: T10-01 脚本可执行
+[0;32m[PASS][0m ✓ T10-01 脚本可执行
+[0;34m[INFO][0m 测试 #59: T10-02 语法检查
+[0;32m[PASS][0m ✓ T10-02 语法检查
+[0;34m[INFO][0m 测试 #60: T10-03 测试运行
+[2026-03-19 01:37:25] === Strava 数据同步开始 ===
+[2026-03-19 01:37:26] ✅ Token 已就绪
+[2026-03-19 01:37:26] 📊 获取 Strava 运动数据...
+[2026-03-19 01:37:27] ✅ 成功获取 30 条运动记录
+[2026-03-19 01:37:27] 📁 数据已保存：data/strava/latest-activities.json
+🏃 最新活动: Zwift - Cobbled Crown in Richmond
+   日期: 2026-03-17 20:53
+   类型: VirtualRide
+   距离: 24.43km
+   时长: 54分钟
+[2026-03-19 01:37:27] === Strava 数据同步完成 ===
+[0;32m[PASS][0m ✓ T10-03 测试运行
+[0;34m[INFO][0m 测试 #61: T10-04 检查依赖
+[0;32m[PASS][0m ✓ T10-04 检查依赖
+[0;34m[INFO][0m 测试 #62: T10-05 错误处理
+[0;32m[PASS][0m ✓ T10-05 错误处理
+[0;34m[INFO][0m 测试 #63: T10-06 日志记录
+[0;32m[PASS][0m ✓ T10-06 日志记录
+[0;34m[INFO][0m 测试 #64: T10-07 超时设置
+[0;31m[FAIL][0m ✗ T10-07 超时设置 - 执行失败
+[1;33m[WARN][0m T10-07 未设置超时
+[0;34m[INFO][0m 测试 #65: T10-08 清理机制
+[0;31m[FAIL][0m ✗ T10-08 清理机制 - 执行失败
+[1;33m[WARN][0m T10-08 无 cleanup 机制
+
+========================================
+🔍 阶段 2: 边界情况测试
+========================================
+
+--- CC-01: 网络异常模拟 ---
+[0;34m[INFO][0m 测试 #66: CC-01-01 检查超时设置
+scripts/daily-hot-report-ultimate.sh:  title=$(curl -s --max-time 10 "https://r.jina.ai/${url}" 2>/dev/null | grep "^Title:" | cut -d: -f2- | sed 's/_哔哩哔哩_bilibili$//' | sed 's/_哔哩哔哩 bilibili$//')
+scripts/daily-hot-report-ultimate.sh:REDDIT_CONTENT=$(curl -s "https://www.reddit.com/r/technology/hot.json?limit=10" -H "User-Agent: Mozilla/5.0" --max-time 30 2>/dev/null | python3 -c "
+scripts/full-system-test.sh:    run_test "${task_id}-07 超时设置" "grep -qE 'timeout|max-time|timeout-seconds' ${task_script}" || \
+scripts/full-system-test.sh:  run_test "CC-01-01 检查超时设置" "grep -r 'max-time\\|timeout' scripts/*.sh"
+scripts/morning-news-check.sh:    if curl -s --max-time 5 "$url" >/dev/null 2>&1; then
+scripts/stress-test-10rounds-v2.sh:  if openclaw sessions spawn --runtime subagent --label "stress-test-morning-${ROUND}" --task "生成今日晨报并发送到飞书" --mode run --timeout-seconds 60 > /dev/null 2>&1; then
+scripts/stress-test-10rounds-v2.sh:  if openclaw sessions spawn --runtime subagent --label "stress-test-hot-${ROUND}" --task "生成今日爆款日报并发送到飞书" --mode run --timeout-seconds 90 > /dev/null 2>&1; then
+scripts/total-monthly-summary.sh:  await page.goto('file://' + process.cwd() + '/monthly-temp.html', { waitUntil: 'networkidle0', timeout: 60000 });
+scripts/total-weekly-review.sh:  await page.goto('file://' + process.cwd() + '/weekly-temp.html', { waitUntil: 'networkidle0', timeout: 60000 });
+scripts/weather-report.sh:WEATHER_RESULT=$(curl -s --max-time 15 "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,wind_speed_10m_max&timezone=Asia%2FShanghai&forecast_days=4" 2>/dev/null | python3 -c "
+[0;32m[PASS][0m ✓ CC-01-01 检查超时设置
+[0;34m[INFO][0m 测试 #67: CC-01-02 检查错误处理
+scripts/analyze-workout.sh:  local has_workout=$(echo "$activities" | grep -c "$YESTERDAY" || echo "0")
+scripts/auto-refresh-strava-token.sh:echo "过期时间：$(date -d "@$EXPIRES_AT" 2>/dev/null || date -r "$EXPIRES_AT" 2>/dev/null || echo "无法解析")"
+scripts/castle-six-daily-questionnaire.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/castle-six-daily-questionnaire.sh:START_TS=$(date -j -f "%Y-%m-%d" "$START_DATE" +%s 2>/dev/null || echo "1773091200")
+scripts/daily-hot-report-full.sh:  awk '{print NR". "$0}' 2>/dev/null || echo "B 站抓取失败")
+scripts/daily-hot-report-full.sh:" 2>/dev/null || echo "Reddit 抓取失败")
+scripts/daily-hot-report-full.sh:  grep -E "^  [a-zA-Z]" | head -10 | awk '{print NR". "$0}' 2>/dev/null || echo "GitHub 抓取失败")
+scripts/daily-hot-report-ultimate.sh:" 2>/dev/null || echo "小红书需要配置 Cookie")
+scripts/daily-hot-report-ultimate.sh:" 2>/dev/null || echo "Reddit 抓取超时")
+scripts/daily-hot-report-ultimate.sh:" 2>/dev/null || echo "GitHub API 限制")
+scripts/daily-hot-report.sh:BILIBILI_HOT=$(python3 /Users/liwang/.openclaw/workspace/scripts/bilibili-hot.py 2>/dev/null || echo "B 站抓取失败")
+scripts/full-system-test.sh:  run_test "CC-01-02 检查错误处理" "grep -r '|| echo\\|if.*curl.*failed' scripts/*.sh" || \
+scripts/full-system-test.sh:| 失败数 | ${FAILED_TESTS} | 0 | $([ $FAILED_TESTS -eq 0 ] && echo "✅" || echo "❌") |
+scripts/full-system-test.sh:| 通过率 | ${pass_rate}% | ≥95% | $([ $pass_rate -ge 95 ] && echo "✅" || echo "❌") |
+scripts/full-system-test.sh:  grep "\[WARN\]" "$LOG_FILE" | head -20 >> "$REPORT_FILE" || echo "无警告项" >> "$REPORT_FILE"
+scripts/full-system-test.sh:$([ $pass_rate -ge 95 ] && echo "✅ 系统稳定，可以投入使用" || echo "⚠️ 发现问题，建议修复")
+scripts/github-backup.sh:REMOTE_URL=$(git remote get-url origin 2>/dev/null || echo "未配置")
+scripts/github-backup.sh:    LAST_COMMIT=$(git log -1 --pretty=format:"%h - %an - %ar : %s" 2>/dev/null || echo "无法获取")
+scripts/github-backup.sh:    LOCAL=$(git rev-parse @ 2>/dev/null || echo "")
+scripts/github-backup.sh:    REMOTE=$(git rev-parse @{u} 2>/dev/null || echo "")
+scripts/github-backup.sh:**验证结果：** $([ $MISSING_FILES -eq 0 ] && echo '✅ 所有关键文件存在' || echo '❌ 缺失 '$MISSING_FILES' 个文件')
+scripts/growth-daily-plan-reminder.sh:START_TS=$(date -j -f "%Y-%m-%d" "$START_DATE" +%s 2>/dev/null || echo "1773091200")
+scripts/growth-daily-plan.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/growth-daily-plan.sh:START_TS=$(date -j -f "%Y-%m-%d" "$START_DATE" +%s 2>/dev/null || echo "1773091200")
+scripts/growth-daily-review.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/health-daily-questionnaire.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/health-daily-review.sh:  " 2>/dev/null || echo '{"found":false}')
+scripts/health-report.sh:  local activity_count=$(echo "$activities" | grep -c '"type"' || echo "0")
+scripts/log-event.sh:" 2>/dev/null || echo "⚠️ agent-memory 记录失败"
+scripts/morning-news.sh:/opt/homebrew/bin/openclaw agent --session-id "morning-news" --message "$(cat /tmp/morning-news-task.txt)" >> logs/morning-news.log 2>&1 || echo "⚠️ AI 任务执行失败" >> logs/morning-news.log
+scripts/relationship-weekly-sender.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/relationship-weekly-sender.sh:START_TS=$(date -j -f "%Y-%m-%d" "$START_DATE" +%s 2>/dev/null || echo "1773091200")
+scripts/send-growth-form.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/send-growth-form.sh:START_TS=$(date -j -f "%Y-%m-%d" "$START_DATE" +%s 2>/dev/null || date -d "$START_DATE" +%s 2>/dev/null || echo "1773091200")
+scripts/send-health-form.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/start-feishu-mirror.sh:PUBLIC_URL=$(tail -1 "$LOG_DIR/lt-feishu-webhook.log" | grep -oE "https://[a-zA-Z0-9.-]+\.loca\.lt" || echo "获取失败")
+scripts/stress-test-10rounds-v2.sh:    FAILURES=$(grep -c "第 ${ROUND} 轮" "logs/stress-test/round-${ROUND}-failures.log" 2>/dev/null || echo "0")
+scripts/stress-test-10rounds.sh:    FAILURES=$(grep -c "失败" "logs/stress-test/round-${ROUND}-failures.log" 2>/dev/null || echo "0")
+scripts/stress-test-all.sh:$(grep "❌ 失败" "$LOG_FILE" | sed 's/.*测试 #\([0-9]*\): \(.*\)/- \2 (测试 #\1)/' || echo "无")
+scripts/stress-test-all.sh:$(grep -E "error|Error|失败|❌" "$LOG_FILE" | head -10 || echo "无明显问题")
+scripts/total-daily-brief.sh:    SLEEP_LINE=$(grep -i "小时\|h" "$HEALTH_FILE" | head -1 || echo "待统计")
+scripts/total-daily-brief.sh:    SLEEP_HOURS=$(echo "$SLEEP_LINE" | grep -oE "[0-9]+\.?[0-9]*" | head -1 || echo "待统计")
+scripts/total-daily-brief.sh:START_TS=$(date -j -f "%Y-%m-%d" "$START_DATE" +%s 2>/dev/null || date -d "$START_DATE" +%s 2>/dev/null || echo "1741564800")
+scripts/total-daily-review.sh:    HEALTH_SCORE=$(grep "综合评分" "$HEALTH_FILE" | head -1 | grep -o "[0-9]*/100" || echo "待评估")
+scripts/total-daily-review.sh:    EXERCISE=$(grep "训练状态" "$HEALTH_FILE" | head -1 || echo "待记录")
+scripts/total-daily-review.sh:    SLEEP=$(grep "睡眠时长" "$HEALTH_FILE" | head -1 || echo "待记录")
+scripts/total-daily-review.sh:    GROWTH_SCORE=$(grep "综合评分" "$GROWTH_FILE" | head -1 | grep -o "[0-9]*/100" || echo "待评估")
+scripts/total-daily-review.sh:    STUDY_TIME=$(grep "总计" "$GROWTH_FILE" | head -1 || echo "待记录")
+scripts/total-daily-review.sh:    QUALITY=$(grep "质量评分" "$GROWTH_FILE" | head -1 || echo "待记录")
+scripts/total-monthly-summary.sh:START_TS=$(date -j -f "%Y-%m-%d" "$PLAN_START_DATE" +%s 2>/dev/null || echo "1741564800")
+scripts/total-review-scientific.sh:        grep "综合评分\|**${scores.total}" "$file" | head -1 | grep -o "[0-9]*/100" | head -1 | grep -o "[0-9]*" || echo "0"
+scripts/total-review-scientific.sh:        local std_dev=$(echo "sqrt($variance)" | bc 2>/dev/null || echo "0")
+scripts/total-review-scientific.sh:| 💪 健康堡 | $HEALTH_SCORE/100 | $([ $HEALTH_SCORE -ge 80 ] && echo '🌟' || ([ $HEALTH_SCORE -ge 60 ] && echo '✅' || echo '💪')) |
+scripts/total-review-scientific.sh:| 📚 成长堡 | $GROWTH_SCORE/100 | $([ $GROWTH_SCORE -ge 80 ] && echo '🌟' || ([ $GROWTH_SCORE -ge 60 ] && echo '✅' || echo '💪')) |
+scripts/total-review-scientific.sh:| 💕 关系堡 | $RELATIONSHIP_SCORE/100 | $([ $RELATIONSHIP_SCORE -ge 80 ] && echo '🌟' || ([ $RELATIONSHIP_SCORE -ge 60 ] && echo '✅' || echo '💪')) |
+scripts/total-review-scientific.sh:- **短板：** $([ $MIN_CASTLE = 'health' ] && echo '💪 健康堡' || ([ $MIN_CASTLE = 'growth' ] && echo '📚 成长堡' || echo '💕 关系堡'))（$MIN_SCORE 分）
+scripts/total-review-scientific.sh:### 优先级 1：$([ $MIN_CASTLE = 'health' ] && echo '💪 健康堡改善' || ([ $MIN_CASTLE = 'growth' ] && echo '📚 成长堡改善' || echo '💕 关系堡改善'))
+scripts/total-review-scientific.sh:| $([ $MIN_CASTLE = 'health' ] && echo '💪 健康堡' || ([ $MIN_CASTLE = 'growth' ] && echo '📚 成长堡' || echo '💕 关系堡')) | $MIN_SCORE | $((MIN_SCORE + 10)) | 按上述建议执行 |
+scripts/total-weekly-review.sh:START_TS=$(date -j -f "%Y-%m-%d" "$PLAN_START_DATE" +%s 2>/dev/null || echo "1741564800")
+scripts/wealth-daily-check.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/webchat-to-feishu-sync-v2.sh:session_id=$(echo "$messages" | node -e "const d=JSON.parse(require('fs').readFileSync(0)); console.log(d[0]?.id||'')" 2>/dev/null || echo "")
+scripts/webchat-to-feishu-sync-v2.sh:history=$($OPENCLAW_CMD sessions history --sessionKey "$session_id" --limit 5 --json 2>/dev/null || echo "[]")
+scripts/webchat-to-feishu-sync-v3.sh:sessions_json=$($OPENCLAW_CMD sessions --active 60 --json 2>/dev/null || echo "[]")
+scripts/webchat-to-feishu-sync-v3.sh:" 2>/dev/null || echo "")
+scripts/webchat-to-feishu-sync-v3.sh:last_check=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$STATE_FILE')).lastCheck || 0)" 2>/dev/null || echo "0")
+scripts/webchat-to-feishu-sync-v3.sh:history=$($OPENCLAW_CMD sessions history --sessionKey "$session_id" --json 2>/dev/null | head -100 || echo "[]")
+scripts/webchat-to-feishu-sync-v3.sh:        text=$(echo "$msg_json" | node -e "console.log(JSON.parse(require('fs').readFileSync(0)).text)" 2>/dev/null || echo "")
+scripts/webchat-to-feishu-sync-v4.sh:sessions_json=$($OPENCLAW_CMD sessions --active 60 --json 2>/dev/null || echo "{}")
+scripts/webchat-to-feishu-sync-v4.sh:" 2>/dev/null || echo "")
+scripts/webchat-to-feishu-sync-v4.sh:last_check=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$STATE_FILE')).lastCheck || 0)" 2>/dev/null || echo "0")
+scripts/webchat-to-feishu-sync-v4.sh:history=$($OPENCLAW_CMD sessions history --sessionKey "$session_key" --json 2>/dev/null | head -200 || echo "[]")
+scripts/webchat-to-feishu-sync-v4.sh:        text=$(echo "$msg_json" | node -e "console.log(JSON.parse(require('fs').readFileSync(0)).text)" 2>/dev/null || echo "")
+scripts/webchat-to-feishu-sync-v5.sh:last_check=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$STATE_FILE')).lastCheck || 0)" 2>/dev/null || echo "0")
+scripts/webchat-to-feishu-sync-v5.sh:        text=$(echo "$msg_json" | node -e "console.log(JSON.parse(require('fs').readFileSync(0)).text)" 2>/dev/null || echo "")
+scripts/webchat-to-feishu-sync-v6.sh:last_check=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$STATE_FILE')).lastCheck || 0)" 2>/dev/null || echo "0")
+scripts/webchat-to-feishu-sync-v6.sh:        text=$(echo "$msg_json" | node -e "console.log(JSON.parse(require('fs').readFileSync(0)).text)" 2>/dev/null || echo "")
+scripts/webchat-to-feishu-sync-v7.sh:last_check=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$STATE_FILE')).lastCheck || 0)" 2>/dev/null || echo "0")
+scripts/webchat-to-feishu-sync-v7.sh:        text=$(echo "$msg_json" | node -e "console.log(JSON.parse(require('fs').readFileSync(0)).text)" 2>/dev/null || echo "")
+scripts/webchat-to-feishu-sync.sh:    messages=$($OPENCLAW_CMD sessions history --sessionKey "$session_id" --limit 10 --json 2>/dev/null || echo "[]")
+[0;32m[PASS][0m ✓ CC-01-02 检查错误处理
+
+--- CC-02: 服务器未启动 ---
+[0;34m[INFO][0m 测试 #68: CC-02-01 健康堡服务器检查
+[0;31m[FAIL][0m ✗ CC-02-01 健康堡服务器检查 - 执行失败
+[1;33m[WARN][0m 健康堡服务器未运行
+[0;34m[INFO][0m 测试 #69: CC-02-02 成长堡服务器检查
+[0;31m[FAIL][0m ✗ CC-02-02 成长堡服务器检查 - 执行失败
+[1;33m[WARN][0m 成长堡服务器未运行
+[0;34m[INFO][0m 测试 #70: CC-02-03 考题服务器检查
+[0;31m[FAIL][0m ✗ CC-02-03 考题服务器检查 - 执行失败
+[1;33m[WARN][0m 考题服务器未运行
+
+--- CC-03: 日志文件检查 ---
+[0;34m[INFO][0m 测试 #71: CC-03-01 检查日志大小
+       0
+[0;32m[PASS][0m ✓ CC-03-01 检查日志大小
+[0;34m[INFO][0m 测试 #72: CC-03-02 检查日志轮转
+       0
+[0;32m[PASS][0m ✓ CC-03-02 检查日志轮转
+
+--- CC-04: 并发冲突检查 ---
+[0;34m[INFO][0m 测试 #73: CC-04-01 检查文件锁
+scripts/full-system-test.sh:  run_test "CC-04-01 检查文件锁" "grep -r 'flock\\|lockfile' scripts/*.sh" || \
+[0;32m[PASS][0m ✓ CC-04-01 检查文件锁
+[0;34m[INFO][0m 测试 #74: CC-04-02 检查临时文件
+       5
+[0;32m[PASS][0m ✓ CC-04-02 检查临时文件
+
+--- CC-05: 数据格式检查 ---
+[0;34m[INFO][0m 测试 #75: CC-05-01 检查数据验证
+scripts/analyze-workout.sh:  if [ -n "$avg_hr" ] && [ "$avg_hr" != "null" ]; then
+scripts/analyze-workout.sh:  if [ -n "$distance" ] && [ "$distance" != "null" ]; then
+scripts/analyze-workout.sh:$(if [ -n "$avg_hr" ] && [ "$avg_hr" != "null" ]; then
+scripts/analyze-workout.sh:$(if [ -n "$avg_watts" ] && [ "$avg_watts" != "null" ]; then
+scripts/auto-refresh-strava-token.sh:if command -v python3 &> /dev/null; then
+scripts/auto-refresh-strava-token.sh:  if command -v python3 &> /dev/null; then
+scripts/castle-six-daily-questionnaire.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/castle-six-daily-questionnaire.sh:if ! curl -s "http://localhost:8897" > /dev/null 2>&1; then
+scripts/castle-six-daily-questionnaire.sh:if ! curl -s "http://localhost:8896" > /dev/null 2>&1; then
+scripts/check-castle-six.sh:    if curl -s "http://localhost:$port" > /dev/null 2>&1; then
+scripts/check-castle-six.sh:    if openclaw cron list 2>/dev/null | grep -q "$pattern"; then
+scripts/config-manager.sh:    if command -v jq &> /dev/null; then
+scripts/config-manager.sh:    ./scripts/validate-configs.sh
+scripts/config-manager.sh:    echo "然后运行验证：./scripts/validate-configs.sh"
+scripts/daily-summary.sh:if command -v markdown-pdf &> /dev/null; then
+scripts/full-system-test.sh:    if grep -q "dry-run\|test\|--help" "$task_script" 2>/dev/null; then
+scripts/full-system-test.sh:  run_test "CC-05-01 检查数据验证" "grep -r 'if.*empty\\|if.*null\\|validate' scripts/*.sh" || \
+scripts/full-system-test.sh:  run_test "CC-08-01 配置验证脚本" "test -x scripts/validate-configs-persistent.sh"
+scripts/github-backup.sh:if ! git status > /dev/null 2>&1; then
+scripts/github-backup.sh:if git rev-parse HEAD > /dev/null 2>&1; then
+scripts/github-backup.sh:if git rev-parse HEAD > /dev/null 2>&1; then
+scripts/github-backup.sh:if git rev-parse HEAD > /dev/null 2>&1; then
+scripts/github-backup.sh:if ! git rev-parse HEAD > /dev/null 2>&1; then
+scripts/github-backup.sh:    if git rev-parse HEAD > /dev/null 2>&1; then
+scripts/growth-daily-plan.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/growth-daily-plan.sh:if ! curl -s "http://localhost:8896" > /dev/null 2>&1; then
+scripts/growth-daily-plan.sh:if ! curl -s "http://localhost:8898" > /dev/null 2>&1; then
+scripts/growth-daily-review.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/growth-daily-review.sh:if ! curl -s "http://localhost:8896" > /dev/null 2>&1; then
+scripts/health-daily-questionnaire.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/health-daily-questionnaire.sh:if ! curl -s "http://localhost:8897" > /dev/null 2>&1; then
+scripts/health-daily-review.sh:  if echo "$ACTIVITY_DATA" | node -e "const d=JSON.parse(require('fs').readFileSync(0,'utf8')); process.exit(d.found?0:1)" 2>/dev/null; then
+scripts/merge-daily-audio.sh:say -v Mei-Jia -r 170 < /tmp/tts-cn-text.txt -o /tmp/merged-cn.aiff 2>/dev/null
+scripts/merge-daily-audio.sh:ffmpeg -i /tmp/merged-cn.aiff -codec:a libmp3lame -b:a 32k -ar 16000 -ac 1 /Users/liwang/.openclaw/workspace/audio/daily-${TODAY}.mp3 -y 2>/dev/null
+scripts/morning-news-check.sh:if command -v openclaw >/dev/null 2>&1 || [ -f /opt/homebrew/bin/openclaw ]; then
+scripts/morning-news-check.sh:if grep -q "feishu" ~/.openclaw/openclaw.json 2>/dev/null && grep -q "ou_7781abd1e83eae23ccf01fe627f0747f" ~/.openclaw/openclaw.json 2>/dev/null; then
+scripts/morning-news-check.sh:    if curl -s --max-time 5 "$url" >/dev/null 2>&1; then
+scripts/morning-news-check.sh:if pgrep -f "openclaw.*gateway" >/dev/null 2>&1; then
+scripts/morning-news-check.sh:    if /opt/homebrew/bin/openclaw gateway restart >/dev/null 2>&1; then
+scripts/overnight-stress-test.sh:if ./scripts/validate-configs-persistent.sh; then
+scripts/production-monitor.sh:    if grep -q "$pattern" "$log_file" 2>/dev/null; then
+scripts/refresh-strava-token.sh:if command -v python3 &> /dev/null; then
+scripts/relationship-weekly-sender.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/relationship-weekly-sender.sh:if ! curl -s "http://localhost:8899" > /dev/null 2>&1; then
+scripts/send-growth-form.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/send-growth-form.sh:if ! curl -s "http://localhost:$PORT" > /dev/null 2>&1; then
+scripts/send-health-form.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/send-health-form.sh:if ! curl -s "http://localhost:$PORT" > /dev/null 2>&1; then
+scripts/start-douyin-mcp.sh:    if ps -p $PID > /dev/null 2>&1; then
+scripts/start-feishu-mirror-stable.sh:if curl -s "http://localhost:$PORT/status" > /dev/null 2>&1; then
+scripts/start-feishu-mirror.sh:if curl -s "http://localhost:$PORT/status" > /dev/null 2>&1; then
+scripts/start-growth-public.sh:if curl -s http://localhost:$PORT/ > /dev/null 2>&1; then
+scripts/start-quiz-public.sh:if curl -s http://localhost:$PORT/ > /dev/null 2>&1; then
+scripts/start-relationship-public.sh:if ! curl -s "http://localhost:8899" > /dev/null 2>&1; then
+scripts/start-relationship-public.sh:if ! curl -s "https://$(cat $LOG_DIR/lt-relationship.log 2>/dev/null | grep -o '[a-z-]*\.loca\.lt' | head -1)" > /dev/null 2>&1; then
+scripts/start-wealth-public.sh:if curl -s http://localhost:$PORT/status > /dev/null 2>&1; then
+scripts/start-wealth-public.sh:    if curl -s http://localhost:$PORT/status > /dev/null 2>&1; then
+scripts/stress-test-10rounds-v2.sh:  if openclaw sessions spawn --runtime subagent --label "stress-test-morning-${ROUND}" --task "生成今日晨报并发送到飞书" --mode run --timeout-seconds 60 > /dev/null 2>&1; then
+scripts/stress-test-10rounds-v2.sh:  if openclaw sessions spawn --runtime subagent --label "stress-test-hot-${ROUND}" --task "生成今日爆款日报并发送到飞书" --mode run --timeout-seconds 90 > /dev/null 2>&1; then
+scripts/stress-test-10rounds-v2.sh:  if ./scripts/castle-six-daily-questionnaire.sh > /dev/null 2>&1; then
+scripts/stress-test-10rounds.sh:    if openclaw cron run "$CRON_ID" > /dev/null 2>&1; then
+scripts/validate-configs-persistent.sh:# 使用：./scripts/validate-configs-persistent.sh
+scripts/validate-configs-persistent.sh:  if grep -q "$CRON_ID" HEARTBEAT.md 2>/dev/null; then
+scripts/validate-configs-persistent.sh:if grep -q "feishu" config.json 2>/dev/null || grep -q "feishu" ~/.openclaw/config.json 2>/dev/null; then
+scripts/validate-configs.sh:# 用法：./scripts/validate-configs.sh [--fix]
+scripts/validate-configs.sh:if crontab -l 2>/dev/null | grep -q "morning-news.sh"; then
+scripts/validate-configs.sh:    if crontab -l 2>/dev/null | grep "morning-news.sh" | grep -q "cd.*workspace"; then
+scripts/wealth-daily-check.sh:if curl -s http://localhost:$PORT/status > /dev/null 2>&1; then
+scripts/wealth-daily-check.sh:    if curl -s http://localhost:$PORT/status > /dev/null 2>&1; then
+scripts/wealth-daily-check.sh:LOCAL_IP=$(node -e "const os = require('os'); const interfaces = os.networkInterfaces(); for (const name of Object.keys(interfaces)) { for (const iface of interfaces[name]) { if (iface.family === 'IPv4' && !iface.internal) { console.log(iface.address); process.exit(0); } } }" 2>/dev/null || echo "localhost")
+scripts/wealth-weekly-check.sh:if curl -s http://localhost:$PORT/status > /dev/null 2>&1; then
+scripts/wealth-weekly-check.sh:    if curl -s http://localhost:$PORT/status > /dev/null 2>&1; then
+scripts/webchat-to-feishu-sync-v3.sh:        node -e "const fs=require('fs'); const s=JSON.parse(fs.readFileSync('$STATE_FILE')); s.lastCheck=$new_time; fs.writeFileSync('$STATE_FILE',JSON.stringify(s))" 2>/dev/null || true
+scripts/webchat-to-feishu-sync-v4.sh:        node -e "const fs=require('fs'); const s=JSON.parse(fs.readFileSync('$STATE_FILE')); s.lastCheck=$new_time; fs.writeFileSync('$STATE_FILE',JSON.stringify(s))" 2>/dev/null || true
+scripts/webchat-to-feishu-sync-v5.sh:        node -e "const fs=require('fs'); const s=JSON.parse(fs.readFileSync('$STATE_FILE')); s.lastCheck=$new_time; fs.writeFileSync('$STATE_FILE',JSON.stringify(s))" 2>/dev/null || true
+scripts/webchat-to-feishu-sync-v6.sh:        node -e "const fs=require('fs'); const s=JSON.parse(fs.readFileSync('$STATE_FILE')); s.lastCheck=$new_time; fs.writeFileSync('$STATE_FILE',JSON.stringify(s))" 2>/dev/null || true
+scripts/webchat-to-feishu-sync-v7.sh:        node -e "const fs=require('fs'); const s=JSON.parse(fs.readFileSync('$STATE_FILE')); s.lastCheck=$new_time; fs.writeFileSync('$STATE_FILE',JSON.stringify(s))" 2>/dev/null || true
+scripts/webchat-to-feishu-sync.sh:fs.writeFileSync('$STATE_FILE', JSON.stringify(state, null, 2));
+[0;32m[PASS][0m ✓ CC-05-01 检查数据验证
+[0;34m[INFO][0m 测试 #76: CC-05-02 检查默认值
+scripts/analyze-workout.sh:  local per_page=${1:-10}
+scripts/full-system-test.sh:  local expected_result="${3:-0}"
+scripts/full-system-test.sh:  run_test "CC-05-02 检查默认值" "grep -r ':-\\|default\\|fallback' scripts/*.sh" || \
+scripts/health-report.sh:  local per_page=${1:-30}
+scripts/health-report.sh:case "${1:-daily}" in
+scripts/merge-daily-audio.sh:  DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$OUTPUT_FILE" 2>/dev/null | cut -d. -f1)
+scripts/nano-banana-gen.sh:PROMPT="${1:-a red apple}"
+scripts/nano-banana-gen.sh:FILENAME="${2:-$(date +%Y-%m-%d-%H-%M-%S)-banana.png}"
+scripts/nano-banana-gen.sh:RESOLUTION="${3:-1K}"
+scripts/send-unified-message.sh:ENABLE_FEISHU="${ENABLE_FEISHU:-true}"
+scripts/send-unified-message.sh:ENABLE_WEBCHAT="${ENABLE_WEBCHAT:-true}"
+scripts/send-unified-message.sh:    local send_to_feishu="${2:-true}"
+scripts/send-unified-message.sh:    local send_to_webchat="${3:-true}"
+scripts/update-training-plan.sh:case "${1:-check}" in
+[0;32m[PASS][0m ✓ CC-05-02 检查默认值
+
+--- CC-06: 时间边界检查 ---
+[0;34m[INFO][0m 测试 #77: CC-06-01 检查时区设置
+scripts/full-system-test.sh:  run_test "CC-06-01 检查时区设置" "grep -r 'Asia/Shanghai\\|TZ=' scripts/*.sh" || \
+[0;32m[PASS][0m ✓ CC-06-01 检查时区设置
+[0;34m[INFO][0m 测试 #78: CC-06-02 检查日期计算
+scripts/analyze-workout.sh:YESTERDAY=$(date -v-1d +%Y-%m-%d)
+scripts/analyze-workout.sh:analyze_yesterday_workout() {
+scripts/analyze-workout.sh:analyze_yesterday_workout
+scripts/full-system-test.sh:  run_test "CC-06-02 检查日期计算" "grep -r 'date.*-v\\|yesterday\\|tomorrow' scripts/*.sh" || \
+scripts/health-daily-review.sh:YESTERDAY=$(date -v-1d +%Y-%m-%d)
+scripts/health-daily-review.sh:    const yesterday = '$YESTERDAY';
+scripts/health-daily-review.sh:    const yesterdayActivity = activities.find(act => {
+scripts/health-daily-review.sh:      return startDate === yesterday;
+scripts/health-daily-review.sh:    if (yesterdayActivity) {
+scripts/health-daily-review.sh:      const distanceKm = (yesterdayActivity.distance / 1000).toFixed(2);
+scripts/health-daily-review.sh:      const timeMin = Math.round(yesterdayActivity.moving_time / 60);
+scripts/health-daily-review.sh:      const type = yesterdayActivity.sport_type || yesterdayActivity.type;
+scripts/health-daily-review.sh:      const name = yesterdayActivity.name;
+scripts/health-daily-review.sh:WEEKDAY=$(date -v-1d +%u)
+scripts/health-report.sh:  local yesterday=$(date -d "yesterday" +%Y-%m-%d)
+scripts/total-daily-brief.sh:YESTERDAY=$(date -v-1d +%Y-%m-%d)
+scripts/total-daily-review.sh:YESTERDAY=$(date -v-1d '+%Y-%m-%d' 2>/dev/null || date -d "yesterday" '+%Y-%m-%d' 2>/dev/null || date '+%Y-%m-%d')
+scripts/total-review-scientific.sh:YESTERDAY=$(date -v-1d '+%Y-%m-%d' 2>/dev/null || date -d "yesterday" '+%Y-%m-%d' 2>/dev/null || date '+%Y-%m-%d')
+scripts/total-weekly-review.sh:LAST_SUNDAY=$(date -v-sun +%Y-%m-%d)
+scripts/total-weekly-review.sh:NEXT_SATURDAY=$(date -vsat +%Y-%m-%d)
+scripts/training-reminder.sh:TOMORROW=$(date -v+1d +%Y-%m-%d)
+scripts/training-reminder.sh:  local tomorrow_weekday_name=""
+scripts/training-reminder.sh:    1) tomorrow_weekday_name="周一" ;;
+scripts/training-reminder.sh:    2) tomorrow_weekday_name="周二" ;;
+scripts/training-reminder.sh:    3) tomorrow_weekday_name="周三" ;;
+scripts/training-reminder.sh:    4) tomorrow_weekday_name="周四" ;;
+scripts/training-reminder.sh:    5) tomorrow_weekday_name="周五" ;;
+scripts/training-reminder.sh:    6) tomorrow_weekday_name="周六" ;;
+scripts/training-reminder.sh:    7) tomorrow_weekday_name="周日" ;;
+scripts/training-reminder.sh:  local MESSAGE="🌙 明日训练预告 - $TOMORROW ($tomorrow_weekday_name)
+[0;32m[PASS][0m ✓ CC-06-02 检查日期计算
+
+--- CC-07: 资源泄漏检查 ---
+[0;34m[INFO][0m 测试 #79: CC-07-01 检查后台进程
+       0
+[0;32m[PASS][0m ✓ CC-07-01 检查后台进程
+[0;34m[INFO][0m 测试 #80: CC-07-02 检查 cleanup
+scripts/full-system-test.sh:  run_test "CC-07-02 检查 cleanup" "grep -r 'trap.*EXIT\\|cleanup()' scripts/*.sh" || \
+[0;32m[PASS][0m ✓ CC-07-02 检查 cleanup
+
+--- CC-08: 配置变更检查 ---
+[0;34m[INFO][0m 测试 #81: CC-08-01 配置验证脚本
+[0;32m[PASS][0m ✓ CC-08-01 配置验证脚本
+[0;34m[INFO][0m 测试 #82: CC-08-02 HEARTBEAT 更新检查
+[0;32m[PASS][0m ✓ CC-08-02 HEARTBEAT 更新检查
+
+========================================
+⚙️  阶段 3: 配置检查
+========================================
+[0;34m[INFO][0m 测试 #83: CFG-01 cron 任务列表
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/Users/liwang/.openclaw/extensions/feishu/index.ts)
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+ID                                   Name                     Schedule                         Next       Last       Status    Target    Agent ID   Model               
+a08d1fb5-9307-43cc-a544-f3cd1f057841 🏃 Strava 数据同步           cron 0 * * * * (stagger 5m)      in 24m     36m ago    ok        main      -          -
+2e4a8df1-0ff3-4870-bdce-0f6cac54a047 每日晨报                     cron 0 7 * * * @ Asia/Shangha... in 5h      2h ago     ok        isolated  -          -
+312409fd-ecaf-46d6-a463-846ca2c75aad 🔥 每日爆款日报                cron 30 7 * * * @ Asia/Shangh... in 6h      1h ago     ok        main      main       -
+18f367a4-e6fb-48ca-9525-2e4000d3fa8b 💪 健康堡每日问卷               cron 0 8 * * * @ Asia/Shangha... in 6h      1h ago     ok        main      main       -
+82f69a17-51c3-4c91-b541-49b36a31dc5d 🔍 每日稳定性监控               cron 0 9 * * * @ Asia/Shangha... in 7h      -          idle      main      -          -
+42b34ea5-8c2f-4b9b-94a1-1fd4f4101ea3 💪 健康堡每日复盘               cron 30 10 * * * @ Asia/Shang... in 9h      15h ago    ok        main      -          -
+5042e91c-08d1-4177-ae20-06d812443ea6 成长堡每日复盘                  cron 0 21 * * * @ Asia/Shangh... in 19h     4h ago     ok        main      main       -
+8b29a2ea-ef85-4a89-940f-51d4509edc30 🏰 Castle Six 总复盘        cron 30 21 * * * @ Asia/Shang... in 20h     4h ago     ok        main      main       -
+5f2ec99b-dabb-4f6a-93fd-624befb636b3 总复盘堡每日简报                 cron 45 21 * * * (exact)         in 20h     4h ago     ok        isolated  main       -
+bae76ef7-1fff-4403-937a-e0136f3aaf77 💰 财富堡每周复盘               cron 0 20 * * 0 @ Asia/Shangh... in 4d      3d ago     ok        main      -          -
+d4bf3a50-7c4e-4a0d-a214-4d1497e7b0ee 总复盘堡每周复盘                 cron 0 20 * * 0 (exact)          in 4d      3d ago     ok        isolated  main       -
+da6b6f7b-969a-46e2-9aaf-d6f46b580c26 💕 关系堡每周问卷发送             cron 0 20 * * 0 @ Asia/Shangh... in 4d      3d ago     ok        main      main       -
+721db8fa-e1f6-48f4-80a0-c72fd3440e28 🏰 Castle Six 科学总复盘      cron 30 21 * * 0 @ Asia/Shang... in 4d      3d ago     ok        main      main       -
+bf0d97d8-41df-4482-aae1-a44a6879f48a 🗄️ OpenClaw GitHub 自动备份 cron 0 2 * * 1 @ Asia/Shangha... in 4d      3d ago     ok        main      main       -
+2990a6f4-882f-4b6f-a662-5d91908e04a7 总复盘堡每月总结                 cron 0 20 28-31 * * (exact)      in 10d     -          idle      isolated  main       -
+489e704b-d6cc-4098-80d9-302a9b3f64e9 月末银行理财报告                 cron 0 20 28-31 * * @ Asia/Sh... in 10d     -          idle      main      -          -
+[0;32m[PASS][0m ✓ CFG-01 cron 任务列表
+[0;34m[INFO][0m 测试 #84: CFG-02 脚本可执行权限
+66
+[0;32m[PASS][0m ✓ CFG-02 脚本可执行权限
+[0;34m[INFO][0m 测试 #85: CFG-03 日志目录可写
+[0;32m[PASS][0m ✓ CFG-03 日志目录可写
+[0;34m[INFO][0m 测试 #86: CFG-04 输出目录存在
+[0;32m[PASS][0m ✓ CFG-04 输出目录存在
+[0;34m[INFO][0m 测试 #87: CFG-05 报告目录存在
+[0;32m[PASS][0m ✓ CFG-05 报告目录存在
+
+========================================
+📊 生成测试报告
+========================================
+
+========================================
+测试完成 - 2026-03-19 01:37:32
+========================================
+[0;31m[FAIL][0m 测试失败：20 个问题

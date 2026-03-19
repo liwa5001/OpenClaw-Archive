@@ -2,16 +2,33 @@
 # 关系堡每周问卷发送脚本
 # 每周日 20:00 发送关系堡 HTML 问卷
 
+# Cleanup 机制
+cleanup() {
+  local exit_code=$?
+  log "清理..."
+  rm -f /tmp/relationship_*.tmp 2>/dev/null || true
+  [ -n "$SERVER_PID" ] && kill $SERVER_PID 2>/dev/null || true
+  [ $exit_code -eq 0 ] && log "✅ 关系堡问卷完成" || log "❌ 失败 ($exit_code)"
+  exit $exit_code
+}
+trap cleanup EXIT INT TERM
+
+# 超时设置
+TIMEOUT_SECONDS=90
+
 set -e
 
 WORKSPACE="/Users/liwang/.openclaw/workspace"
 LOG_FILE="$WORKSPACE/logs/relationship-weekly-sender.log"
 FEISHU_USER="ou_7781abd1e83eae23ccf01fe627f0747f"
 
+mkdir -p "$WORKSPACE/logs"
+
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
 }
 
+log "超时设置：${TIMEOUT_SECONDS}秒"
 log "=== 关系堡每周问卷发送开始 ==="
 
 # 获取本机 IP

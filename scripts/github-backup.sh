@@ -81,7 +81,7 @@ else
     log "⚠️ 警告：仓库还没有任何提交"
 fi
 
-# 8. 尝试推送（如果有更改）
+# 8. 提交未提交的文件并推送
 log "检查是否需要推送..."
 
 # 检查仓库是否有提交
@@ -91,6 +91,16 @@ if ! git rev-parse HEAD > /dev/null 2>&1; then
     LOCAL=""
     REMOTE=""
 else
+    # 检查未提交的文件
+    UNCOMMITTED=$(git status --porcelain | wc -l | tr -d ' ')
+    
+    if [ "$UNCOMMITTED" -gt 0 ]; then
+        log "发现 $UNCOMMITTED 个未提交的文件，自动提交..."
+        git add -A
+        git commit -m "backup: 自动备份 $(date '+%Y-%m-%d %H:%M') - $UNCOMMITTED 个文件"
+        log "✅ 已提交 $UNCOMMITTED 个文件"
+    fi
+    
     git fetch origin > /dev/null 2>&1 || true
     
     # 检查本地和远程是否有差异

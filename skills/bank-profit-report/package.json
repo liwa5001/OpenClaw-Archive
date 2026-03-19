@@ -1,0 +1,23 @@
+{
+  "name": "bank-profit-report",
+  "version": "1.0.0",
+  "description": "银行理财收益跟踪报表生成技能",
+  "main": "scripts/generate-report.js",
+  "scripts": {
+    "start": "node scripts/generate-report.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bank",
+    "wealth",
+    "report",
+    "excel",
+    "openclaw",
+    "skill"
+  ],
+  "author": "城堡 🏰",
+  "license": "MIT",
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

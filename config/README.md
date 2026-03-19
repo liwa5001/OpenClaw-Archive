@@ -72,8 +72,7 @@ config/
 |------|------|------|------|
 | 晨报 | 7:00 | 飞书 | morning-news.sh |
 | 健康日报 | 7:30 | 飞书 | health-report.sh |
-| 训练提醒（当天） | 8:00 | 飞书 | training-reminder.sh |
-| 训练提醒（预告） | 20:00 | 飞书 | training-reminder.sh |
+| 训练提醒 | 11:00 | 飞书 | training-reminder.sh |
 | 运动数据分析 | 9:00 | 飞书 | analyze-workout.sh |
 | 训练计划检查 | 9:30 | 飞书 | update-training-plan.sh |
 | 健康周报 | 周一 8:30 | 飞书 | health-report.sh |
@@ -104,4 +103,4 @@ A: 使用 `crontab -l` 查看当前用户的 crontab
 ---
 
 **维护者：** 城堡 🏰  
-**最后更新：** 2026-03-05
+**最后更新：** 2026-03-19（训练提醒改为 11:00）

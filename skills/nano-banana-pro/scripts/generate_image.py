@@ -111,16 +111,35 @@ def main():
         print(f"Generating image with resolution {output_resolution}...")
 
     try:
-        response = client.models.generate_content(
-            model="gemini-3-pro-image-preview",
-            contents=contents,
-            config=types.GenerateContentConfig(
-                response_modalities=["TEXT", "IMAGE"],
-                image_config=types.ImageConfig(
-                    image_size=output_resolution
+        # Try Nano Banana 2 first (more stable), fall back to Nano Banana Pro
+        model_name = "gemini-2.5-flash-image"  # Nano Banana 2
+        try:
+            response = client.models.generate_content(
+                model=model_name,
+                contents=contents,
+                config=types.GenerateContentConfig(
+                    response_modalities=["TEXT", "IMAGE"],
+                    image_config=types.ImageConfig(
+                        image_size=output_resolution
+                    )
                 )
             )
-        )
+        except Exception as e1:
+            if "503" in str(e1) or "UNAVAILABLE" in str(e1):
+                print(f"Nano Banana 2 busy, trying Nano Banana Pro...")
+                model_name = "gemini-3-pro-image-preview"  # Nano Banana Pro
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=contents,
+                    config=types.GenerateContentConfig(
+                        response_modalities=["TEXT", "IMAGE"],
+                        image_config=types.ImageConfig(
+                            image_size=output_resolution
+                        )
+                    )
+                )
+            else:
+                raise
 
         # Process response and convert to PNG
         image_saved = False

@@ -1,0 +1,41 @@
+[2026-03-17 01:13:34] 开始安装 RVC
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/aria2/
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [23 lines of output]
+      Traceback (most recent call last):
+        File "/Users/liwang/.openclaw/workspace/rvc-voice-cloning/Retrieval-based-Voice-Conversion-WebUI/venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/Users/liwang/.openclaw/workspace/rvc-voice-cloning/Retrieval-based-Voice-Conversion-WebUI/venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/liwang/.openclaw/workspace/rvc-voice-cloning/Retrieval-based-Voice-Conversion-WebUI/venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 178, in prepare_metadata_for_build_wheel
+          whl_basename = backend.build_wheel(metadata_directory, config_settings)
+        File "/private/var/folders/kp/4mzhsq2d6dl_mqftkzpmr0dm0000gn/T/pip-build-env-wx6bcxg5/overlay/lib/python3.14/site-packages/hatchling/build.py", line 58, in build_wheel
+          return os.path.basename(next(builder.build(directory=wheel_directory, versions=["standard"])))
+                                  ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/var/folders/kp/4mzhsq2d6dl_mqftkzpmr0dm0000gn/T/pip-build-env-wx6bcxg5/overlay/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py", line 149, in build
+          build_hook.initialize(version, build_data)
+          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+        File "/private/var/folders/kp/4mzhsq2d6dl_mqftkzpmr0dm0000gn/T/pip-install-8h7b3cat/aria2_d6ec970e99624bca841be8a76561c88a/hatch_build.py", line 132, in initialize
+          aria2_tag = get_tag_4_build()
+        File "/private/var/folders/kp/4mzhsq2d6dl_mqftkzpmr0dm0000gn/T/pip-install-8h7b3cat/aria2_d6ec970e99624bca841be8a76561c88a/hatch_build.py", line 110, in get_tag_4_build
+          raise RuntimeError(msg)
+      RuntimeError: Can't find tag for build.
+      Please set 'WHL_PLATFORM' env var or run this building on supported platform.
+          supported platform: manylinux_2_17_x86_64, musllinux_1_1_x86_64, manylinux_2_17_aarch64, musllinux_1_1_aarch64, win_amd64, win32
+      
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> aria2
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+[2026-03-17 01:14:34] ✅ RVC 安装完成

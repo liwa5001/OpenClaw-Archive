@@ -34,6 +34,36 @@ data_sources:
 
 ---
 
+## 【📍 报考位置 - 12 周计划进度】
+
+EOF
+
+# 计算 12 周计划进度
+PLAN_START_DATE="2026-03-10"
+START_TS=$(date -j -f "%Y-%m-%d" "$PLAN_START_DATE" +%s 2>/dev/null || echo "1741564800")
+NOW_TS=$(date +%s)
+DAYS_ELAPSED=$(( (NOW_TS - START_TS) / 86400 + 1 ))
+PLAN_WEEK_NUM=$(( (DAYS_ELAPSED - 1) / 7 + 1 ))
+PLAN_DAY_IN_WEEK=$(( (DAYS_ELAPSED - 1) % 7 + 1 ))
+PROGRESS_PERCENT=$(echo "scale=1; $PLAN_WEEK_NUM * 100 / 12" | bc)
+
+# 限制在 12 周内
+if [ $PLAN_WEEK_NUM -gt 12 ]; then
+  PLAN_WEEK_NUM=12
+  PLAN_DAY_IN_WEEK=7
+  PROGRESS_PERCENT=100
+fi
+
+cat >> "$OUTPUT_DIR/${MONTH}-summary.md" << EOF
+
+| 项目 | 当前进度 | 总进度 | 完成度 |
+|------|----------|--------|--------|
+| 12 周计划 | 第${PLAN_WEEK_NUM}周 第${PLAN_DAY_IN_WEEK}天 | 12 周 84 天 | ${PROGRESS_PERCENT}% |
+| 本月 | $MONTH | 12 月/年 | - |
+| 今年已过 | $(date +%j)天 | 365 天 | $(echo "scale=1; $(date +%j) * 100 / 365" | bc)% |
+
+---
+
 ## 【月度核心指标】
 
 ### 健康堡

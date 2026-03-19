@@ -1,0 +1,130 @@
+🎙️ 开始生成合并版音频 - 2026-03-17 07:52:07
+📰 生成晨报朗读文本...
+✅ 晨报文本已生成
+🔥 生成爆款日报朗读文本...
+✅ 爆款日报文本已生成
+📝 合并文本...
+🔊 生成 TTS 音频...
+🎙️ 开始生成合并版音频（纯中文）- 2026-03-17 22:37:20
+📝 生成纯中文朗读文本...
+✅ 纯中文文本已生成
+🔊 使用 macOS say 生成音频...
+✅ 合并音频已生成：/Users/liwang/.openclaw/workspace/audio/daily-2026-03-17.mp3 (2.2M, 588秒)
+📤 发送文字稿到飞书...
+✅ 文字稿发送完成 - 2026-03-17 22:38:34
+🎙️ 开始生成合并版音频（纯中文）- 2026-03-18 07:37:22
+📝 生成纯中文朗读文本...
+./scripts/merge-daily-audio.sh: line 36: 早上好，今天是2026年3月18日，星期三。欢迎收听今日新闻和爆款日报。: command not found
+./scripts/merge-daily-audio.sh: line 38: 首先是新闻部分。: command not found
+./scripts/merge-daily-audio.sh: line 40: 国际新闻第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 41: 国际新闻第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 42: 国际新闻第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 44: 国内新闻第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 45: 国内新闻第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 46: 国内新闻第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 48: 人工智能领域第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 49: 人工智能领域第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 50: 人工智能领域第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 52: 汽车新闻第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 53: 汽车新闻第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 54: 汽车新闻第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 56: 以上是新闻部分，接下来是爆款日报。: command not found
+./scripts/merge-daily-audio.sh: line 58: 虎嗅热门第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 59: 虎嗅热门第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 60: 虎嗅热门第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 62: 三六氪热门第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 63: 三六氪热门第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 64: 三六氪热门第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 66: 哔哩哔哩热门第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 67: 哔哩哔哩热门第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 69: 吉特哈布热门第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 70: 吉特哈布热门第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 71: 吉特哈布热门第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 73: 以上是今天的晨报和爆款日报全部内容。感谢收听，祝你有收获满满的一天！: command not found
+🎙️ 开始生成合并版音频（纯中文）- 2026-03-18 07:37:27
+📝 生成纯中文朗读文本...
+./scripts/merge-daily-audio.sh: line 36: 早上好，今天是2026年3月18日，星期三。欢迎收听今日新闻和爆款日报。: command not found
+./scripts/merge-daily-audio.sh: line 38: 首先是新闻部分。: command not found
+./scripts/merge-daily-audio.sh: line 40: 国际新闻第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 41: 国际新闻第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 42: 国际新闻第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 44: 国内新闻第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 45: 国内新闻第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 46: 国内新闻第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 48: 人工智能领域第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 49: 人工智能领域第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 50: 人工智能领域第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 52: 汽车新闻第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 53: 汽车新闻第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 54: 汽车新闻第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 56: 以上是新闻部分，接下来是爆款日报。: command not found
+./scripts/merge-daily-audio.sh: line 58: 虎嗅热门第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 59: 虎嗅热门第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 60: 虎嗅热门第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 62: 三六氪热门第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 63: 三六氪热门第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 64: 三六氪热门第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 66: 哔哩哔哩热门第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 67: 哔哩哔哩热门第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 69: 吉特哈布热门第一条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 70: 吉特哈布热门第二条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 71: 吉特哈布热门第三条：[标题]。[内容]: command not found
+./scripts/merge-daily-audio.sh: line 73: 以上是今天的晨报和爆款日报全部内容。感谢收听，祝你有收获满满的一天！: command not found
+✅ 纯中文文本已生成
+🔊 使用 macOS say 生成音频...
+✅ 合并音频已生成：/Users/liwang/.openclaw/workspace/audio/daily-2026-03-18.mp3 (2.8M, 740秒)
+📤 发送文字稿到飞书...
+🎙️ 开始生成合并版音频（纯中文）- 2026-03-18 07:38:38
+📝 生成纯中文朗读文本...
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.feishu: plugin feishu: duplicate plugin id detected;  │
+│    later plugin may be overridden                                        │
+│    (/Users/liwang/.openclaw/extensions/feishu/index.ts)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[info]: [ 'client ready' ]
+✅ Sent via Feishu. Message ID: om_x100b54aa2ed7b8a4c375048fd2ad43c (chat ou_7781abd1e83eae23ccf01fe627f0747f)
+✅ 文字稿发送完成 - 2026-03-18 07:38:41
+✅ 纯中文文本已生成
+🔊 使用 macOS say 生成音频...
+✅ 合并音频已生成：/Users/liwang/.openclaw/workspace/audio/daily-2026-03-18.mp3 (2.8M, 740秒)
+📤 发送文字稿到飞书...
+✅ 文字稿发送完成 - 2026-03-18 07:39:29
+🎙️ 开始生成合并版音频（纯中文）- 2026-03-19 08:06:47
+📝 生成纯中文朗读文本...
+🎙️ 开始生成合并版音频（纯中文）- 2026-03-19 08:20:40
+📝 生成纯中文朗读文本...
+✅ 纯中文文本已生成
+🔊 使用 macOS say 生成音频...
+✅ 合并音频已生成：/Users/liwang/.openclaw/workspace/audio/daily-2026-03-19.mp3 (80K, 20秒)
+📤 发送文字稿到飞书...
+✅ 文字稿发送完成 - 2026-03-19 08:20:44
+✅ 合并音频任务完成 - 2026-03-19 08:20:44
+🎙️ 开始生成合并版音频（纯中文）- 2026-03-19 08:21:51
+📝 生成纯中文朗读文本...
+✅ 纯中文文本已生成，共        7 行
+🔊 使用 macOS say 生成音频...
+✅ 合并音频已生成：/Users/liwang/.openclaw/workspace/audio/daily-2026-03-19.mp3 (80K, 20秒)
+📤 发送文字稿到飞书...
+✅ 文字稿发送完成 - 2026-03-19 08:21:56
+✅ 合并音频任务完成 - 2026-03-19 08:21:56
+🎙️ 开始生成合并版音频（纯中文）- 2026-03-19 08:23:09
+📝 生成纯中文朗读文本...
+✅ 纯中文文本已生成，共       43 行
+🔊 使用 macOS say 生成音频...
+✅ 合并音频已生成：/Users/liwang/.openclaw/workspace/audio/daily-2026-03-19.mp3 (844K, 215秒)
+📤 发送文字稿到飞书...
+✅ 文字稿发送完成 - 2026-03-19 08:23:14
+✅ 合并音频任务完成 - 2026-03-19 08:23:14

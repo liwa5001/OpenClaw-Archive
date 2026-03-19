@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 财富堡每周复盘</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .date-picker {
+            margin-top: 15px;
+        }
+        
+        .date-picker input[type="date"] {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 2px solid rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+        }
+        
+        .date-picker input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
+        }
+        
+        .date-picker input[type="date"]:focus {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.8);
+        }
+        
+        .form-body {
+            padding: 30px 20px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        input[type="number"],
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        
+        input[type="number"]:focus,
+        input[type="text"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #f093fb;
+            box-shadow: 0 0 0 3px rgba(240, 147, 251, 0.1);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .input-hint {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .summary-card {
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .summary-card.income {
+            background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+            color: white;
+        }
+        
+        .summary-card.expense {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+            color: white;
+        }
+        
+        .summary-card.balance {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+        
+        .summary-card.saving {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        .summary-label {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+        
+        .summary-value {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 6px;
+            transition: width 0.5s ease;
+        }
+        
+        .progress-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+            text-align: right;
+        }
+        
+        .week-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .week-selector select {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 15px;
+            background: white;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(240, 147, 251, 0.4);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        .success-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        
+        .success-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #f093fb;
+            margin-bottom: 10px;
+        }
+        
+        .success-text {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .form-body.hidden {
+            display: none;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .category-item {
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .category-item:hover {
+            background: #e9ecef;
+        }
+        
+        .category-item.selected {
+            border-color: #f093fb;
+            background: #fff0f7;
+        }
+        
+        .category-item label {
+            margin: 0;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+        }
+        
+        .category-item input[type="radio"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💰 财富堡每周复盘</h1>
+            <p>每周一次，掌控财务自由之路</p>
+            <div class="date-picker">
+                <input type="date" id="dateInput">
+            </div>
+        </div>
+        
+        <div class="form-body" id="formBody">
+            <!-- 周数选择 -->
+            <div class="section">
+                <div class="section-title">
+                    <span>📅</span>
+                    选择周数
+                </div>
+                <div class="week-selector">
+                    <select id="weekSelect" onchange="updateWeekRange()">
+                        <!-- 动态生成 -->
+                    </select>
+                </div>
+                <div class="input-hint" id="weekRange">本周范围：-- 至 --</div>
+            </div>
+            
+            <!-- 本周概览 -->
+            <div class="section">
+                <div class="section-title">
+                    <span>📊</span>
+                    本周概览
+                </div>
+                <div class="summary-cards">
+                    <div class="summary-card income">
+                        <div class="summary-label">本周总收入</div>
+                        <div class="summary-value">¥<span id="totalIncome">0</span></div>
+                    </div>
+                    <div class="summary-card expense">
+                        <div class="summary-label">本周总支出</div>
+                        <div class="summary-value">¥<span id="totalExpense">0</span></div>
+                    </div>
+                    <div class="summary-card balance">
+                        <div class="summary-label">本周结余</div>
+                        <div class="summary-value">¥<span id="weekBalance">0</span></div>
+                    </div>
+                    <div class="summary-card saving">
+                        <div class="summary-label">储蓄率</div>
+                        <div class="summary-value"><span id="savingRate">0</span>%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 本周收入 -->
+            <div class="section">
+                <div class="section-title">
+                    <span>💰</span>
+                    本周收入
+                </div>
+                <div class="form-group">
+                    <label>工资收入</label>
+                    <input type="number" id="salaryIncome" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>奖金/绩效</label>
+                    <input type="number" id="bonusIncome" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>投资回报（股息/利息/收益）</label>
+                    <input type="number" id="investmentIncome" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>兼职/副业</label>
+                    <input type="number" id="sideIncome" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>其他收入</label>
+                    <input type="number" id="otherIncome" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+            </div>
+            
+            <!-- 本周支出 -->
+            <div class="section">
+                <div class="section-title">
+                    <span>💸</span>
+                    本周支出
+                </div>
+                <div class="form-group">
+                    <label>餐饮（外卖/餐厅/ groceries）</label>
+                    <input type="number" id="foodExpense" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>交通（打车/公交/加油）</label>
+                    <input type="number" id="transportExpense" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>购物（衣服/电子产品/日用品）</label>
+                    <input type="number" id="shoppingExpense" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>娱乐（电影/游戏/聚会）</label>
+                    <input type="number" id="entertainmentExpense" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>学习（课程/书籍/培训）</label>
+                    <input type="number" id="learningExpense" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>医疗（药品/检查/治疗）</label>
+                    <input type="number" id="medicalExpense" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>住房（房租/房贷/水电）</label>
+                    <input type="number" id="housingExpense" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+                <div class="form-group">
+                    <label>其他支出</label>
+                    <input type="number" id="otherExpense" placeholder="¥" step="0.01" oninput="updateSummary()">
+                </div>
+            </div>
+            
+            <!-- 账户余额 -->
+            <div class="section">
+                <div class="section-title">
+                    <span>🏦</span>
+                    当前账户余额（截至本周日）
+                </div>
+                <div class="form-group">
+                    <label>银行卡余额</label>
+                    <input type="number" id="bankBalance" placeholder="¥" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label>支付宝/微信余额</label>
+                    <input type="number" id="digitalBalance" placeholder="¥" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label>投资账户余额（股票/基金/crypto）</label>
+                    <input type="number" id="investmentBalance" placeholder="¥" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label>现金余额</label>
+                    <input type="number" id="cashBalance" placeholder="¥" step="0.01">
+                </div>
+                <div class="input-hint">💡 总资产 = ¥<span id="totalAssets">0</span></div>
+            </div>
+            
+            <!-- 储蓄目标 -->
+            <div class="section">
+                <div class="section-title">
+                    <span>🎯</span>
+                    月度储蓄目标进度
+                </div>
+                <div class="form-group">
+                    <label>本月目标储蓄金额</label>
+                    <input type="number" id="monthlySavingGoal" placeholder="¥" value="10000" oninput="updateSavingProgress()">
+                </div>
+                <div class="form-group">
+                    <label>本月已储蓄金额（截至本周）</label>
+                    <input type="number" id="currentSaving" placeholder="¥" step="0.01" oninput="updateSavingProgress()">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="savingProgress" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-text" id="savingProgressText">0 / 10000 元</div>
+                </div>
+            </div>
+            
+            <!-- 财务反思 -->
+            <div class="section">
+                <div class="section-title">
+                    <span>💭</span>
+                    本周财务反思
+                </div>
+                <div class="form-group">
+                    <label>本周最大的支出是什么？值得吗？</label>
+                    <textarea id="topExpense" placeholder="描述本周最大的一笔或一类支出，并反思是否必要"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>本周有没有冲动消费？如何避免？</label>
+                    <textarea id="impulseBuying" placeholder="如果有，是什么？下次如何避免？"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>本周有什么理财心得或发现？</label>
+                    <textarea id="financeInsight" placeholder="投资观察、省钱技巧、理财学习等"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>下周的财务计划</label>
+                    <textarea id="nextWeekPlan" placeholder="预算安排、投资计划、消费计划等"></textarea>
+                </div>
+            </div>
+            
+            <button class="submit-btn" onclick="submitForm()">💾 保存本周财富数据</button>
+        </div>
+        
+        <div class="success-message" id="successMessage">
+            <div class="success-icon">✅</div>
+            <div class="success-title">财富数据已保存！</div>
+            <div class="success-text">继续保持财务纪律，离财务自由更近一步！</div>
+        </div>
+    </div>
+    
+    <script>
+        // 设置默认日期为今天
+        const today = new Date();
+        document.getElementById('dateInput').valueAsDate = today;
+        
+        // 生成周数选择器（过去 12 周 + 本周）
+        function initWeekSelector() {
+            const select = document.getElementById('weekSelect');
+            select.innerHTML = '';
+            
+            for (let i = 0; i <= 12; i++) {
+                const weekDate = new Date(today);
+                weekDate.setDate(weekDate.getDate() - (i * 7));
+                
+                const weekStart = new Date(weekDate);
+                weekStart.setDate(weekStart.getDate() - weekStart.getDay()); // 周日为本周开始
+                
+                const weekEnd = new Date(weekStart);
+                weekEnd.setDate(weekEnd.getDate() + 6);
+                
+                const weekNum = getWeekNumber(weekDate);
+                const option = document.createElement('option');
+                option.value = weekNum;
+                option.textContent = `第${weekNum}周 (${formatDate(weekStart)} - ${formatDate(weekEnd)})${i === 0 ? ' (本周)' : ''}`;
+                if (i === 0) option.selected = true;
+                
+                select.appendChild(option);
+            }
+            
+            updateWeekRange();
+        }
+        
+        function getWeekNumber(date) {
+            const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+            const dayNum = d.getUTCDay() || 7;
+            d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+            const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+            return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+        }
+        
+        function formatDate(date) {
+            const month = (date.getMonth() + 1).toString().padStart(2, '0');
+            const day = date.getDate().toString().padStart(2, '0');
+            return `${month}/${day}`;
+        }
+        
+        function updateWeekRange() {
+            const select = document.getElementById('weekSelect');
+            const selectedOption = select.options[select.selectedIndex];
+            document.getElementById('weekRange').textContent = `本周范围：${selectedOption.textContent.split('(')[1].split(')')[0]}`;
+        }
+        
+        // 更新概览数据
+        function updateSummary() {
+            const totalIncome = 
+                (parseFloat(document.getElementById('salaryIncome').value) || 0) +
+                (parseFloat(document.getElementById('bonusIncome').value) || 0) +
+                (parseFloat(document.getElementById('investmentIncome').value) || 0) +
+                (parseFloat(document.getElementById('sideIncome').value) || 0) +
+                (parseFloat(document.getElementById('otherIncome').value) || 0);
+            
+            const totalExpense = 
+                (parseFloat(document.getElementById('foodExpense').value) || 0) +
+                (parseFloat(document.getElementById('transportExpense').value) || 0) +
+                (parseFloat(document.getElementById('shoppingExpense').value) || 0) +
+                (parseFloat(document.getElementById('entertainmentExpense').value) || 0) +
+                (parseFloat(document.getElementById('learningExpense').value) || 0) +
+                (parseFloat(document.getElementById('medicalExpense').value) || 0) +
+                (parseFloat(document.getElementById('housingExpense').value) || 0) +
+                (parseFloat(document.getElementById('otherExpense').value) || 0);
+            
+            document.getElementById('totalIncome').textContent = totalIncome.toFixed(2);
+            document.getElementById('totalExpense').textContent = totalExpense.toFixed(2);
+            
+            const weekBalance = totalIncome - totalExpense;
+            document.getElementById('weekBalance').textContent = weekBalance.toFixed(2);
+            
+            const savingRate = totalIncome > 0 ? ((totalIncome - totalExpense) / totalIncome * 100) : 0;
+            document.getElementById('savingRate').textContent = savingRate.toFixed(1);
+            
+            updateTotalAssets();
+        }
+        
+        // 更新总资产
+        function updateTotalAssets() {
+            const totalAssets = 
+                (parseFloat(document.getElementById('bankBalance').value) || 0) +
+                (parseFloat(document.getElementById('digitalBalance').value) || 0) +
+                (parseFloat(document.getElementById('investmentBalance').value) || 0) +
+                (parseFloat(document.getElementById('cashBalance').value) || 0);
+            
+            document.getElementById('totalAssets').textContent = totalAssets.toFixed(2);
+        }
+        
+        ['bankBalance', 'digitalBalance', 'investmentBalance', 'cashBalance'].forEach(id => {
+            document.getElementById(id).addEventListener('input', updateTotalAssets);
+        });
+        
+        // 更新储蓄进度
+        function updateSavingProgress() {
+            const goal = parseFloat(document.getElementById('monthlySavingGoal').value) || 10000;
+            const current = parseFloat(document.getElementById('currentSaving').value) || 0;
+            
+            const percentage = Math.min((current / goal) * 100, 100);
+            document.getElementById('savingProgress').style.width = percentage + '%';
+            document.getElementById('savingProgressText').textContent = `${current.toFixed(0)} / ${goal.toFixed(0)} 元`;
+        }
+        
+        // 提交表单
+        async function submitForm() {
+            const date = document.getElementById('dateInput').value;
+            const weekNum = document.getElementById('weekSelect').value;
+            const year = new Date().getFullYear();
+            
+            const data = {
+                date: date,
+                weekNum: weekNum,
+                year: year,
+                income: {
+                    salary: parseFloat(document.getElementById('salaryIncome').value) || 0,
+                    bonus: parseFloat(document.getElementById('bonusIncome').value) || 0,
+                    investment: parseFloat(document.getElementById('investmentIncome').value) || 0,
+                    side: parseFloat(document.getElementById('sideIncome').value) || 0,
+                    other: parseFloat(document.getElementById('otherIncome').value) || 0
+                },
+                expense: {
+                    food: parseFloat(document.getElementById('foodExpense').value) || 0,
+                    transport: parseFloat(document.getElementById('transportExpense').value) || 0,
+                    shopping: parseFloat(document.getElementById('shoppingExpense').value) || 0,
+                    entertainment: parseFloat(document.getElementById('entertainmentExpense').value) || 0,
+                    learning: parseFloat(document.getElementById('learningExpense').value) || 0,
+                    medical: parseFloat(document.getElementById('medicalExpense').value) || 0,
+                    housing: parseFloat(document.getElementById('housingExpense').value) || 0,
+                    other: parseFloat(document.getElementById('otherExpense').value) || 0
+                },
+                balances: {
+                    bank: parseFloat(document.getElementById('bankBalance').value) || 0,
+                    digital: parseFloat(document.getElementById('digitalBalance').value) || 0,
+                    investment: parseFloat(document.getElementById('investmentBalance').value) || 0,
+                    cash: parseFloat(document.getElementById('cashBalance').value) || 0
+                },
+                savingGoal: {
+                    monthly: parseFloat(document.getElementById('monthlySavingGoal').value) || 0,
+                    current: parseFloat(document.getElementById('currentSaving').value) || 0
+                },
+                reflection: {
+                    topExpense: document.getElementById('topExpense').value,
+                    impulseBuying: document.getElementById('impulseBuying').value,
+                    financeInsight: document.getElementById('financeInsight').value,
+                    nextWeekPlan: document.getElementById('nextWeekPlan').value
+                },
+                summary: {
+                    totalIncome: parseFloat(document.getElementById('totalIncome').textContent),
+                    totalExpense: parseFloat(document.getElementById('totalExpense').textContent),
+                    weekBalance: parseFloat(document.getElementById('weekBalance').textContent),
+                    savingRate: parseFloat(document.getElementById('savingRate').textContent)
+                }
+            };
+            
+            try {
+                const response = await fetch('/api/save', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    document.getElementById('formBody').classList.add('hidden');
+                    document.getElementById('successMessage').classList.add('show');
+                    
+                    // 3 秒后重置表单
+                    setTimeout(() => {
+                        document.getElementById('formBody').classList.remove('hidden');
+                        document.getElementById('successMessage').classList.remove('show');
+                        initWeekSelector();
+                        updateSummary();
+                        updateSavingProgress();
+                    }, 3000);
+                } else {
+                    alert('保存失败：' + result.error);
+                }
+            } catch (error) {
+                alert('保存失败：' + error.message);
+            }
+        }
+        
+        // 初始化
+        initWeekSelector();
+        updateSavingProgress();
+    </script>
+</body>
+</html>

@@ -9,6 +9,9 @@
 set -e
 
 cd /Users/liwang/.openclaw/workspace
+# 超时设置
+TIMEOUT_SECONDS=90
+
 
 DATE=$(date +%Y-%m-%d)
 YESTERDAY=$(date -v-1d +%Y-%m-%d)
@@ -183,25 +186,32 @@ EOF
 echo "✅ 归档文件已生成：$ARCHIVE_FILE"
 
 # ============================================
-# 4. 获取本机 IP 地址（用于表单链接）
+# 4. 获取表单链接（优先使用公网链接）
 # ============================================
-# 使用 Node.js 获取 IP（跨平台兼容）
-LOCAL_IP=$(node -e "
-const os = require('os');
-const interfaces = os.networkInterfaces();
-let ip = 'localhost';
-for (const name of Object.keys(interfaces)) {
-    for (const iface of interfaces[name]) {
-        if (iface.family === 'IPv4' && !iface.internal) {
-            ip = iface.address;
-            break;
+PUBLIC_URL_FILE="logs/health-public-url.txt"
+if [ -f "$PUBLIC_URL_FILE" ]; then
+    FORM_URL=$(cat "$PUBLIC_URL_FILE")
+    echo "🌐 使用公网链接：$FORM_URL"
+else
+    # 使用 Node.js 获取 IP（跨平台兼容）
+    LOCAL_IP=$(node -e "
+    const os = require('os');
+    const interfaces = os.networkInterfaces();
+    let ip = 'localhost';
+    for (const name of Object.keys(interfaces)) {
+        for (const iface of interfaces[name]) {
+            if (iface.family === 'IPv4' && !iface.internal) {
+                ip = iface.address;
+                break;
+            }
         }
+        if (ip !== 'localhost') break;
     }
-    if (ip !== 'localhost') break;
-}
-console.log(ip);
-")
-FORM_URL="http://${LOCAL_IP}:8893/"
+    console.log(ip);
+    ")
+    FORM_URL="http://${LOCAL_IP}:8893/"
+    echo "🏠 使用内网链接：$FORM_URL"
+fi
 
 # ============================================
 # 5. 发送飞书消息（含表单链接）

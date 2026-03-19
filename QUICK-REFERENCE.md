@@ -12,10 +12,9 @@
 | 6:55 | 配置验证 | 日志 | validate-configs.sh | ✅ |
 | 7:00 | 晨报 | 飞书 | morning-news.sh | ✅ |
 | 7:30 | 健康日报 | 飞书 | health-report.sh | ✅ |
-| 8:00 | 训练提醒（当天） | 飞书 | training-reminder.sh | ✅ |
+| 11:00 | 训练提醒 | 飞书 | training-reminder.sh | ✅ |
 | 9:00 | 运动数据分析 | 飞书 | analyze-workout.sh | ✅ |
 | 9:30 | 训练计划检查 | 飞书 | update-training-plan.sh | ✅ |
-| 20:00 | 训练提醒（预告） | 飞书 | training-reminder.sh | ✅ |
 
 **周报/年报：**
 - 健康周报：周一 8:30
